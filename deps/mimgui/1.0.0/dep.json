@@ -1,0 +1,12 @@
+{
+  "id": "mimgui",
+  "version": "1.0.0",
+  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/mimgui",
+  "files": [
+    "cdefs.lua",
+    "cimguidx9.dll",
+    "dx9.lua",
+    "imgui.lua",
+    "init.lua"
+  ]
+}

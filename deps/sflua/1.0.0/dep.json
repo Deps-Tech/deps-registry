@@ -1,0 +1,14 @@
+{
+  "id": "sflua",
+  "version": "1.0.0",
+  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/SFlua",
+  "files": [
+    "037-r1\\cdef.lua",
+    "037-r1\\init.lua",
+    "addition.lua",
+    "bitstream.lua",
+    "cdef.lua",
+    "const.lua",
+    "init.lua"
+  ]
+}

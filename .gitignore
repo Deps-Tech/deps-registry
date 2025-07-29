@@ -1,0 +1,11 @@
+# Go package management
+vendor/
+go.sum
+go.mod
+
+# IDE and OS-specific files
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db

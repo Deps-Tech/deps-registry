@@ -1,0 +1,14 @@
+{
+  "id": "socket-lib",
+  "version": "1.0.0",
+  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/socket",
+  "files": [
+    "core.dll",
+    "ftp.lua",
+    "headers.lua",
+    "http.lua",
+    "smtp.lua",
+    "tp.lua",
+    "url.lua"
+  ]
+}

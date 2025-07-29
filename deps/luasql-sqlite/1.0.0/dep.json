@@ -1,0 +1,8 @@
+{
+  "id": "luasql-sqlite",
+  "version": "1.0.0",
+  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/luasql-sqlite",
+  "files": [
+    "luasql\\sqlite3.dll"
+  ]
+}

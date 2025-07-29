@@ -1,0 +1,13 @@
+{
+  "id": "htmlparser-lib",
+  "version": "1.0.0",
+  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/htmlparser",
+  "files": [
+    "ElementNode.lua",
+    "Set\\init.lua",
+    "htmlparser\\ElementNode.lua",
+    "htmlparser\\voidelements.lua",
+    "htmlparser.lua",
+    "voidelements.lua"
+  ]
+}

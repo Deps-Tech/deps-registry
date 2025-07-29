@@ -1,0 +1,9 @@
+{
+  "id": "lpeg",
+  "version": "1.0.0",
+  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/lpeg",
+  "files": [
+    "lpeg.dll",
+    "re.lua"
+  ]
+}

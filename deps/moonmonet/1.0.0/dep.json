@@ -1,0 +1,9 @@
+{
+  "id": "moonmonet",
+  "version": "1.0.0",
+  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/MoonMonet",
+  "files": [
+    "init.lua",
+    "moonmonet_rs.dll"
+  ]
+}

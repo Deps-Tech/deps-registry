@@ -1,0 +1,11 @@
+{
+  "id": "game",
+  "version": "1.0.0",
+  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/game",
+  "files": [
+    "globals.lua",
+    "keys.lua",
+    "models.lua",
+    "weapons.lua"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "imcustom",
+  "version": "1.0.0",
+  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/imcustom",
+  "files": [
+    "hotkey.lua",
+    "piemenu.lua"
+  ]
+}

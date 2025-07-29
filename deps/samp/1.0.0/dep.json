@@ -1,0 +1,20 @@
+{
+  "id": "samp",
+  "version": "1.0.0",
+  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/samp",
+  "files": [
+    "events\\bitstream_io.lua",
+    "events\\bot.lua.upd.ini",
+    "events\\core.lua",
+    "events\\extra_types.lua",
+    "events\\handlers.lua",
+    "events\\logo-law.jpg",
+    "events\\logo-law2.jpg",
+    "events\\utils.lua",
+    "events.lua",
+    "events_core.lua",
+    "packet.lua",
+    "raknet.lua",
+    "synchronization.lua"
+  ]
+}

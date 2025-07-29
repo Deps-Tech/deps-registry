@@ -1,0 +1,18 @@
+{
+  "id": "luasocket",
+  "version": "1.0.0",
+  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/luasocket",
+  "files": [
+    "ltn12.lua",
+    "mime\\core.dll",
+    "mime.lua",
+    "socket\\core.dll",
+    "socket\\ftp.lua",
+    "socket\\headers.lua",
+    "socket\\http.lua",
+    "socket\\smtp.lua",
+    "socket\\tp.lua",
+    "socket\\url.lua",
+    "socket.lua"
+  ]
+}

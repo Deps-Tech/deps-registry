@@ -1,0 +1,12 @@
+{
+  "id": "events-lib",
+  "version": "1.0.0",
+  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/events",
+  "files": [
+    "bitstream_io.lua",
+    "core.lua",
+    "extra_types.lua",
+    "handlers.lua",
+    "utils.lua"
+  ]
+}

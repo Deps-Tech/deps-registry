@@ -1,0 +1,12 @@
+{
+  "id": "snet",
+  "version": "1.0.0",
+  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/snet",
+  "files": [
+    "bstream.lua",
+    "client.lua",
+    "init.lua",
+    "server.lua",
+    "utilities\\bcoder.lua"
+  ]
+}
