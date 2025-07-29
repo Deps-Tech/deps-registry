@@ -1,0 +1,11 @@
+{
+  "id": "arizona-events",
+  "version": "2025.728.952",
+  "sourceUrl": "https://www.blast.hk/threads/235586",
+  "files": [
+    "bitstream.lua",
+    "core.lua",
+    "init.lua",
+    "subprocess.lua"
+  ]
+}

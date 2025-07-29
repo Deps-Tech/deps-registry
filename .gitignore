@@ -9,3 +9,6 @@ go.mod
 *.swp
 .DS_Store
 Thumbs.db
+
+#Binary files
+*.exe
