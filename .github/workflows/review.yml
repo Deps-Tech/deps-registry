@@ -3,6 +3,10 @@ name: "PR Review"
 on:
   pull_request:
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   review:
     runs-on: ubuntu-latest
