@@ -1,7 +1,7 @@
 package main
 
 import (
-	"dep-tools/cmd"
+	"registry-tools/cmd"
 )
 
 func main() {

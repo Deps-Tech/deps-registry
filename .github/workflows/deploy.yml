@@ -1,0 +1,53 @@
+name: "Deploy to CDN"
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.1
+        with:
+          fetch-depth: 2
+
+      - name: Configure AWS Credentials via OIDC
+        uses: aws-actions/configure-aws-credentials@v4.0.2
+        with:
+          role-to-assume: ${{ secrets.AWS_OIDC_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      - name: Get changed files
+        id: changed-files
+        run: |
+          echo "files=$(git diff --name-only HEAD~1 HEAD | xargs)" >> $GITHUB_OUTPUT
+
+      - name: Build and Package
+        if: steps.changed-files.outputs.files
+        run: |
+          cd tools
+          go build -o ../tools-cli .
+          cd ..
+          ./tools-cli package
+
+      - name: Deploy Dependencies
+        if: contains(steps.changed-files.outputs.files, 'deps/')
+        run: |
+          aws s3 sync ./dist/deps s3://${{ vars.S3_BUCKET_NAME }}/deps
+          aws cloudfront create-invalidation --distribution-id ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/deps_index.json"
+
+      - name: Deploy Scripts
+        if: contains(steps.changed-files.outputs.files, 'scripts/')
+        run: |
+          aws s3 sync ./dist/scripts s3://${{ vars.S3_BUCKET_NAME }}/scripts
+          aws cloudfront create-invalidation --distribution-id ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/scripts_index.json"

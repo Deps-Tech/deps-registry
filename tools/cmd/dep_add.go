@@ -18,7 +18,7 @@ var addCmd = &cobra.Command{
 }
 
 func init() {
-	rootCmd.AddCommand(addCmd)
+	depCmd.AddCommand(addCmd)
 }
 
 func addDependency(cmd *cobra.Command, args []string) {
@@ -98,32 +98,4 @@ func addDependency(cmd *cobra.Command, args []string) {
 	}
 
 	fmt.Printf("Success: Added dependency '%s' version '%s'. The following files are now staged for commit. Please review and then run 'git add .', 'git commit', and 'git push'.\n", answers.ID, answers.Version)
-}
-
-func copyFiles(src, dest string) ([]string, error) {
-	var fileNames []string
-	files, err := ioutil.ReadDir(src)
-	if err != nil {
-		return nil, err
-	}
-
-	for _, file := range files {
-		if file.IsDir() {
-			continue
-		}
-		sourcePath := filepath.Join(src, file.Name())
-		destPath := filepath.Join(dest, file.Name())
-
-		input, err := ioutil.ReadFile(sourcePath)
-		if err != nil {
-			return nil, err
-		}
-
-		err = ioutil.WriteFile(destPath, input, 0644)
-		if err != nil {
-			return nil, err
-		}
-		fileNames = append(fileNames, file.Name())
-	}
-	return fileNames, nil
 }

@@ -6,7 +6,6 @@ import (
 	"io/ioutil"
 	"os"
 	"path/filepath"
-	"sort"
 
 	"github.com/AlecAivazis/survey/v2"
 	"github.com/spf13/cobra"
@@ -19,7 +18,7 @@ var updateCmd = &cobra.Command{
 }
 
 func init() {
-	rootCmd.AddCommand(updateCmd)
+	depCmd.AddCommand(updateCmd)
 }
 
 func updateDependency(cmd *cobra.Command, args []string) {
@@ -119,39 +118,4 @@ func updateDependency(cmd *cobra.Command, args []string) {
 	}
 
 	fmt.Printf("Success: Updated dependency '%s' with new version '%s'. Please review and commit the changes.\n", idAnswer, answers.Version)
-}
-
-func getLatestVersionInfo(depPath string) (string, string, error) {
-	versions, err := ioutil.ReadDir(depPath)
-	if err != nil {
-		return "", "", err
-	}
-
-	var versionNames []string
-	for _, v := range versions {
-		if v.IsDir() {
-			versionNames = append(versionNames, v.Name())
-		}
-	}
-
-	if len(versionNames) == 0 {
-		return "", "", fmt.Errorf("no versions found for this dependency")
-	}
-
-	sort.Strings(versionNames)
-	latestVersion := versionNames[len(versionNames)-1]
-
-	manifestPath := filepath.Join(depPath, latestVersion, "dep.json")
-	manifestFile, err := ioutil.ReadFile(manifestPath)
-	if err != nil {
-		return "", "", fmt.Errorf("could not read manifest for version %s: %v", latestVersion, err)
-	}
-
-	var manifest DepManifest
-	err = json.Unmarshal(manifestFile, &manifest)
-	if err != nil {
-		return "", "", fmt.Errorf("could not parse manifest for version %s: %v", latestVersion, err)
-	}
-
-	return latestVersion, manifest.SourceURL, nil
 }

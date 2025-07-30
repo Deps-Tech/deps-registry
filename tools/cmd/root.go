@@ -8,8 +8,8 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "dep-tools",
-	Short: "A CLI tool for managing game launcher dependencies",
+	Use:   "tools",
+	Short: "A CLI tool for managing dependencies and scripts",
 }
 
 func Execute() {
