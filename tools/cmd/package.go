@@ -5,7 +5,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 
@@ -24,7 +23,7 @@ func init() {
 
 func runPackaging(cmd *cobra.Command, args []string) {
 	fmt.Println("Running packaging...")
-	distPath := filepath.Join("..", "dist")
+	distPath := "dist"
 	if err := os.MkdirAll(distPath, os.ModePerm); err != nil {
 		fmt.Printf("Error creating dist directory: %v\n", err)
 		os.Exit(1)
@@ -44,11 +43,16 @@ func runPackaging(cmd *cobra.Command, args []string) {
 }
 
 func packageItems(itemType, distPath string) error {
-	basePath := filepath.Join("..", itemType)
-	items, err := ioutil.ReadDir(basePath)
+	basePath := itemType
+	targetPath := filepath.Join(distPath, itemType)
+	if err := os.MkdirAll(targetPath, os.ModePerm); err != nil {
+		return fmt.Errorf("could not create target directory: %w", err)
+	}
+
+	items, err := os.ReadDir(basePath)
 	if err != nil {
 		if os.IsNotExist(err) {
-			return nil // Nothing to package
+			return nil
 		}
 		return err
 	}
@@ -61,7 +65,7 @@ func packageItems(itemType, distPath string) error {
 		}
 		itemID := item.Name()
 		itemPath := filepath.Join(basePath, itemID)
-		versions, err := ioutil.ReadDir(itemPath)
+		versions, err := os.ReadDir(itemPath)
 		if err != nil {
 			return err
 		}
@@ -75,11 +79,8 @@ func packageItems(itemType, distPath string) error {
 			versionNames = append(versionNames, versionID)
 			versionPath := filepath.Join(itemPath, versionID)
 			zipName := fmt.Sprintf("%s-%s.zip", itemID, versionID)
-			zipPath := filepath.Join(distPath, itemType, zipName)
+			zipPath := filepath.Join(targetPath, zipName)
 
-			if err := os.MkdirAll(filepath.Dir(zipPath), os.ModePerm); err != nil {
-				return err
-			}
 			if err := zipDirectory(versionPath, zipPath); err != nil {
 				return fmt.Errorf("failed to zip %s: %w", versionPath, err)
 			}
@@ -93,7 +94,7 @@ func packageItems(itemType, distPath string) error {
 		return err
 	}
 
-	return ioutil.WriteFile(indexPath, indexData, 0644)
+	return os.WriteFile(indexPath, indexData, 0644)
 }
 
 func zipDirectory(source, target string) error {
