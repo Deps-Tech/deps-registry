@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"path/filepath"
 	"sort"
+	"strings"
 )
 
 func copyFiles(src, dest string) ([]string, error) {
@@ -69,4 +70,15 @@ func getLatestVersionInfo(itemPath string) (string, string, error) {
 	}
 
 	return latestVersion, manifest.SourceURL, nil
+}
+
+func parseTags(tagsStr string) []string {
+	if tagsStr == "" {
+		return nil
+	}
+	tags := strings.Split(tagsStr, ",")
+	for i, tag := range tags {
+		tags[i] = strings.TrimSpace(tag)
+	}
+	return tags
 }
