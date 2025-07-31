@@ -32,22 +32,21 @@ jobs:
         run: |
           echo "files=$(git diff --name-only HEAD~1 HEAD | xargs)" >> $GITHUB_OUTPUT
 
-      - name: Build and Package
+      - name: Build tool
         if: steps.changed-files.outputs.files
         run: |
           cd tools
           go build -o ../tools-cli .
           cd ..
+
+      - name: Package and Generate Index
+        if: steps.changed-files.outputs.files
+        run: |
           ./tools-cli package
+          ./tools-cli generate-index --cdn-url "https://${{ vars.S3_BUCKET_NAME }}.s3.${{ vars.AWS_REGION }}.amazonaws.com"
 
-      - name: Deploy Dependencies
-        if: contains(steps.changed-files.outputs.files, 'deps/')
+      - name: Deploy Content to CDN
+        if: steps.changed-files.outputs.files
         run: |
-          aws s3 sync ./dist/deps s3://${{ vars.S3_BUCKET_NAME }}/deps
-          aws cloudfront create-invalidation --distribution-id ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/deps_index.json"
-
-      - name: Deploy Scripts
-        if: contains(steps.changed-files.outputs.files, 'scripts/')
-        run: |
-          aws s3 sync ./dist/scripts s3://${{ vars.S3_BUCKET_NAME }}/scripts
-          aws cloudfront create-invalidation --distribution-id ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/scripts_index.json"
+          aws s3 sync ./dist/ s3://${{ vars.S3_BUCKET_NAME }}/
+          aws cloudfront create-invalidation --distribution-id ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"

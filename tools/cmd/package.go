@@ -2,7 +2,6 @@ package cmd
 
 import (
 	"archive/zip"
-	"encoding/json"
 	"fmt"
 	"io"
 	"os"
@@ -88,13 +87,7 @@ func packageItems(itemType, distPath string) error {
 		index[itemID] = versionNames
 	}
 
-	indexPath := filepath.Join(distPath, fmt.Sprintf("%s_index.json", itemType))
-	indexData, err := json.MarshalIndent(index, "", "  ")
-	if err != nil {
-		return err
-	}
-
-	return os.WriteFile(indexPath, indexData, 0644)
+	return nil
 }
 
 func zipDirectory(source, target string) error {
