@@ -15,7 +15,7 @@ type ScriptAnalysis struct {
 	HasNetworkAccess bool
 }
 
-func analyzeScript(sourcePath string) (*ScriptAnalysis, error) {
+func analyzeScript(sourcePath string, id string) (*ScriptAnalysis, error) {
 	analysis := &ScriptAnalysis{
 		Dependencies:     []string{},
 		TouchedFiles:     []string{},
@@ -94,6 +94,9 @@ func analyzeScript(sourcePath string) (*ScriptAnalysis, error) {
 		for _, match := range matchesDep {
 			if len(match) > 1 {
 				cleanDepID := strings.TrimPrefix(match[1], "lib.")
+				if id != "" && (cleanDepID == id || strings.HasPrefix(cleanDepID, id+".")) {
+					continue
+				}
 				depSet[cleanDepID] = struct{}{}
 			}
 		}

@@ -88,7 +88,7 @@ func addScript(cmd *cobra.Command, args []string) {
 	}
 
 	sourcePath := strings.Trim(answers.SourcePath, `"`)
-	analysis, err := analyzeScript(sourcePath)
+	analysis, err := analyzeScript(sourcePath, answers.ID)
 	if err != nil {
 		fmt.Printf("Error analyzing script: %v\n", err)
 		return

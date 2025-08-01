@@ -122,7 +122,7 @@ func updateScript(cmd *cobra.Command, args []string) {
 	}
 
 	sourcePath := strings.Trim(answers.SourcePath, `"`)
-	analysis, err := analyzeScript(sourcePath)
+	analysis, err := analyzeScript(sourcePath, idAnswer)
 	if err != nil {
 		fmt.Printf("Error analyzing script: %v\n", err)
 		return
