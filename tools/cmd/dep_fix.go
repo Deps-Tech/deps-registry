@@ -28,6 +28,13 @@ func fixDependencies(cmd *cobra.Command, args []string) {
 		return
 	}
 
+	allDepIDs := make(map[string]bool)
+	for _, dir := range dirs {
+		if dir.IsDir() {
+			allDepIDs[dir.Name()] = true
+		}
+	}
+
 	for _, dir := range dirs {
 		if !dir.IsDir() {
 			continue
@@ -50,7 +57,7 @@ func fixDependencies(cmd *cobra.Command, args []string) {
 				continue
 			}
 
-			analysis, err := analyzeScript(versionPath)
+			analysis, err := analyzeScript(versionPath, depID, allDepIDs)
 			if err != nil {
 				fmt.Printf("Error analyzing dependency '%s' version '%s': %v\n", depID, version.Name(), err)
 				continue
