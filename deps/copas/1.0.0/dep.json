@@ -12,5 +12,15 @@
     "smtp.lua",
     "copas.lua",
     "timer.lua"
-  ]
+  ],
+  "dependencies": {
+    "ltn12": "1.0.0",
+    "mime": "1.0.0",
+    "socket": "1.0.0",
+    "socket.ftp": "1.0.0",
+    "socket.headers": "1.0.0",
+    "socket.smtp": "1.0.0",
+    "socket.url": "1.0.0",
+    "ssl": "1.0.0"
+  }
 }

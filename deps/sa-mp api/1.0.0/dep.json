@@ -74,5 +74,8 @@
     "samp\\0_3_DL-R1\\stVehiclePool.lua",
     "samp\\0_3_DL-R1\\sync.lua",
     "samp\\definitions.lua"
-  ]
+  ],
+  "dependencies": {
+    "ffi": "1.0.0"
+  }
 }

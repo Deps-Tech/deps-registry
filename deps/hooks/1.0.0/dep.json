@@ -4,5 +4,8 @@
   "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/hooks.lua",
   "files": [
     "hooks.lua"
-  ]
+  ],
+  "dependencies": {
+    "ffi": "1.0.0"
+  }
 }

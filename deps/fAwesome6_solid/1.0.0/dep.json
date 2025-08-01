@@ -4,5 +4,8 @@
   "sourceUrl": "https://www.blast.hk/threads/151050/",
   "files": [
     "fAwesome6_solid.lua"
-  ]
+  ],
+  "dependencies": {
+    "mimgui": "1.0.0"
+  }
 }

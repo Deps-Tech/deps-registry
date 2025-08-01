@@ -122,7 +122,22 @@ func updateScript(cmd *cobra.Command, args []string) {
 	}
 
 	sourcePath := strings.Trim(answers.SourcePath, `"`)
-	analysis, err := analyzeScript(sourcePath, idAnswer)
+
+	depsPath := filepath.Join("..", "deps")
+	dirs, err := ioutil.ReadDir(depsPath)
+	if err != nil {
+		fmt.Printf("Error reading deps directory: %v\n", err)
+		return
+	}
+
+	allDepIDs := make(map[string]bool)
+	for _, dir := range dirs {
+		if dir.IsDir() {
+			allDepIDs[strings.ToLower(dir.Name())] = true
+		}
+	}
+
+	analysis, err := analyzeScript(sourcePath, idAnswer, allDepIDs)
 	if err != nil {
 		fmt.Printf("Error analyzing script: %v\n", err)
 		return

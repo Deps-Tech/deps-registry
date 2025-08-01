@@ -14,5 +14,10 @@
     "socket\\tp.lua",
     "socket\\url.lua",
     "socket.lua"
-  ]
+  ],
+  "dependencies": {
+    "ltn12": "1.0.0",
+    "mime.core": "1.0.0",
+    "socket.core": "1.0.0"
+  }
 }

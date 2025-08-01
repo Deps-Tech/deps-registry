@@ -4,5 +4,9 @@
   "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/imgui_notf.lua",
   "files": [
     "imgui_notf.lua"
-  ]
+  ],
+  "dependencies": {
+    "encoding": "1.0.0",
+    "imgui": "1.0.0"
+  }
 }

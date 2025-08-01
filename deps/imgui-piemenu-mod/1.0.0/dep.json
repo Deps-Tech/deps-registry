@@ -4,5 +4,8 @@
   "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/imgui_piemenu_mod.lua",
   "files": [
     "imgui_piemenu_mod.lua"
-  ]
+  ],
+  "dependencies": {
+    "imgui": "1.0.0"
+  }
 }

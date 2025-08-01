@@ -4,5 +4,11 @@
   "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/luairc.lua",
   "files": [
     "luairc.lua"
-  ]
+  ],
+  "dependencies": {
+    "asyncoperations": "1.0.0",
+    "handlers": "1.0.0",
+    "socket": "1.0.0",
+    "util": "1.0.0"
+  }
 }

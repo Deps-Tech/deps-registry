@@ -4,5 +4,8 @@
   "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/matrix3x3.lua",
   "files": [
     "matrix3x3.lua"
-  ]
+  ],
+  "dependencies": {
+    "vector3d": "1.0.0"
+  }
 }

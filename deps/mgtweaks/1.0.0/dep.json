@@ -4,5 +4,9 @@
   "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/mgtweaks.lua",
   "files": [
     "mgtweaks.lua"
-  ]
+  ],
+  "dependencies": {
+    "moonloader": "1.0.0",
+    "sampfuncs": "1.0.0"
+  }
 }

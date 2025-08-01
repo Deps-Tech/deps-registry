@@ -4,5 +4,10 @@
   "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/imgui.lua",
   "files": [
     "imgui.lua"
-  ]
+  ],
+  "dependencies": {
+    "MoonImGui": "1.0.0",
+    "bitex": "1.0.0",
+    "windows.message": "1.0.0"
+  }
 }

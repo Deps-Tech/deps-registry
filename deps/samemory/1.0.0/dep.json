@@ -102,5 +102,11 @@
     "init.lua",
     "metatype.lua",
     "shared.lua"
-  ]
+  ],
+  "dependencies": {
+    "SAMemory.game.definitions": "1.0.0",
+    "SAMemory.metatype": "1.0.0",
+    "SAMemory.shared": "1.0.0",
+    "ffi": "1.0.0"
+  }
 }

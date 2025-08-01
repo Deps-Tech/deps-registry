@@ -4,5 +4,8 @@
   "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/moonloader.lua",
   "files": [
     "moonloader.lua"
-  ]
+  ],
+  "dependencies": {
+    "vkeys": "1.0.0"
+  }
 }

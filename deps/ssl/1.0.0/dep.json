@@ -5,5 +5,11 @@
   "files": [
     "ssl.lua",
     "https.lua"
-  ]
+  ],
+  "dependencies": {
+    "ltn12": "1.0.0",
+    "socket": "1.0.0",
+    "socket.http": "1.0.0",
+    "socket.url": "1.0.0"
+  }
 }

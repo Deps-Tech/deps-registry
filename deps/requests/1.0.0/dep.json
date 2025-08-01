@@ -4,5 +4,15 @@
   "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/requests.lua",
   "files": [
     "requests.lua"
-  ]
+  ],
+  "dependencies": {
+    "base64": "1.0.0",
+    "cjson.safe": "1.0.0",
+    "ltn12": "1.0.0",
+    "md5": "1.0.0",
+    "socket.http": "1.0.0",
+    "socket.url": "1.0.0",
+    "ssl.https": "1.0.0",
+    "xml": "1.0.0"
+  }
 }

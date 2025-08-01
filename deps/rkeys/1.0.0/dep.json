@@ -4,5 +4,11 @@
   "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/rkeys.lua",
   "files": [
     "rkeys.lua"
-  ]
+  ],
+  "dependencies": {
+    "bitex": "1.0.0",
+    "ffi": "1.0.0",
+    "vkeys": "1.0.0",
+    "windows.message": "1.0.0"
+  }
 }

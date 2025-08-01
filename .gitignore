@@ -7,3 +7,7 @@ Thumbs.db
 
 #Binary files
 *.exe
+
+#Trash
+dep_validate.go
+dep_fix.go

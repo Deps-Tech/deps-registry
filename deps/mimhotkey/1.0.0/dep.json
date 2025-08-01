@@ -4,5 +4,10 @@
   "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/mimhotkey.lua",
   "files": [
     "mimhotkey.lua"
-  ]
+  ],
+  "dependencies": {
+    "mimgui": "1.0.0",
+    "moonloader": "1.0.0",
+    "vkeys": "1.0.0"
+  }
 }

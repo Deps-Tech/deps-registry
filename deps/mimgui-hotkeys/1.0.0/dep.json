@@ -4,5 +4,9 @@
   "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/mimgui_hotkeys.lua",
   "files": [
     "mimgui_hotkeys.lua"
-  ]
+  ],
+  "dependencies": {
+    "mimgui": "1.0.0",
+    "vkeys": "1.0.0"
+  }
 }

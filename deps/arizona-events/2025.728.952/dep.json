@@ -7,5 +7,9 @@
     "core.lua",
     "init.lua",
     "subprocess.lua"
-  ]
+  ],
+  "dependencies": {
+    "ffi": "1.0.0",
+    "vector3d": "1.0.0"
+  }
 }

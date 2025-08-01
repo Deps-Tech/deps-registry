@@ -8,5 +8,9 @@
     "init.lua",
     "server.lua",
     "utilities\\bcoder.lua"
-  ]
+  ],
+  "dependencies": {
+    "ffi": "1.0.0",
+    "socket": "1.0.0"
+  }
 }

@@ -11,5 +11,9 @@
     "headers.lua",
     "http.lua",
     "smtp.lua"
-  ]
+  ],
+  "dependencies": {
+    "ltn12": "1.0.0",
+    "mime": "1.0.0"
+  }
 }

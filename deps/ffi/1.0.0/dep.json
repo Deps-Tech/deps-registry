@@ -6,5 +6,8 @@
     "fs.lua",
     "types.lua",
     "wcs.lua"
-  ]
+  ],
+  "dependencies": {
+    "path.win32.ffi.types": "1.0.0"
+  }
 }

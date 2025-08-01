@@ -4,5 +4,8 @@
   "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/set.lua",
   "files": [
     "set.lua"
-  ]
+  ],
+  "dependencies": {
+    "socket": "1.0.0"
+  }
 }

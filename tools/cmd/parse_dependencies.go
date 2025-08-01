@@ -15,7 +15,7 @@ type ScriptAnalysis struct {
 	HasNetworkAccess bool
 }
 
-func analyzeScript(sourcePath string, id string) (*ScriptAnalysis, error) {
+func analyzeScript(sourcePath string, id string, allDepIDs map[string]bool) (*ScriptAnalysis, error) {
 	analysis := &ScriptAnalysis{
 		Dependencies:     []string{},
 		TouchedFiles:     []string{},
@@ -38,14 +38,17 @@ func analyzeScript(sourcePath string, id string) (*ScriptAnalysis, error) {
 
 	var luaFiles []string
 	if info.IsDir() {
-		files, err := ioutil.ReadDir(sourcePath)
+		err = filepath.Walk(sourcePath, func(path string, fileInfo os.FileInfo, err error) error {
+			if err != nil {
+				return err
+			}
+			if !fileInfo.IsDir() && filepath.Ext(fileInfo.Name()) == ".lua" {
+				luaFiles = append(luaFiles, path)
+			}
+			return nil
+		})
 		if err != nil {
 			return nil, err
-		}
-		for _, file := range files {
-			if !file.IsDir() && filepath.Ext(file.Name()) == ".lua" {
-				luaFiles = append(luaFiles, filepath.Join(sourcePath, file.Name()))
-			}
 		}
 	} else if filepath.Ext(sourcePath) == ".lua" {
 		luaFiles = append(luaFiles, sourcePath)
@@ -94,9 +97,15 @@ func analyzeScript(sourcePath string, id string) (*ScriptAnalysis, error) {
 		for _, match := range matchesDep {
 			if len(match) > 1 {
 				cleanDepID := strings.TrimPrefix(match[1], "lib.")
-				if id != "" && (cleanDepID == id || strings.HasPrefix(cleanDepID, id+".")) {
+				depRootDir := getDepRootDir(cleanDepID)
+				if id != "" && strings.EqualFold(depRootDir, id) {
 					continue
 				}
+
+				if _, exists := allDepIDs[strings.ToLower(depRootDir)]; !exists {
+					continue
+				}
+
 				depSet[cleanDepID] = struct{}{}
 			}
 		}

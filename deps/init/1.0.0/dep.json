@@ -4,5 +4,11 @@
   "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/init.lua",
   "files": [
     "init.lua"
-  ]
+  ],
+  "dependencies": {
+    "ffi": "1.0.0",
+    "mimgui.dx9": "1.0.0",
+    "mimgui.imgui": "1.0.0",
+    "windows.message": "1.0.0"
+  }
 }

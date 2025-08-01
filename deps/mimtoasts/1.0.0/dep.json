@@ -4,5 +4,10 @@
   "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/mimtoasts.lua",
   "files": [
     "mimtoasts.lua"
-  ]
+  ],
+  "dependencies": {
+    "encoding": "1.0.0",
+    "fAwesome5": "1.0.0",
+    "mimgui": "1.0.0"
+  }
 }

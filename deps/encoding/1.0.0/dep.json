@@ -4,5 +4,8 @@
   "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/encoding.lua",
   "files": [
     "encoding.lua"
-  ]
+  ],
+  "dependencies": {
+    "iconv": "1.0.0"
+  }
 }

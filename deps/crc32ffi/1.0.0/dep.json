@@ -4,5 +4,8 @@
   "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/crc32ffi.lua",
   "files": [
     "crc32ffi.lua"
-  ]
+  ],
+  "dependencies": {
+    "ffi": "1.0.0"
+  }
 }

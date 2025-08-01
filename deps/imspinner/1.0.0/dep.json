@@ -4,5 +4,8 @@
   "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/imspinner.lua",
   "files": [
     "imspinner.lua"
-  ]
+  ],
+  "dependencies": {
+    "mimgui": "1.0.0"
+  }
 }

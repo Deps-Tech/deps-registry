@@ -9,5 +9,16 @@
     "handlers.lua",
     "utils.lua",
     "events.lua"
-  ]
+  ],
+  "dependencies": {
+    "ffi": "1.0.0",
+    "samp.events.bitstream_io": "1.0.0",
+    "samp.events.core": "1.0.0",
+    "samp.events.extra_types": "1.0.0",
+    "samp.events.handlers": "1.0.0",
+    "samp.events.utils": "1.0.0",
+    "samp.raknet": "1.0.0",
+    "samp.synchronization": "1.0.0",
+    "vector3d": "1.0.0"
+  }
 }

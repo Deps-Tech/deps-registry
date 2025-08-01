@@ -6,5 +6,8 @@
     "Parser.lua",
     "core.dll",
     "init.lua"
-  ]
+  ],
+  "dependencies": {
+    "lub": "1.0.0"
+  }
 }

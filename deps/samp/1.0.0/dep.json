@@ -16,5 +16,9 @@
     "packet.lua",
     "raknet.lua",
     "synchronization.lua"
-  ]
+  ],
+  "dependencies": {
+    "ffi": "1.0.0",
+    "sampfuncs": "1.0.0"
+  }
 }

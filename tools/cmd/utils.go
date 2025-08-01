@@ -114,3 +114,44 @@ func parseTags(tagsStr string) []string {
 	}
 	return tags
 }
+
+func DetectCycle(depID string, allDeps map[string]bool, visited map[string]bool) error {
+	if visited[depID] {
+		return fmt.Errorf("cyclical dependency detected: %s", depID)
+	}
+	visited[depID] = true
+
+	depPath := filepath.Join("..", "deps", depID)
+	versions, err := ioutil.ReadDir(depPath)
+	if err != nil {
+		return nil // Should be handled by the main check
+	}
+
+	for _, version := range versions {
+		if !version.IsDir() {
+			continue
+		}
+		versionStr := version.Name()
+		manifestPath := filepath.Join(depPath, versionStr, "dep.json")
+		data, err := ioutil.ReadFile(manifestPath)
+		if err != nil {
+			continue // Should be handled by the main check
+		}
+
+		var manifest DepManifest
+		if err := json.Unmarshal(data, &manifest); err != nil {
+			continue // Should be handled by the main check
+		}
+
+		for subDep := range manifest.Dependencies {
+			subDepRoot := getDepRootDir(subDep)
+			if allDeps[subDepRoot] {
+				if err := DetectCycle(subDepRoot, allDeps, visited); err != nil {
+					return fmt.Errorf("%s -> %s", depID, err.Error())
+				}
+			}
+		}
+	}
+	delete(visited, depID)
+	return nil
+}

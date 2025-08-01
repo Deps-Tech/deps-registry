@@ -5,5 +5,8 @@
   "files": [
     "init.lua",
     "moonmonet_rs.dll"
-  ]
+  ],
+  "dependencies": {
+    "ffi": "1.0.0"
+  }
 }

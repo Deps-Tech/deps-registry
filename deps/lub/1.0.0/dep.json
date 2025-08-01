@@ -8,5 +8,8 @@
     "Param.lua",
     "Template.lua",
     "init.lua"
-  ]
+  ],
+  "dependencies": {
+    "lfs": "1.0.0"
+  }
 }
