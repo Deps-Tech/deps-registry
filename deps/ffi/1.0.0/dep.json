@@ -1,0 +1,10 @@
+{
+  "id": "ffi",
+  "version": "1.0.0",
+  "sourceUrl": "https://github.com/luapower/ffi",
+  "files": [
+    "fs.lua",
+    "types.lua",
+    "wcs.lua"
+  ]
+}

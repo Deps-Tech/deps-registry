@@ -21,10 +21,9 @@ var addCmd = &cobra.Command{
 func init() {
 	depCmd.AddCommand(addCmd)
 	addCmd.Flags().String("id", "", "Dependency ID")
-	addCmd.Flags().String("name", "", "Dependency Name")
 	addCmd.Flags().String("version", "", "Dependency version")
 	addCmd.Flags().String("source-url", "", "Source URL")
-	addCmd.Flags().String("source-path", "", "Local path to source files")
+	addCmd.Flags().StringSlice("source-path", []string{}, "Local path(s) to source files (can be specified multiple times)")
 	addCmd.Flags().String("deps", "", "Dependencies in format: dep1:ver1,dep2:ver2")
 }
 
@@ -32,10 +31,9 @@ func addDependency(cmd *cobra.Command, args []string) {
 	var err error
 	answers := struct {
 		ID         string
-		Name       string
 		Version    string
 		SourceURL  string
-		SourcePath string
+		SourcePath string // For interactive mode, we'll take a comma-separated string
 		Deps       string
 	}{}
 
@@ -50,11 +48,6 @@ func addDependency(cmd *cobra.Command, args []string) {
 				Validate: survey.Required,
 			},
 			{
-				Name:     "name",
-				Prompt:   &survey.Input{Message: "What is the new dependency's name?"},
-				Validate: survey.Required,
-			},
-			{
 				Name:     "version",
 				Prompt:   &survey.Input{Message: "What is the version to add (e.g., '1.2.0')?"},
 				Validate: survey.Required,
@@ -66,7 +59,7 @@ func addDependency(cmd *cobra.Command, args []string) {
 			},
 			{
 				Name:     "sourcePath",
-				Prompt:   &survey.Input{Message: "What is the local path to the dependency's source files?"},
+				Prompt:   &survey.Input{Message: "What are the local paths to the dependency's source files (comma-separated)?"},
 				Validate: survey.Required,
 			},
 			{
@@ -81,10 +74,10 @@ func addDependency(cmd *cobra.Command, args []string) {
 		}
 	} else {
 		answers.ID = id
-		answers.Name, _ = flags.GetString("name")
 		answers.Version, _ = flags.GetString("version")
 		answers.SourceURL, _ = flags.GetString("source-url")
-		answers.SourcePath, _ = flags.GetString("source-path")
+		// This flag is now a slice, but we handle it later to support both modes.
+		// For simplicity, we don't assign it to the answers struct here.
 		answers.Deps, _ = flags.GetString("deps")
 	}
 
@@ -101,11 +94,28 @@ func addDependency(cmd *cobra.Command, args []string) {
 		return
 	}
 
-	sourcePath := strings.Trim(answers.SourcePath, `"`)
-	files, err := copyFiles(sourcePath, versionPath)
-	if err != nil {
-		fmt.Printf("Error copying files: %v\n", err)
-		return
+	var sourcePaths []string
+	pathsFromFlags, _ := flags.GetStringSlice("source-path")
+
+	if len(pathsFromFlags) > 0 {
+		sourcePaths = pathsFromFlags
+	} else {
+		// From interactive survey, split the comma-separated string
+		sourcePaths = strings.Split(answers.SourcePath, ",")
+	}
+
+	var allFiles []string
+	for _, p := range sourcePaths {
+		sourcePath := strings.Trim(strings.TrimSpace(p), `"`)
+		if sourcePath == "" {
+			continue
+		}
+		files, err := copyFiles(sourcePath, versionPath)
+		if err != nil {
+			fmt.Printf("Error copying files from '%s': %v\n", sourcePath, err)
+			return
+		}
+		allFiles = append(allFiles, files...)
 	}
 
 	depVersions := make(map[string]string)
@@ -121,10 +131,9 @@ func addDependency(cmd *cobra.Command, args []string) {
 
 	manifest := DepManifest{
 		ID:           answers.ID,
-		Name:         answers.Name,
 		Version:      answers.Version,
 		SourceURL:    answers.SourceURL,
-		Files:        files,
+		Files:        allFiles,
 		Dependencies: depVersions,
 	}
 

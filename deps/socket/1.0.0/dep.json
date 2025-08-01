@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/socket.lua",
   "files": [
-    "socket.lua"
+    "tp.lua",
+    "url.lua",
+    "socket.lua",
+    "core.dll",
+    "ftp.lua",
+    "headers.lua",
+    "http.lua",
+    "smtp.lua"
   ]
 }

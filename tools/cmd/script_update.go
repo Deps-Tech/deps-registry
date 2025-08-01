@@ -122,11 +122,12 @@ func updateScript(cmd *cobra.Command, args []string) {
 	}
 
 	sourcePath := strings.Trim(answers.SourcePath, `"`)
-	deps, err := parseLuaDependencies(sourcePath)
+	analysis, err := analyzeScript(sourcePath)
 	if err != nil {
-		fmt.Printf("Error parsing dependencies: %v\n", err)
+		fmt.Printf("Error analyzing script: %v\n", err)
 		return
 	}
+	deps := analysis.Dependencies
 
 	depVersions := make(map[string]string)
 	depsFlag, _ := flags.GetString("deps")
@@ -170,6 +171,26 @@ func updateScript(cmd *cobra.Command, args []string) {
 		depVersions = resolvedDeps
 	}
 
+	if analysis.HasNetworkAccess {
+		fmt.Println("Warning: This script appears to make network requests.")
+	}
+
+	if len(analysis.TouchedFiles) > 0 {
+		fmt.Println("Found file operations. Please confirm to add them to the manifest:")
+		for _, file := range analysis.TouchedFiles {
+			fmt.Printf("- %s\n", file)
+		}
+		confirm := false
+		prompt := &survey.Confirm{
+			Message: "Add these files to the manifest?",
+			Default: true,
+		}
+		survey.AskOne(prompt, &confirm)
+		if !confirm {
+			analysis.TouchedFiles = nil
+		}
+	}
+
 	files, err := copyFiles(answers.SourcePath, versionPath)
 	if err != nil {
 		fmt.Printf("Error copying files: %v\n", err)
@@ -183,13 +204,15 @@ func updateScript(cmd *cobra.Command, args []string) {
 	}
 
 	manifest := DepManifest{
-		ID:           idAnswer,
-		Name:         answers.Name,
-		Version:      answers.Version,
-		SourceURL:    answers.SourceURL,
-		Files:        files,
-		Dependencies: depVersions,
-		Tags:         tags,
+		ID:               idAnswer,
+		Name:             answers.Name,
+		Version:          answers.Version,
+		SourceURL:        answers.SourceURL,
+		Files:            files,
+		Dependencies:     depVersions,
+		Tags:             tags,
+		TouchedFiles:     analysis.TouchedFiles,
+		HasNetworkAccess: analysis.HasNetworkAccess,
 	}
 
 	manifestData, err := json.MarshalIndent(manifest, "", "  ")

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/iconv.dll",
   "files": [
-    "iconv.dll"
+    "README-lua-iconv",
+    "iconv.dll",
+    "COPYING-libiconv",
+    "README-libiconv"
   ]
 }

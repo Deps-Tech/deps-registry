@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/md5.lua",
   "files": [
-    "md5.lua"
+    "md5.lua",
+    "core.dll"
   ]
 }

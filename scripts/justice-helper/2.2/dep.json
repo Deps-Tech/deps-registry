@@ -1,0 +1,27 @@
+{
+  "id": "justice-helper",
+  "name": "Justice Helper",
+  "version": "2.2",
+  "sourceUrl": "https://www.blast.hk/threads/216130/",
+  "files": [
+    "Justice Helper.lua"
+  ],
+  "dependencies": {
+    "effil": "1.0.0",
+    "encoding": "1.0.0",
+    "fAwesome6_solid": "1.0.0",
+    "ffi": "1.0.0",
+    "ltn12": "1.0.0",
+    "mimgui": "1.0.0",
+    "moonloader": "1.0.0",
+    "samp.events": "1.0.0",
+    "socket.http": "1.0.0",
+    "vkeys": "1.0.0"
+  },
+  "tags": [
+    "mtgmods",
+    "arz",
+    "helper"
+  ],
+  "hasNetworkAccess": true
+}

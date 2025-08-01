@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/ssl.lua",
   "files": [
-    "ssl.lua"
+    "ssl.lua",
+    "https.lua"
   ]
 }

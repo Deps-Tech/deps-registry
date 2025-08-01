@@ -4,37 +4,69 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"os"
 	"path/filepath"
 	"sort"
 	"strings"
 )
 
 func copyFiles(src, dest string) ([]string, error) {
-	var fileNames []string
-	files, err := ioutil.ReadDir(src)
+	srcInfo, err := os.Stat(src)
 	if err != nil {
 		return nil, err
 	}
 
-	for _, file := range files {
-		if file.IsDir() {
-			continue
-		}
-		sourcePath := filepath.Join(src, file.Name())
-		destPath := filepath.Join(dest, file.Name())
+	var copiedFileNames []string
 
-		input, err := ioutil.ReadFile(sourcePath)
+	if !srcInfo.IsDir() {
+		// Source is a single file
+		fileName := srcInfo.Name()
+		destPath := filepath.Join(dest, fileName)
+		input, err := ioutil.ReadFile(src)
 		if err != nil {
-			return nil, err
+			return nil, fmt.Errorf("could not read source file '%s': %w", src, err)
 		}
-
-		err = ioutil.WriteFile(destPath, input, 0644)
-		if err != nil {
-			return nil, err
+		if err = ioutil.WriteFile(destPath, input, srcInfo.Mode()); err != nil {
+			return nil, fmt.Errorf("could not write destination file '%s': %w", destPath, err)
 		}
-		fileNames = append(fileNames, file.Name())
+		copiedFileNames = append(copiedFileNames, fileName)
+		return copiedFileNames, nil
 	}
-	return fileNames, nil
+
+	// Source is a directory, walk it
+	err = filepath.Walk(src, func(path string, info os.FileInfo, err error) error {
+		if err != nil {
+			return err
+		}
+
+		relPath, err := filepath.Rel(src, path)
+		if err != nil {
+			return fmt.Errorf("could not determine relative path for '%s': %w", path, err)
+		}
+
+		if relPath == "." {
+			return nil // Skip the root directory itself
+		}
+
+		destPath := filepath.Join(dest, relPath)
+		if info.IsDir() {
+			return os.MkdirAll(destPath, info.Mode())
+		}
+
+		input, err := ioutil.ReadFile(path)
+		if err != nil {
+			return fmt.Errorf("could not read source file '%s': %w", path, err)
+		}
+
+		if err := ioutil.WriteFile(destPath, input, info.Mode()); err != nil {
+			return fmt.Errorf("could not write destination file '%s': %w", destPath, err)
+		}
+
+		copiedFileNames = append(copiedFileNames, relPath)
+		return nil
+	})
+
+	return copiedFileNames, err
 }
 
 func getLatestVersionInfo(itemPath string) (string, string, error) {
