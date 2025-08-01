@@ -1,9 +1,7 @@
-name: "Deploy to CDN"
+name: "Manual Re-index and Deploy"
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 permissions:
   id-token: write
@@ -21,8 +19,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Configure AWS Credentials via OIDC
         uses: aws-actions/configure-aws-credentials@v4.2.1
@@ -39,19 +35,12 @@ jobs:
       - name: Make CLI executable
         run: chmod +x ./tools-cli
 
-      - name: Get changed files
-        id: changed-files
-        run: |
-          echo "files=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }} | xargs)" >> $GITHUB_OUTPUT
-
       - name: Package and Generate Index
-        if: steps.changed-files.outputs.files
         run: |
           ./tools-cli package
           ./tools-cli generate-index --cdn-url "https://${{ vars.S3_BUCKET_NAME }}.s3.${{ vars.AWS_REGION }}.amazonaws.com"
 
       - name: Deploy Content to CDN
-        if: steps.changed-files.outputs.files
         run: |
           aws s3 sync ./dist/ s3://${{ vars.S3_BUCKET_NAME }}/
           aws cloudfront create-invalidation --distribution-id ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"

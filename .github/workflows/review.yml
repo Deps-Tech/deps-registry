@@ -8,7 +8,11 @@ permissions:
   contents: read
 
 jobs:
+  build:
+    uses: ./.github/workflows/build-tool.yml
+
   review:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -16,11 +20,14 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Build tool
-        run: |
-          cd tools
-          go build -o ../tools-cli .
-          cd ..
+      - name: Download CLI artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: tools-cli-artifact
+          path: .
+
+      - name: Make CLI executable
+        run: chmod +x ./tools-cli
 
       - name: Get changed files
         id: changed-files
