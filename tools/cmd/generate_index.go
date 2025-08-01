@@ -98,7 +98,7 @@ func generateIndexForType(itemType, distPath, cdnURL string) (map[string]Depende
 	}
 
 	itemVersions := make(map[string][]string)
-	re := regexp.MustCompile(`^(.+)-(\d+\.\d+\.\d+)\.zip$`)
+	re := regexp.MustCompile(`^(.+)-([\d\.]+)\.zip$`)
 
 	for _, file := range files {
 		if file.IsDir() {
@@ -131,7 +131,8 @@ func generateIndexForType(itemType, distPath, cdnURL string) (map[string]Depende
 
 			manifest, err := readManifestFromZip(filePath)
 			if err != nil {
-				return nil, fmt.Errorf("error reading manifest from %s: %w", fileName, err)
+				fmt.Printf("Warning: could not read manifest from %s: %v. Skipping version.\n", fileName, err)
+				continue
 			}
 
 			url := fmt.Sprintf("%s/%s/%s", strings.TrimSuffix(cdnURL, "/"), itemType, fileName)
