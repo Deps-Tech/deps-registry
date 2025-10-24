@@ -1,0 +1,22 @@
+{
+  "manifestVersion": "1.0",
+  "id": "dnoline-bypass",
+  "name": "dnoline bypass",
+  "version": "1.0.0",
+  "files": {
+    "dnoline bypass.lua": {
+      "sha256": "07574573b9b1323f31d4b11d923c2797474dfc60ef906a9e121f3346f843db4b",
+      "size": 5145
+    }
+  },
+  "dependencies": {
+    "samp": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "tags": [
+      "bypass"
+    ],
+    "sourceUrl": "https://www.blast.hk/threads/219446/"
+  }
+}
