@@ -1,0 +1,29 @@
+{
+  "manifestVersion": "1.0",
+  "id": "arizona-hud-editor",
+  "name": "Arizona HUD Editor",
+  "version": "1.0.0",
+  "files": {
+    "[ARZ] CEF HUD Editor.lua": {
+      "sha256": "bac255f8eedfca74c7e76ae37fdcf4daffea1d1d8c135e741d8cd273a8f35368",
+      "size": 45934
+    }
+  },
+  "dependencies": {
+    "ffi": "1.0.0",
+    "encoding": "1.0.0",
+    "lfs": "1.0.0"
+  },
+  "security": {
+    "usesFFI": true
+  },
+  "metadata": {
+    "tags": [
+      "hud",
+      "cef",
+      "editor"
+    ],
+    "sourceUrl": "https://www.blast.hk/threads/192708/",
+    "uploadedBy": "Beluga18857"
+  }
+}
