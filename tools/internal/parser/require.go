@@ -100,4 +100,3 @@ func findLuaFiles(path string) ([]string, error) {
 
 	return files, err
 }
-

@@ -107,4 +107,3 @@ func validateManifest(path string) error {
 
 	return nil
 }
-

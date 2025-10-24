@@ -31,4 +31,3 @@ func ListFiles(dir string, extensions ...string) ([]string, error) {
 
 	return files, err
 }
-

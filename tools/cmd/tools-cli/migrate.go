@@ -156,4 +156,3 @@ func getStringMap(m map[string]interface{}, key string) map[string]string {
 	}
 	return nil
 }
-

@@ -21,4 +21,3 @@ func SHA256File(path string) (string, error) {
 
 	return hex.EncodeToString(hash.Sum(nil)), nil
 }
-
