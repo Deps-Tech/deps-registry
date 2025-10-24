@@ -3,7 +3,7 @@ dist/
 *.zip
 
 # Binaries
-tools-cli
+/tools/tools-cli
 *.exe
 *.dll
 *.so
