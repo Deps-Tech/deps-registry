@@ -8,11 +8,7 @@ permissions:
   contents: read
 
 jobs:
-  build:
-    uses: ./.github/workflows/build-tool.yml
-
   deploy:
-    needs: build
     runs-on: ubuntu-latest
     environment: production
     
@@ -26,11 +22,10 @@ jobs:
           role-to-assume: ${{ secrets.AWS_OIDC_ROLE_ARN }}
           aws-region: ${{ vars.AWS_REGION }}
 
-      - name: Download CLI artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: tools-cli-artifact
-          path: .
+      - name: Download latest CLI release
+        run: |
+          LATEST_RELEASE=$(curl -s https://api.github.com/repos/${{ github.repository }}/releases/latest | jq -r '.tag_name')
+          curl -sL "https://github.com/${{ github.repository }}/releases/download/${LATEST_RELEASE}/tools-cli-linux-amd64" -o tools-cli
           
       - name: Make CLI executable
         run: chmod +x ./tools-cli
