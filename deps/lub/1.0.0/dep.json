@@ -1,15 +1,34 @@
 {
+  "manifestVersion": "1.0",
   "id": "lub",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/lub",
-  "files": [
-    "Autoload.lua",
-    "Dir.lua",
-    "Param.lua",
-    "Template.lua",
-    "init.lua"
-  ],
+  "files": {
+    "Autoload.lua": {
+      "sha256": "0c6f85b09079a01359b1073e7870aec9f325b9aabfa41f8ff557152437ef0318",
+      "size": 2877
+    },
+    "Dir.lua": {
+      "sha256": "3adacf1cd484fdb3587def9ff9176e44cd02d72ee804e60442ac4b5ab333735b",
+      "size": 2813
+    },
+    "Param.lua": {
+      "sha256": "7f2eda637349e6e4231e559e3fe691ac7b3518186aaf6a6508e6679c7a83b877",
+      "size": 9094
+    },
+    "Template.lua": {
+      "sha256": "8ca1ff31f526668907f38e349fccc2578b62895c4a215c086ef6d18e1c57de65",
+      "size": 4556
+    },
+    "init.lua": {
+      "sha256": "b9a5335d638ff9776679a677e8df5f41a90f8a94b91f41b371273371047c806e",
+      "size": 20988
+    }
+  },
   "dependencies": {
     "lfs": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/lub"
   }
 }

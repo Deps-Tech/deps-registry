@@ -1,11 +1,18 @@
 {
+  "manifestVersion": "1.0",
   "id": "effil",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/effil.lua",
-  "files": [
-    "effil.lua"
-  ],
+  "files": {
+    "effil.lua": {
+      "sha256": "7886a541374f99c86d3714c0a04f65edb3ecb6ab1c933d343240abb908980fbf",
+      "size": 1599
+    }
+  },
   "dependencies": {
     "libeffil": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/effil.lua"
   }
 }

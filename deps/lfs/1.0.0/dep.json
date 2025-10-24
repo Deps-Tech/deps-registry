@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "lfs",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/lfs.dll",
-  "files": [
-    "lfs.dll"
-  ]
+  "files": {
+    "lfs.dll": {
+      "sha256": "2f093e36fc36ec56c852181f428c1d5b6ad9d1071b53f21e93946c490a24609a",
+      "size": 126976
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/lfs.dll"
+  }
 }

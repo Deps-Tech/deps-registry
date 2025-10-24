@@ -1,13 +1,20 @@
 {
+  "manifestVersion": "1.0",
   "id": "mimtoasts",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/mimtoasts.lua",
-  "files": [
-    "mimtoasts.lua"
-  ],
+  "files": {
+    "mimtoasts.lua": {
+      "sha256": "b9ffd13aa7d376b6bc9499ce54bff07c059ea1fa7030aafe095a8608c2e93147",
+      "size": 6408
+    }
+  },
   "dependencies": {
     "encoding": "1.0.0",
     "fAwesome5": "1.0.0",
     "mimgui": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/mimtoasts.lua"
   }
 }

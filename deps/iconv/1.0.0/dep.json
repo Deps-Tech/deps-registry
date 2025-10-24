@@ -1,11 +1,27 @@
 {
+  "manifestVersion": "1.0",
   "id": "iconv",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/iconv.dll",
-  "files": [
-    "README-lua-iconv",
-    "iconv.dll",
-    "COPYING-libiconv",
-    "README-libiconv"
-  ]
+  "files": {
+    "COPYING-libiconv": {
+      "sha256": "56bdea73b6145ef6ac5259b3da390b981d840c24cb03b8e1cbc678de7ecfa18d",
+      "size": 25291
+    },
+    "README-libiconv": {
+      "sha256": "b4f5932ef35fe4a66ae9e8eecf1bac0702fe2a75ece40861baf3ebbc0ee9ed02",
+      "size": 5801
+    },
+    "README-lua-iconv": {
+      "sha256": "7aebae7bea8fb38be3aa18b6e2e6298f9370bfe0b3415ac19fe4d04ba5fca58a",
+      "size": 4755
+    },
+    "iconv.dll": {
+      "sha256": "bb4cc421b7606055d1d517775b15ce77a27ad97b14de2fc31c9d9e3cf788b98f",
+      "size": 1000960
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/iconv.dll"
+  }
 }

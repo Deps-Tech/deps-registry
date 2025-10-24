@@ -1,13 +1,26 @@
 {
+  "manifestVersion": "1.0",
   "id": "ffi",
   "version": "1.0.0",
-  "sourceUrl": "https://github.com/luapower/ffi",
-  "files": [
-    "fs.lua",
-    "types.lua",
-    "wcs.lua"
-  ],
+  "files": {
+    "fs.lua": {
+      "sha256": "178f7b6503a51955fce4b255067f2092ea7756a321a86d455e61fa9b2c9d5ecd",
+      "size": 13383
+    },
+    "types.lua": {
+      "sha256": "fc63a77cf3363200d2b8a4da25956860dddba42a26310faa3ff911be3052e172",
+      "size": 4449
+    },
+    "wcs.lua": {
+      "sha256": "201328cc3a45f941fc769371c621acc65b010dc31746c875b14db3e6460646d5",
+      "size": 3512
+    }
+  },
   "dependencies": {
     "path.win32.ffi.types": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "https://github.com/luapower/ffi"
   }
 }

@@ -1,12 +1,19 @@
 {
+  "manifestVersion": "1.0",
   "id": "imgui-notf",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/imgui_notf.lua",
-  "files": [
-    "imgui_notf.lua"
-  ],
+  "files": {
+    "imgui_notf.lua": {
+      "sha256": "d3d911bf8fb7f804cccaa46db401b25b70dabeef2afefb61f02f3aa920cb30a1",
+      "size": 6528
+    }
+  },
   "dependencies": {
     "encoding": "1.0.0",
     "imgui": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/imgui_notf.lua"
   }
 }

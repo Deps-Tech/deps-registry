@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "libmcrypt",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/libmcrypt.dll",
-  "files": [
-    "libmcrypt.dll"
-  ]
+  "files": {
+    "libmcrypt.dll": {
+      "sha256": "18d4ce3b8e317c6c14b73e0849232577f81ddec230c8a14d8821e5260b2009fd",
+      "size": 166912
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/libmcrypt.dll"
+  }
 }

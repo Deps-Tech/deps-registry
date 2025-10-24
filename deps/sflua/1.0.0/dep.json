@@ -1,19 +1,44 @@
 {
+  "manifestVersion": "1.0",
   "id": "sflua",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/SFlua",
-  "files": [
-    "037-r1\\cdef.lua",
-    "037-r1\\init.lua",
-    "addition.lua",
-    "bitstream.lua",
-    "cdef.lua",
-    "const.lua",
-    "init.lua"
-  ],
+  "files": {
+    "037-r1/cdef.lua": {
+      "sha256": "6d88c44aa9a7c1dd8f9a106545f7c51e5134f0f7f4c9a9462f0b5913d103abf8",
+      "size": 26321
+    },
+    "037-r1/init.lua": {
+      "sha256": "4c745f03878fd855fab18532e90e4adecd03582afb059fab264ef5cbb463d93e",
+      "size": 53428
+    },
+    "addition.lua": {
+      "sha256": "bc5a419fecd2af3d0548c1fc5e0dfd9999bd31bc7ad4ec9f2b35fa13c19cf83e",
+      "size": 1569
+    },
+    "bitstream.lua": {
+      "sha256": "3d124c70f896fc48aac4fed78a83a77bdc77020dcf90da01e76401dc53d9e201",
+      "size": 14089
+    },
+    "cdef.lua": {
+      "sha256": "e6a2e4800b7135ad1af03500275b6e160301e231877e40a55b23fd931e594a53",
+      "size": 3024
+    },
+    "const.lua": {
+      "sha256": "d056abcaf01613167c13dd2d6cf34c66800f2973c52aa18533e416b299029004",
+      "size": 15242
+    },
+    "init.lua": {
+      "sha256": "65fe5a6a808e4c54a55634fad51122f6f5d353683b63c20c08cc2466ba146c0d",
+      "size": 1199
+    }
+  },
   "dependencies": {
     "SFlua.cdef": "1.0.0",
     "SFlua.const": "1.0.0",
     "ffi": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/SFlua"
   }
 }

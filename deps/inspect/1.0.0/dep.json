@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "inspect",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/inspect.lua",
-  "files": [
-    "inspect.lua"
-  ]
+  "files": {
+    "inspect.lua": {
+      "sha256": "cbe437fe32d0cb895bd0123f07b866aac433e32c874adda441c9896e1f6ad7e7",
+      "size": 9749
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/inspect.lua"
+  }
 }

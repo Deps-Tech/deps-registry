@@ -1,12 +1,19 @@
 {
+  "manifestVersion": "1.0",
   "id": "addons",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/ADDONS.lua",
-  "files": [
-    "ADDONS.lua"
-  ],
+  "files": {
+    "ADDONS.lua": {
+      "sha256": "89b9fc7de5bb349a861ed903dc2193dbf206d94501db821c7cd568470ced4232",
+      "size": 26762
+    }
+  },
   "dependencies": {
     "ffi": "1.0.0",
     "mimgui": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/ADDONS.lua"
   }
 }

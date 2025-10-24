@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "luasql-sqlite",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/luasql-sqlite",
-  "files": [
-    "luasql\\sqlite3.dll"
-  ]
+  "files": {
+    "luasql/sqlite3.dll": {
+      "sha256": "ac2aa49ff7cde55563cb0e13920b018a4ad039dca3ab3bfb9ee0ac361fcf6605",
+      "size": 654336
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/luasql-sqlite"
+  }
 }

@@ -1,18 +1,45 @@
 {
+  "manifestVersion": "1.0",
   "id": "copas",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/copas.lua",
-  "files": [
-    "ftp.lua",
-    "http.lua",
-    "limit.lua",
-    "lock.lua",
-    "queue.lua",
-    "semaphore.lua",
-    "smtp.lua",
-    "copas.lua",
-    "timer.lua"
-  ],
+  "files": {
+    "copas.lua": {
+      "sha256": "c8bda25ffce2866032baa46fdbe27459ce29d5ed5ea82b096f79603b144bf3e3",
+      "size": 27760
+    },
+    "ftp.lua": {
+      "sha256": "09cfe191ab41e8f88c434dc2f3ae7a5ae89f3e43b22c7e1b10979d60398ffedd",
+      "size": 2700
+    },
+    "http.lua": {
+      "sha256": "ccef896e8b8401342ec8ed127aec615087e55010b07361785b6cde9e0d800c2c",
+      "size": 14232
+    },
+    "limit.lua": {
+      "sha256": "9010155375ee75c9f8c3d00135267d2e4a2a56aad6ae9447a27b4ac691fb6756",
+      "size": 3409
+    },
+    "lock.lua": {
+      "sha256": "2ca47cf2fb1dc62129eec4bf7d1cedd46406a593ea386376978c8a186fa25a57",
+      "size": 4989
+    },
+    "queue.lua": {
+      "sha256": "6583cdc495ac521dda7c0ac33908e16b6128cd72d11e5ef9fc56df036a8f78df",
+      "size": 4633
+    },
+    "semaphore.lua": {
+      "sha256": "408d686eb9531b505a7034eaec597676f5e9cd1d0d17ff3339a6858a2b315ec6",
+      "size": 4912
+    },
+    "smtp.lua": {
+      "sha256": "0ee9256203ab42bc742fec699b2d3805d8138d7f749bba6dbeffaee60717cd48",
+      "size": 956
+    },
+    "timer.lua": {
+      "sha256": "8f1e7cbe86e0d73077e595008ff963398c1ea84ea91792d69d85d354b44a0bca",
+      "size": 3332
+    }
+  },
   "dependencies": {
     "ltn12": "1.0.0",
     "mime": "1.0.0",
@@ -22,5 +49,9 @@
     "socket.smtp": "1.0.0",
     "socket.url": "1.0.0",
     "ssl": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/copas.lua"
   }
 }

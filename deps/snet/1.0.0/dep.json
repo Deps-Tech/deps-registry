@@ -1,16 +1,35 @@
 {
+  "manifestVersion": "1.0",
   "id": "snet",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/snet",
-  "files": [
-    "bstream.lua",
-    "client.lua",
-    "init.lua",
-    "server.lua",
-    "utilities\\bcoder.lua"
-  ],
+  "files": {
+    "bstream.lua": {
+      "sha256": "1355ddf914a3ba64e9e3baa62b2a4f923805184594c063084a331b369e5cdf57",
+      "size": 1450
+    },
+    "client.lua": {
+      "sha256": "b8bfad2e2f15756822de2b29e14f5c254b4c721d7e57fb874f2f851e33df898e",
+      "size": 3333
+    },
+    "init.lua": {
+      "sha256": "7ad32fff9ea5c78803b53617b68de6d2fe6a0a60cae1e155dc6447b635b76649",
+      "size": 1405
+    },
+    "server.lua": {
+      "sha256": "ceeb848c3ff047a73b4f9e1bb23a87ee8072d56362ada08d253781f862267492",
+      "size": 5403
+    },
+    "utilities/bcoder.lua": {
+      "sha256": "d0e56af26a870ea32a388954c644c5ecb1ca2fbd99fb241a4525a87030b956f5",
+      "size": 898
+    }
+  },
   "dependencies": {
     "ffi": "1.0.0",
     "socket": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/snet"
   }
 }

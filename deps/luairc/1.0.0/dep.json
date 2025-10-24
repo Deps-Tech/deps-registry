@@ -1,14 +1,21 @@
 {
+  "manifestVersion": "1.0",
   "id": "luairc",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/luairc.lua",
-  "files": [
-    "luairc.lua"
-  ],
+  "files": {
+    "luairc.lua": {
+      "sha256": "586c9a5da4b623d1cf10b11aea622196d6294ca4fda710fe5a67d208d3e2c713",
+      "size": 4488
+    }
+  },
   "dependencies": {
     "asyncoperations": "1.0.0",
     "handlers": "1.0.0",
     "socket": "1.0.0",
     "util": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/luairc.lua"
   }
 }

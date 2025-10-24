@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "lume",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/lume",
-  "files": [
-    "lume.lua"
-  ]
+  "files": {
+    "lume.lua": {
+      "sha256": "a746a3fe0e9def853e90e4d14891e9a284f0b1e2eb91416a975b1e5889e1b63b",
+      "size": 15091
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/lume"
+  }
 }

@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "lip",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/LIP.lua",
-  "files": [
-    "LIP.lua"
-  ]
+  "files": {
+    "LIP.lua": {
+      "sha256": "9ca6f78bac71d8db79aa6bd5fb9819117728a1cab2584ef5ab95e26c8fa8ae8d",
+      "size": 3006
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/LIP.lua"
+  }
 }

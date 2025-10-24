@@ -1,24 +1,32 @@
 {
+  "manifestVersion": "1.0",
   "id": "fake-documents",
   "name": "Fake Documents",
   "version": "1.2",
-  "sourceUrl": "https://www.blast.hk/threads/235664/",
-  "files": [
-    "Fake Documents 1.2.lua"
-  ],
+  "files": {
+    "Fake Documents 1.2.lua": {
+      "sha256": "cd7b2c2b370e87b5108d547a14c2cf71ad49fe8762b31cdf431f0c0e8ce80d45",
+      "size": 31283
+    }
+  },
   "dependencies": {
     "arizona-events": "2025.728.952",
     "encoding": "1.0.0",
     "ffi": "1.0.0",
     "mimgui": "1.0.0"
   },
-  "tags": [
-    "arizona",
-    "cef",
-    "fake",
-    "fake documents"
-  ],
-  "touchedFiles": [
-    "\u003cworking_dir\u003e\\\\config\\\\fake_doc.json"
-  ]
+  "security": {
+    "fileAccess": [
+      "\u003cworking_dir\u003e\\\\config\\\\fake_doc.json"
+    ]
+  },
+  "metadata": {
+    "sourceUrl": "https://www.blast.hk/threads/235664/",
+    "tags": [
+      "arizona",
+      "cef",
+      "fake",
+      "fake documents"
+    ]
+  }
 }

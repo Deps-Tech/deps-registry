@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "neatjson",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/neatjson.lua",
-  "files": [
-    "neatjson.lua"
-  ]
+  "files": {
+    "neatjson.lua": {
+      "sha256": "54787cfbe36680b1acf0e8e356c0f9a25abb8933c16fdaf43c5454b380a1ca67",
+      "size": 7476
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/neatjson.lua"
+  }
 }

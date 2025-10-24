@@ -1,10 +1,23 @@
 {
+  "manifestVersion": "1.0",
   "id": "cjson",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/cjson.dll",
-  "files": [
-    "cjson.dll",
-    "cjson\\util.lua",
-    "util.lua"
-  ]
+  "files": {
+    "cjson.dll": {
+      "sha256": "7d402147fb093813d20432aa3c6211cd9cde3848ab8f4be3ed977c67dbddfced",
+      "size": 136704
+    },
+    "cjson/util.lua": {
+      "sha256": "0f9c82e5ba2779ecf5c4016e944213524549e8ea0c91fd7f00b2c6bb0441ee4a",
+      "size": 6837
+    },
+    "util.lua": {
+      "sha256": "0f9c82e5ba2779ecf5c4016e944213524549e8ea0c91fd7f00b2c6bb0441ee4a",
+      "size": 6837
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/cjson.dll"
+  }
 }

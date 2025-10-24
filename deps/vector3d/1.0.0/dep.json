@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "vector3d",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/vector3d.lua",
-  "files": [
-    "vector3d.lua"
-  ]
+  "files": {
+    "vector3d.lua": {
+      "sha256": "5896b1519473475ae8e8912c81ed2611990e489d38745a6dd35f73c13dbf8322",
+      "size": 1690
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/vector3d.lua"
+  }
 }

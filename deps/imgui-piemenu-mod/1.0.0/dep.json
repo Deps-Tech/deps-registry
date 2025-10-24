@@ -1,11 +1,18 @@
 {
+  "manifestVersion": "1.0",
   "id": "imgui-piemenu-mod",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/imgui_piemenu_mod.lua",
-  "files": [
-    "imgui_piemenu_mod.lua"
-  ],
+  "files": {
+    "imgui_piemenu_mod.lua": {
+      "sha256": "f7c445649f2b119ebaf76e26747e9a2a71c0cb1e7296b75a7afb83f3dbfb16f4",
+      "size": 13486
+    }
+  },
   "dependencies": {
     "imgui": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/imgui_piemenu_mod.lua"
   }
 }

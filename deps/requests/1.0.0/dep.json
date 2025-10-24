@@ -1,10 +1,13 @@
 {
+  "manifestVersion": "1.0",
   "id": "requests",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/requests.lua",
-  "files": [
-    "requests.lua"
-  ],
+  "files": {
+    "requests.lua": {
+      "sha256": "cc87b4764134b81488de4bc76b9e99fdc1f07b5e6fce8a35d78dfae63d9932fe",
+      "size": 8717
+    }
+  },
   "dependencies": {
     "base64": "1.0.0",
     "cjson.safe": "1.0.0",
@@ -14,5 +17,9 @@
     "socket.url": "1.0.0",
     "ssl.https": "1.0.0",
     "xml": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/requests.lua"
   }
 }

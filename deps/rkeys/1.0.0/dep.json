@@ -1,14 +1,21 @@
 {
+  "manifestVersion": "1.0",
   "id": "rkeys",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/rkeys.lua",
-  "files": [
-    "rkeys.lua"
-  ],
+  "files": {
+    "rkeys.lua": {
+      "sha256": "814c9502da41cad722ffe2654607b97d1a71799a89255de434afae42b14be564",
+      "size": 16115
+    }
+  },
   "dependencies": {
     "bitex": "1.0.0",
     "ffi": "1.0.0",
     "vkeys": "1.0.0",
     "windows.message": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/rkeys.lua"
   }
 }

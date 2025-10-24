@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "jsoncfg",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/jsoncfg.lua",
-  "files": [
-    "jsoncfg.lua"
-  ]
+  "files": {
+    "jsoncfg.lua": {
+      "sha256": "8cf390c2a86ae5ec8c752e177f292d919f1707ca197b926d189568f0c9285038",
+      "size": 551
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/jsoncfg.lua"
+  }
 }

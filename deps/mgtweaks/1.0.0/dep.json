@@ -1,12 +1,19 @@
 {
+  "manifestVersion": "1.0",
   "id": "mgtweaks",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/mgtweaks.lua",
-  "files": [
-    "mgtweaks.lua"
-  ],
+  "files": {
+    "mgtweaks.lua": {
+      "sha256": "568d8f1c6eb10aca0c79dbc2703aea75aef2f07d78b345e9d023ecd1f8e36054",
+      "size": 6503
+    }
+  },
   "dependencies": {
     "moonloader": "1.0.0",
     "sampfuncs": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/mgtweaks.lua"
   }
 }

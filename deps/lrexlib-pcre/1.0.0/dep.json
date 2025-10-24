@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "lrexlib-pcre",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/lrexlib-pcre",
-  "files": [
-    "rex_pcre.dll"
-  ]
+  "files": {
+    "rex_pcre.dll": {
+      "sha256": "510474059fea185afd35005933c1203947d223598e5bf3934183a9d75f51e37a",
+      "size": 241152
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/lrexlib-pcre"
+  }
 }

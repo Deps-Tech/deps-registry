@@ -1,16 +1,35 @@
 {
+  "manifestVersion": "1.0",
   "id": "mimgui",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/mimgui",
-  "files": [
-    "cdefs.lua",
-    "cimguidx9.dll",
-    "dx9.lua",
-    "imgui.lua",
-    "init.lua"
-  ],
+  "files": {
+    "cdefs.lua": {
+      "sha256": "55b10a5b13590a076ffaf3a109f4748be305a76943313ddf22c9d9a5761bcaad",
+      "size": 116058
+    },
+    "cimguidx9.dll": {
+      "sha256": "1a7a059974c33095edc2f2da880d7c79c99d7e3b3c189e2f51036bb7e519d88b",
+      "size": 543744
+    },
+    "dx9.lua": {
+      "sha256": "94522c3ea629b7e1daf92ce64376097ad222a62b67f5ed1adf7f8879f1b46f2f",
+      "size": 6734
+    },
+    "imgui.lua": {
+      "sha256": "a55619546334392b1c654c9c0d9034dd971049906f277a60f27dd77bf7ae2cc6",
+      "size": 101558
+    },
+    "init.lua": {
+      "sha256": "01b6eeed97631c7a350b7f8b23b924432d5b78116a0e426fe70ab6f8b7421f73",
+      "size": 11674
+    }
+  },
   "dependencies": {
     "ffi": "1.0.0",
     "windows.message": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/mimgui"
   }
 }

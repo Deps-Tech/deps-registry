@@ -1,11 +1,18 @@
 {
+  "manifestVersion": "1.0",
   "id": "dkjson",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/dkjson.lua",
-  "files": [
-    "dkjson.lua"
-  ],
+  "files": {
+    "dkjson.lua": {
+      "sha256": "1f56a6971ffce3021ece3afdc06163f10bee91264d0d29cc88bbbeb43cffd2d2",
+      "size": 22416
+    }
+  },
   "dependencies": {
     "lpeg": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/dkjson.lua"
   }
 }

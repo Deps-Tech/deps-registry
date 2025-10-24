@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "vkeys",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/vkeys.lua",
-  "files": [
-    "vkeys.lua"
-  ]
+  "files": {
+    "vkeys.lua": {
+      "sha256": "b411f2c33c5f326bb1048d0a4c314c8e06231a872925aff98cd4a1764b177cd8",
+      "size": 9388
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/vkeys.lua"
+  }
 }

@@ -1,13 +1,35 @@
 {
+  "manifestVersion": "1.0",
   "id": "htmlparser",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/htmlparser.lua",
-  "files": [
-    "Set\\init.lua",
-    "htmlparser\\ElementNode.lua",
-    "htmlparser\\voidelements.lua",
-    "voidelements.lua",
-    "htmlparser.lua",
-    "ElementNode.lua"
-  ]
+  "files": {
+    "ElementNode.lua": {
+      "sha256": "c268d10dd018d4cd6a10f3aa311cc0dcfd6f78fe978bdfe68cee1c08ddef0c13",
+      "size": 7919
+    },
+    "Set/init.lua": {
+      "sha256": "20a54bfa09a7ad3f1db67643df4f332bd8517bc92108a17f340c818555581f25",
+      "size": 1710
+    },
+    "htmlparser.lua": {
+      "sha256": "b695f9439a095de6de7afb8232609832b97bbacb4100d6575ba6746f6cb4cc0c",
+      "size": 2211
+    },
+    "htmlparser/ElementNode.lua": {
+      "sha256": "9e940ecc9dc6948aa8b19ffff5e7ec164fc139333bd1c8c26759cf568120586b",
+      "size": 6610
+    },
+    "htmlparser/voidelements.lua": {
+      "sha256": "92445535f1bcb5075ca9a7c437ee42c56bfd655cf2802351dddbb5aa181f5186",
+      "size": 254
+    },
+    "voidelements.lua": {
+      "sha256": "22cd0ea154ae80b2a9bea18276de2a033a91232a0eb1b02338a05bb02f85b7cc",
+      "size": 258
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/htmlparser.lua"
+  }
 }

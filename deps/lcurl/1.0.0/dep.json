@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "lcurl",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/lcurl.dll",
-  "files": [
-    "lcurl.dll"
-  ]
+  "files": {
+    "lcurl.dll": {
+      "sha256": "624b8b411cd13eccf90be1517bca29e48b0f72d7de38fe7d8ad8e7a7e4d62fe1",
+      "size": 459475
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/lcurl.dll"
+  }
 }

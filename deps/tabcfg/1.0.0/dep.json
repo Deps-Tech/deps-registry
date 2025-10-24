@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "tabcfg",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/tabcfg.lua",
-  "files": [
-    "tabcfg.lua"
-  ]
+  "files": {
+    "tabcfg.lua": {
+      "sha256": "1486f14c5c76637038778828a673ccd85dcc331d911a5c85ca96bca19f0af671",
+      "size": 1676
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/tabcfg.lua"
+  }
 }

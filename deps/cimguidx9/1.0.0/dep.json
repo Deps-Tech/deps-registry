@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "cimguidx9",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/cimguidx9.dll",
-  "files": [
-    "cimguidx9.dll"
-  ]
+  "files": {
+    "cimguidx9.dll": {
+      "sha256": "1a7a059974c33095edc2f2da880d7c79c99d7e3b3c189e2f51036bb7e519d88b",
+      "size": 543744
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/cimguidx9.dll"
+  }
 }

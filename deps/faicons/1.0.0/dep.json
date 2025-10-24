@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "faicons",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/faIcons.lua",
-  "files": [
-    "faIcons.lua"
-  ]
+  "files": {
+    "faIcons.lua": {
+      "sha256": "4a01aea1129124ea9f90d035a56aa5870ca707e53e8055d3b7e798bb0c45f2f4",
+      "size": 26692
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/faIcons.lua"
+  }
 }

@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "cdefs",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/cdefs.lua",
-  "files": [
-    "cdefs.lua"
-  ]
+  "files": {
+    "cdefs.lua": {
+      "sha256": "55b10a5b13590a076ffaf3a109f4748be305a76943313ddf22c9d9a5761bcaad",
+      "size": 116058
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/cdefs.lua"
+  }
 }

@@ -1,46 +1,167 @@
 {
+  "manifestVersion": "1.0",
   "id": "penlight",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/penlight",
-  "files": [
-    "pl\\Date.lua",
-    "pl\\List.lua",
-    "pl\\Map.lua",
-    "pl\\MultiMap.lua",
-    "pl\\OrderedMap.lua",
-    "pl\\Set.lua",
-    "pl\\app.lua",
-    "pl\\array2d.lua",
-    "pl\\class.lua",
-    "pl\\compat.lua",
-    "pl\\comprehension.lua",
-    "pl\\config.lua",
-    "pl\\data.lua",
-    "pl\\dir.lua",
-    "pl\\file.lua",
-    "pl\\func.lua",
-    "pl\\import_into.lua",
-    "pl\\init.lua",
-    "pl\\input.lua",
-    "pl\\lapp.lua",
-    "pl\\lexer.lua",
-    "pl\\luabalanced.lua",
-    "pl\\operator.lua",
-    "pl\\path.lua",
-    "pl\\permute.lua",
-    "pl\\pretty.lua",
-    "pl\\seq.lua",
-    "pl\\sip.lua",
-    "pl\\strict.lua",
-    "pl\\stringio.lua",
-    "pl\\stringx.lua",
-    "pl\\tablex.lua",
-    "pl\\template.lua",
-    "pl\\test.lua",
-    "pl\\text.lua",
-    "pl\\types.lua",
-    "pl\\url.lua",
-    "pl\\utils.lua",
-    "pl\\xml.lua"
-  ]
+  "files": {
+    "pl/Date.lua": {
+      "sha256": "3190552429f15c723dd0568a46880741e1ba5c4e904873966fc18044922ee88e",
+      "size": 18173
+    },
+    "pl/List.lua": {
+      "sha256": "cd3e58b6985a3446b96425947d9da73043308aa4ec82025ef877dfd4c7eb1551",
+      "size": 15803
+    },
+    "pl/Map.lua": {
+      "sha256": "01fec70b8e015ba19040d3ccf5a1ab54e7eaee25466eeea5877695d11770094e",
+      "size": 2761
+    },
+    "pl/MultiMap.lua": {
+      "sha256": "3966dd5945ea1dd1530746ef29416ef82147bf2e55b57bbc72a90a003ec2e7ce",
+      "size": 1458
+    },
+    "pl/OrderedMap.lua": {
+      "sha256": "44d9c560b6fa99ed87e3e176fd8f0ac497ab79a392a744fec27c57cf53fcd2e6",
+      "size": 4495
+    },
+    "pl/Set.lua": {
+      "sha256": "d987d737b2b965220a5d66ca559bf7e528265df5d5fcc78375d75319ab747d61",
+      "size": 5441
+    },
+    "pl/app.lua": {
+      "sha256": "a5c19f4b96466bc73768a9ab27934f0986e99ca21cc13463bc07fd1251ba9cd8",
+      "size": 5722
+    },
+    "pl/array2d.lua": {
+      "sha256": "c5e7f27b9ebc64e9fd890f3aa669d5f077d757c6b4f21a88f791c962dc1aca6f",
+      "size": 13371
+    },
+    "pl/class.lua": {
+      "sha256": "c815fde840edb2d02a78fcbf1db23f3f3b33cad4532b67321d864aaad2ebfa0a",
+      "size": 8115
+    },
+    "pl/compat.lua": {
+      "sha256": "2dcc632340b0aaba251f796b4de10c2d2c4522e522a99c48f3e492d830370699",
+      "size": 4402
+    },
+    "pl/comprehension.lua": {
+      "sha256": "56b1fc2faf49e7f90202a4947fdcc6ea8754d03fafe8b3c05b4d2d58aef48947",
+      "size": 9077
+    },
+    "pl/config.lua": {
+      "sha256": "7bccc4b42653dd7a0a2386161d7621eef84e59faddec73515066a57dd2b0d4c1",
+      "size": 6749
+    },
+    "pl/data.lua": {
+      "sha256": "73584534954cfbaf699058c91e4049b58862f737fd7eabe28a55b8fd3bcacc94",
+      "size": 20443
+    },
+    "pl/dir.lua": {
+      "sha256": "6a146e83b93169ad0e38b035745c0c2653d79b407c28e3cc0934c8bce975c03d",
+      "size": 15980
+    },
+    "pl/file.lua": {
+      "sha256": "7fc06f6e6e5f7cb5cfbf25eb3d1ba3a3a52fe2b33a38b10ee1a00b502ab33357",
+      "size": 1585
+    },
+    "pl/func.lua": {
+      "sha256": "53713649d53e7bea37a610e0c6eb193f94557a0d7d386248cbebf457ebdf4fc4",
+      "size": 10456
+    },
+    "pl/import_into.lua": {
+      "sha256": "6324edbfa627bd22d8f2bd4f0e151c1feedb8b6b305c8824f566a635421279d9",
+      "size": 2702
+    },
+    "pl/init.lua": {
+      "sha256": "ee21a521059baed3df1365a56979f0878d0c8bd863fd2fd951dd3aa6f8e8e7ff",
+      "size": 432
+    },
+    "pl/input.lua": {
+      "sha256": "d218a7d78ba83d9f59d302dd18b8773049d33effbead914c9ac9530f59aefa2f",
+      "size": 5192
+    },
+    "pl/lapp.lua": {
+      "sha256": "e76daffe26137f43ea6bbcd03983d899423d06b4ba76520df94c0619ad5acde8",
+      "size": 14382
+    },
+    "pl/lexer.lua": {
+      "sha256": "0afa6171cab0cdcd53d446817eecb75fbb029ca9af6a4310f08fc0a7fc411164",
+      "size": 15019
+    },
+    "pl/luabalanced.lua": {
+      "sha256": "c90d35d55c8a59c6a8c05c6dab658c38c6061851e8bd2034f29ead38c9edde2b",
+      "size": 8024
+    },
+    "pl/operator.lua": {
+      "sha256": "b2575b8c10026c83312f665118f7ddb3f55b1895c643d49fb025a7b424ae1186",
+      "size": 4310
+    },
+    "pl/path.lua": {
+      "sha256": "4831bf473a6d202f31e8accc13922514c958a51ae5eb8cc8559ee60205405f9c",
+      "size": 11785
+    },
+    "pl/permute.lua": {
+      "sha256": "709e8f7cfc93029668220d3b2f688e236a71846946d1526558975f90f0455fbf",
+      "size": 1574
+    },
+    "pl/pretty.lua": {
+      "sha256": "239fb4b2f01f895d546c3d22e9e3451135ac4a150d327518a61e995d17e30a6b",
+      "size": 10090
+    },
+    "pl/seq.lua": {
+      "sha256": "4e45401d305da559c38f7c0323d36d4530ed691ce5f9109e70c2f2ff15e2f596",
+      "size": 14626
+    },
+    "pl/sip.lua": {
+      "sha256": "504f583d57ce40dd871228e663b20c8b18a2e4b388462462f70875e677d63f03",
+      "size": 10296
+    },
+    "pl/strict.lua": {
+      "sha256": "7baec80e7485830a9bd7f0e8516f4097002c21c5b20d2a6589512556f1830d57",
+      "size": 3839
+    },
+    "pl/stringio.lua": {
+      "sha256": "0663e3bf8104a0599e81d7139c4cbf2fb41bdc0908100bdc1717e6f0c89ad480",
+      "size": 3821
+    },
+    "pl/stringx.lua": {
+      "sha256": "a5fb7dd4ddfd726832ec837d5452227a21859bc2be13173f8a818f72ed64fb48",
+      "size": 14802
+    },
+    "pl/tablex.lua": {
+      "sha256": "b1686642dd29a1b777e8128548126f108d60d7e285dbe0ed79bf3e5b558dbeab",
+      "size": 27308
+    },
+    "pl/template.lua": {
+      "sha256": "8fe4e9b485a1d0af4aae819bdd60c6317703668667c1891158b649a29138d1b3",
+      "size": 3560
+    },
+    "pl/test.lua": {
+      "sha256": "412882f5504e07e1f8d3fad05c39ced98e488705b953e786a11fa6a4ab3b23c4",
+      "size": 5169
+    },
+    "pl/text.lua": {
+      "sha256": "3553e0f0a476d449f5a649a5f3c98d5a2e789f78700ee0321f05260d94fb1e8c",
+      "size": 7279
+    },
+    "pl/types.lua": {
+      "sha256": "b325f578f5259b1754354eea7e35ec2a55fb90240f16c6cd70f38006e0720a10",
+      "size": 4693
+    },
+    "pl/url.lua": {
+      "sha256": "1dc85c7ee27760305c1122b1cc438a23b73c78d44066018f240c119a6123dbeb",
+      "size": 1054
+    },
+    "pl/utils.lua": {
+      "sha256": "e68ae150b876923c316303b9142d9bedba0c7feff3f8918470d0b735303f8903",
+      "size": 16579
+    },
+    "pl/xml.lua": {
+      "sha256": "f15acdd013ea44e8dc9e582183b61334453c484e36147c707cfe1b7509e4794a",
+      "size": 25405
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/penlight"
+  }
 }

@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "base64",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/base64.dll",
-  "files": [
-    "base64.dll"
-  ]
+  "files": {
+    "base64.dll": {
+      "sha256": "4e19bac2a3e0a3e854143ed9259b82a4f405409b0d2928e10a27db672bf346be",
+      "size": 72192
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/base64.dll"
+  }
 }

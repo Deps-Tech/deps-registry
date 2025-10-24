@@ -1,15 +1,29 @@
 {
+  "manifestVersion": "1.0",
   "id": "ssl",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/ssl.lua",
-  "files": [
-    "ssl.lua",
-    "https.lua"
-  ],
+  "files": {
+    "https.lua": {
+      "sha256": "aa10898dd60781500f30cd0f425eea0ca8e9632b7067d56d26a5d4341055d239",
+      "size": 4033
+    },
+    "ssl.dll": {
+      "sha256": "7ae579c19b20e618cd30d661bb22f3e9736428d1b62b1e758d87da32c00409c5",
+      "size": 1633280
+    },
+    "ssl.lua": {
+      "sha256": "ca0ceeafc6d9e68cab7b3c2f2120d8b40e4d3065ed9be2169764ee87af54c75a",
+      "size": 4663
+    }
+  },
   "dependencies": {
     "ltn12": "1.0.0",
     "socket": "1.0.0",
     "socket.http": "1.0.0",
     "socket.url": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/ssl.lua"
   }
 }

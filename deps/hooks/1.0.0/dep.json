@@ -1,11 +1,18 @@
 {
+  "manifestVersion": "1.0",
   "id": "hooks",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/hooks.lua",
-  "files": [
-    "hooks.lua"
-  ],
+  "files": {
+    "hooks.lua": {
+      "sha256": "fb73e133af62a36d470b7f942425069b856cb81bd24479661a38437bc061ce85",
+      "size": 6978
+    }
+  },
   "dependencies": {
     "ffi": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/hooks.lua"
   }
 }

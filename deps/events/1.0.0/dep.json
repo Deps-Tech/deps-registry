@@ -1,15 +1,33 @@
 {
+  "manifestVersion": "1.0",
   "id": "events",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/events.lua",
-  "files": [
-    "bitstream_io.lua",
-    "core.lua",
-    "extra_types.lua",
-    "handlers.lua",
-    "utils.lua",
-    "events.lua"
-  ],
+  "files": {
+    "bitstream_io.lua": {
+      "sha256": "00e85ade0fc4ea4c868bb42b27c3b93cc12f5c8feee7c2528454c5ea87e03dfa",
+      "size": 6145
+    },
+    "core.lua": {
+      "sha256": "2f5e563aed6f558fa94134b83a36868abe6a68b8270bf5d975eecbe146adb615",
+      "size": 3817
+    },
+    "events.lua": {
+      "sha256": "6dc758e5dde13c5d9013e883c1bfb203309cfaa21f58d5c67591977bb46e89dd",
+      "size": 21676
+    },
+    "extra_types.lua": {
+      "sha256": "431b95a4bc9c51f15178418e6c302c9450380530fe82eb31fbe2f24983dc2228",
+      "size": 2114
+    },
+    "handlers.lua": {
+      "sha256": "30b14884dc2cf357fc6a8a18ab3dc87cfedf3dde23348e1d4d699c123e24192c",
+      "size": 16882
+    },
+    "utils.lua": {
+      "sha256": "a2398822d9a10fc6bd5cf459b6b3b9e0f42721b9629b22b74ae16c2e1932cebb",
+      "size": 1550
+    }
+  },
   "dependencies": {
     "ffi": "1.0.0",
     "samp.events.bitstream_io": "1.0.0",
@@ -20,5 +38,9 @@
     "samp.raknet": "1.0.0",
     "samp.synchronization": "1.0.0",
     "vector3d": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/events.lua"
   }
 }

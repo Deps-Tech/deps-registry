@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "tabler-icons",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/tabler_icons.lua",
-  "files": [
-    "tabler_icons.lua"
-  ]
+  "files": {
+    "tabler_icons.lua": {
+      "sha256": "b604df9985e2bf4f14adc230ee59f93b9f71573cedd0f04d8f522267c39cba2d",
+      "size": 1565501
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/tabler_icons.lua"
+  }
 }

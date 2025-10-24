@@ -1,9 +1,19 @@
 {
+  "manifestVersion": "1.0",
   "id": "luafilesystem",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/luafilesystem",
-  "files": [
-    "lcurl.dll",
-    "lfs.dll"
-  ]
+  "files": {
+    "lcurl.dll": {
+      "sha256": "624b8b411cd13eccf90be1517bca29e48b0f72d7de38fe7d8ad8e7a7e4d62fe1",
+      "size": 459475
+    },
+    "lfs.dll": {
+      "sha256": "0558ab68940463dedb10b7daf0f807dc45be3aeba45a9d375b6cf86356fa7d57",
+      "size": 126976
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/luafilesystem"
+  }
 }

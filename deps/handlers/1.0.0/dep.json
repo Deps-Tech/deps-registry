@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "handlers",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/handlers.lua",
-  "files": [
-    "handlers.lua"
-  ]
+  "files": {
+    "handlers.lua": {
+      "sha256": "c50798b346de259ca606d38472dd7550517194ed234722bce1c9f3475bf7bcfd",
+      "size": 4325
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/handlers.lua"
+  }
 }

@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "des56",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/des56.dll",
-  "files": [
-    "des56.dll"
-  ]
+  "files": {
+    "des56.dll": {
+      "sha256": "f11c13152a8f6fbc44d3c3fa8a8c804d7fbb2d22a20a869a130e6da3264e7862",
+      "size": 76800
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/des56.dll"
+  }
 }

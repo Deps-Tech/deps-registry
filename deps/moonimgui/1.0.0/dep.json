@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "moonimgui",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/MoonImGui.dll",
-  "files": [
-    "MoonImGui.dll"
-  ]
+  "files": {
+    "MoonImGui.dll": {
+      "sha256": "6cc52dfe21df3725cb1c5aa02d4041d830c540bc1e00299a6de6e9c735ab9b1a",
+      "size": 3349504
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/MoonImGui.dll"
+  }
 }

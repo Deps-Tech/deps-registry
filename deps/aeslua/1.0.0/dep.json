@@ -1,13 +1,35 @@
 {
+  "manifestVersion": "1.0",
   "id": "aeslua",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/aeslua.lua",
-  "files": [
-    "aes.lua",
-    "buffer.lua",
-    "ciphermode.lua",
-    "gf.lua",
-    "util.lua",
-    "aeslua.lua"
-  ]
+  "files": {
+    "aes.lua": {
+      "sha256": "c141206d045bafe99eac40bbc374d8eac6b17fd1e050c5cc6c4249310ed36c34",
+      "size": 17825
+    },
+    "aeslua.lua": {
+      "sha256": "3fcd6f07c6dc0ed83825ed4967c2ab67de20f6a65f71d798190b9a109c550e96",
+      "size": 3461
+    },
+    "buffer.lua": {
+      "sha256": "02364f1e8d68fadeeee8cff9aead42514240def869c3404b40f398cc8e98f5fe",
+      "size": 454
+    },
+    "ciphermode.lua": {
+      "sha256": "5c65873d17eac620d3f76513afef41e392bbf58dc12495ba458b24c2d4f1454a",
+      "size": 3600
+    },
+    "gf.lua": {
+      "sha256": "b5af38abfbfe0749ae27b28a80b0cd5571792d0d2b03267edf18c91d44f9eddc",
+      "size": 2289
+    },
+    "util.lua": {
+      "sha256": "9d1fc9e03612bc3bd0298060de237fca5afb96d18db566728a3051be1fb99333",
+      "size": 3703
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/aeslua.lua"
+  }
 }

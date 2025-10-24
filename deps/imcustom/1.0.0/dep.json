@@ -1,15 +1,25 @@
 {
+  "manifestVersion": "1.0",
   "id": "imcustom",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/imcustom",
-  "files": [
-    "hotkey.lua",
-    "piemenu.lua"
-  ],
+  "files": {
+    "hotkey.lua": {
+      "sha256": "df78adbf967df19bf98f059776e545c80a994ca8c87860450dca9cc0f8a2ddc4",
+      "size": 4010
+    },
+    "piemenu.lua": {
+      "sha256": "fa63b8ad213566c706a8d3d1ed37603aba719c529c61fb54396af9b60119af22",
+      "size": 13517
+    }
+  },
   "dependencies": {
     "imgui": "1.0.0",
     "rkeys": "1.0.0",
     "vkeys": "1.0.0",
     "windows.message": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/imcustom"
   }
 }

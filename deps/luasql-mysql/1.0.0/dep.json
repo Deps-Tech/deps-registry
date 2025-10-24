@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "luasql-mysql",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/luasql-mysql",
-  "files": [
-    "luasql\\mysql.dll"
-  ]
+  "files": {
+    "luasql/mysql.dll": {
+      "sha256": "61d0a19f3cd0f0985726540d5ad06f72e808500f72d9ff27cc400a98c60efc95",
+      "size": 3886592
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/luasql-mysql"
+  }
 }

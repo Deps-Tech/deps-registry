@@ -1,11 +1,18 @@
 {
+  "manifestVersion": "1.0",
   "id": "smartthreads",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/smartThreads.lua",
-  "files": [
-    "smartThreads.lua"
-  ],
+  "files": {
+    "smartThreads.lua": {
+      "sha256": "a275e31d1681db5a14db3ebc203f1ff486e927318ac8f11b61d22adc23dea585",
+      "size": 16464
+    }
+  },
   "dependencies": {
     "smartThreads": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/smartThreads.lua"
   }
 }

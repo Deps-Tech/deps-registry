@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "asyncoperations",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/asyncoperations.lua",
-  "files": [
-    "asyncoperations.lua"
-  ]
+  "files": {
+    "asyncoperations.lua": {
+      "sha256": "dab4b5fd669386de357abfbd7f4440dc1fc3774b3bf7bd1ab00a556290596a6f",
+      "size": 1883
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/asyncoperations.lua"
+  }
 }

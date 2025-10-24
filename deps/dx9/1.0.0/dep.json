@@ -1,12 +1,19 @@
 {
+  "manifestVersion": "1.0",
   "id": "dx9",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/dx9.lua",
-  "files": [
-    "dx9.lua"
-  ],
+  "files": {
+    "dx9.lua": {
+      "sha256": "94522c3ea629b7e1daf92ce64376097ad222a62b67f5ed1adf7f8879f1b46f2f",
+      "size": 6734
+    }
+  },
   "dependencies": {
     "ffi": "1.0.0",
     "mimgui.imgui": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/dx9.lua"
   }
 }

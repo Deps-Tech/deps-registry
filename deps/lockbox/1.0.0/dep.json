@@ -1,43 +1,155 @@
 {
+  "manifestVersion": "1.0",
   "id": "lockbox",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/lockbox.lua",
-  "files": [
-    "digest\\ripemd128.lua",
-    "kdf\\hkdf.lua",
-    "init.lua",
-    "cipher\\aes192.lua",
-    "cipher\\aes256.lua",
-    "digest\\md5.lua",
-    "padding\\pkcs7.lua",
-    "cipher\\des.lua",
-    "cipher\\mode\\cbc.lua",
-    "cipher\\tea.lua",
-    "util\\array.lua",
-    "digest\\md4.lua",
-    "digest\\ripemd160.lua",
-    "padding\\ansix923.lua",
-    "padding\\isoiec7816.lua",
-    "padding\\zero.lua",
-    "mac\\hmac.lua",
-    "util\\queue.lua",
-    "kdf\\pbkdf2.lua",
-    "cipher\\mode\\cfb.lua",
-    "cipher\\mode\\ige.lua",
-    "digest\\md2.lua",
-    "digest\\sha2_224.lua",
-    "digest\\sha2_256.lua",
-    "util\\base64.lua",
-    "util\\bit.lua",
-    "cipher\\des3.lua",
-    "cipher\\mode\\ofb.lua",
-    "digest\\sha1.lua",
-    "util\\stream.lua",
-    "cipher\\mode\\pcbc.lua",
-    "lockbox.lua",
-    "cipher\\aes128.lua",
-    "cipher\\mode\\ctr.lua",
-    "cipher\\mode\\ecb.lua",
-    "cipher\\xtea.lua"
-  ]
+  "files": {
+    "cipher/aes128.lua": {
+      "sha256": "9916291c379e2f2d5a9e3b3b7d7684d161c5ad1ac8fccd08d05553b6aae0b358",
+      "size": 15290
+    },
+    "cipher/aes192.lua": {
+      "sha256": "3becd6a5ed18cba05face72ac0f51ac6d90215dcbccaa7b394454e089fb21674",
+      "size": 16779
+    },
+    "cipher/aes256.lua": {
+      "sha256": "f348aab3da77b69ca7db28a07112096e83291bac935e85c021b7934207938007",
+      "size": 17780
+    },
+    "cipher/des.lua": {
+      "sha256": "269274466039177513b12149483050f33ba894c5c380f0fd51cfa001379f9011",
+      "size": 15071
+    },
+    "cipher/des3.lua": {
+      "sha256": "ed8c02e22455246783551150513143d0b4c32f9b6668a8a327a4dd627e8c024c",
+      "size": 1262
+    },
+    "cipher/mode/cbc.lua": {
+      "sha256": "3197bee22b048a3a2b0df05ff10c59c5ef5ba9c1eeb582fd56a6f247b0b78734",
+      "size": 3089
+    },
+    "cipher/mode/cfb.lua": {
+      "sha256": "a753efa0c2f6662ea4a1fb150ac69922dbe7b097c9d2ec0d8c02a673810be5a5",
+      "size": 3103
+    },
+    "cipher/mode/ctr.lua": {
+      "sha256": "a8f681d7af6c4d1be41c578c05cfb682bd5a14a7fa727ede33a74a21e2847438",
+      "size": 5262
+    },
+    "cipher/mode/ecb.lua": {
+      "sha256": "92d95b812e09f644eafe311add7ea365e755aba2de1e87828218e456559c7bd9",
+      "size": 2846
+    },
+    "cipher/mode/ige.lua": {
+      "sha256": "79aa63230d9aaae8fb7996d82cad7f2493e859ee79401dadd41b78ccdfaa3f66",
+      "size": 3352
+    },
+    "cipher/mode/ofb.lua": {
+      "sha256": "41cb32ae09bb4c8989a947e8bf66b9f5aa2c875df297e400f11bb1b9d1e48585",
+      "size": 3102
+    },
+    "cipher/mode/pcbc.lua": {
+      "sha256": "44888d7eee62663b55fc548e32a4f4d4b512bcea0fa750c3580a43625b1a5582",
+      "size": 3140
+    },
+    "cipher/tea.lua": {
+      "sha256": "24b77fc6c95e14464469f215b49d164913e29db755ea9df711f61607b9419911",
+      "size": 2819
+    },
+    "cipher/xtea.lua": {
+      "sha256": "a11b4d6e44203c1e5832c30222bf3226a3492bb25725317092e25b01ceeb0a5d",
+      "size": 2914
+    },
+    "digest/md2.lua": {
+      "sha256": "4cfb0a691e1f0e0ed95ed67974f16471406308ffaed3c40679f08e8d6a5ba49d",
+      "size": 3807
+    },
+    "digest/md4.lua": {
+      "sha256": "501dd894e82d87ba16606971694e79e70a0eaf60e1e05832765ad0a54ef1ca33",
+      "size": 5826
+    },
+    "digest/md5.lua": {
+      "sha256": "58b7ac5e3e96b30e715da6c4590c385e0d08356f2ccc64b47493a99fb232f7a3",
+      "size": 4845
+    },
+    "digest/ripemd128.lua": {
+      "sha256": "5ccc016ab29b96b4c742213174ad0a1daaa2f9277415a3be218e901dbe8c6a5d",
+      "size": 9597
+    },
+    "digest/ripemd160.lua": {
+      "sha256": "899895c3d7bd43d9ded03aec60e5acda574b6d373efdd30b6d2ff80e2bc9c337",
+      "size": 15117
+    },
+    "digest/sha1.lua": {
+      "sha256": "b76e8af4f4686cbf82a21ede4c3e782088b141ae4a6b923aaa217f5111db11f4",
+      "size": 4051
+    },
+    "digest/sha2_224.lua": {
+      "sha256": "c53bbf3252b478bb1c9b03c145fc8e56cf929c7674438ae87c95647083a6ff2c",
+      "size": 5277
+    },
+    "digest/sha2_256.lua": {
+      "sha256": "a327c2dce4b83f5e429e18f539b45dae4948b1f8aa3532eba239b5ce703b7ce1",
+      "size": 5410
+    },
+    "init.lua": {
+      "sha256": "b4288fb07c8f21f277d813b61204caf9b7be3f97648116e41d34e3d6cb1d7333",
+      "size": 513
+    },
+    "kdf/hkdf.lua": {
+      "sha256": "f5343bc483861527510d7e56544f71db7ee6d37e6360840c37a71358cd2aae26",
+      "size": 2804
+    },
+    "kdf/pbkdf2.lua": {
+      "sha256": "602ca5a33e215c1af7f13c08d81c049675e5a2bc867263f6166038c71eede76f",
+      "size": 2614
+    },
+    "lockbox.lua": {
+      "sha256": "0efa8f85cf3c8c4d87f16bcc12b624242b2501d94cd74196e85550e3c1cc4439",
+      "size": 31
+    },
+    "mac/hmac.lua": {
+      "sha256": "8d32920ea93ef74736de787848e4d475ac712a4903cb4dd625b03f1a55b4cb0b",
+      "size": 1606
+    },
+    "padding/ansix923.lua": {
+      "sha256": "3b6be9dfe9d719431360faae36238c1492f8cb7828cc81d269bdf0b11536fd66",
+      "size": 455
+    },
+    "padding/isoiec7816.lua": {
+      "sha256": "436e41f49b0ef6532f5943b574fca061b19e4dc51e8914f94e4b0a45c845e5a7",
+      "size": 464
+    },
+    "padding/pkcs7.lua": {
+      "sha256": "82b97690628f110c17141723ae59b4eeef971daf0570a32cfe13dcef3cd6ae91",
+      "size": 383
+    },
+    "padding/zero.lua": {
+      "sha256": "23f58ef7fa04ac78018a73294b9ff0ecd67e84876198befb12b0589700e7cccf",
+      "size": 374
+    },
+    "util/array.lua": {
+      "sha256": "35ae9d9c96e883e4be6872a5d61c3b1c1080f438ab9ff5d0a1b610ab500e5717",
+      "size": 2914
+    },
+    "util/base64.lua": {
+      "sha256": "21dadf4a2b00eb0bcc0e45ca118561704c7df6cc822c9bd07d7f1f461d9b63ef",
+      "size": 3464
+    },
+    "util/bit.lua": {
+      "sha256": "31feb876e084bb35e06e73cc4dc319089847a8083a9db182e0c9de7b073fee52",
+      "size": 559
+    },
+    "util/queue.lua": {
+      "sha256": "39ca120ee5e4fcc630dd1a8408426336c7fa8748121ec17e20cfa326d3526c1a",
+      "size": 613
+    },
+    "util/stream.lua": {
+      "sha256": "fdf62afbfdbca8c81529adbe972e0cdb330f2fcbd01c671a7f16887693402c53",
+      "size": 1512
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/lockbox.lua"
+  }
 }

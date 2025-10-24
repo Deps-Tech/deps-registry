@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "moonadditions",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/MoonAdditions.dll",
-  "files": [
-    "MoonAdditions.dll"
-  ]
+  "files": {
+    "MoonAdditions.dll": {
+      "sha256": "a91b2e74c99633788b669a55ffccefa6d40980b816054d86d9cda208df37d3fa",
+      "size": 765440
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/MoonAdditions.dll"
+  }
 }

@@ -1,11 +1,27 @@
 {
+  "manifestVersion": "1.0",
   "id": "lustache",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/lustache",
-  "files": [
-    "lustache\\context.lua",
-    "lustache\\renderer.lua",
-    "lustache\\scanner.lua",
-    "lustache.lua"
-  ]
+  "files": {
+    "lustache.lua": {
+      "sha256": "92cfd0c49e147c0d190e0f75bc4865b99c2ef23eb1b968834a505b7dba1a8dee",
+      "size": 718
+    },
+    "lustache/context.lua": {
+      "sha256": "7005df5647181f829ef413a8110e78b1e78a6221b01bbaf3e4547ad4643321a5",
+      "size": 1196
+    },
+    "lustache/renderer.lua": {
+      "sha256": "afd26c2b440a06c4925aaadc6731ec8906e1b9f6724c69afae60238ca79a7a6b",
+      "size": 10072
+    },
+    "lustache/scanner.lua": {
+      "sha256": "95bcb805a1629148955a75ee3fd2ae860a057fd0761d0d4c2e749102c7f73789",
+      "size": 1327
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/lustache"
+  }
 }

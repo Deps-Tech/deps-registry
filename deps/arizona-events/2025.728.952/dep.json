@@ -1,15 +1,31 @@
 {
+  "manifestVersion": "1.0",
   "id": "arizona-events",
   "version": "2025.728.952",
-  "sourceUrl": "https://www.blast.hk/threads/235586",
-  "files": [
-    "bitstream.lua",
-    "core.lua",
-    "init.lua",
-    "subprocess.lua"
-  ],
+  "files": {
+    "bitstream.lua": {
+      "sha256": "c1742582cab8a086d12e8d46131f3c93b17a3ddfe906b4df30f3b2b5ca0838f4",
+      "size": 6057
+    },
+    "core.lua": {
+      "sha256": "37ad5d6731401f233403a567f4afeb9c672980df3a3f9f8cb0bcfb2a39d05c43",
+      "size": 5636
+    },
+    "init.lua": {
+      "sha256": "00bafb075175f7a629d16e2387a7956b94bbc28e5490d5959ef7b4d3e710fe48",
+      "size": 9189
+    },
+    "subprocess.lua": {
+      "sha256": "242376c7d9e9e3f8d6159c82253fcf7369a44aa094ad2755c96c0f2bda3349cd",
+      "size": 1951
+    }
+  },
   "dependencies": {
     "ffi": "1.0.0",
     "vector3d": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "https://www.blast.hk/threads/235586"
   }
 }

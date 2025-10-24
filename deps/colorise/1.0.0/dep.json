@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "colorise",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/colorise.lua",
-  "files": [
-    "colorise.lua"
-  ]
+  "files": {
+    "colorise.lua": {
+      "sha256": "1421770ae2d254be538c895ddd37180b1523c20aeb49acdd8729d2da66e6e8c1",
+      "size": 893
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/colorise.lua"
+  }
 }

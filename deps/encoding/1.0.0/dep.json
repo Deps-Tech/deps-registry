@@ -1,11 +1,18 @@
 {
+  "manifestVersion": "1.0",
   "id": "encoding",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/encoding.lua",
-  "files": [
-    "encoding.lua"
-  ],
+  "files": {
+    "encoding.lua": {
+      "sha256": "645e7fb9611411a02f6bd07bc1ade920d4d274017d2c2d3ad598bd0382fa43e8",
+      "size": 2528
+    }
+  },
   "dependencies": {
     "iconv": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/encoding.lua"
   }
 }

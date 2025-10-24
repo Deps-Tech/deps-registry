@@ -1,12 +1,19 @@
 {
+  "manifestVersion": "1.0",
   "id": "json2lua",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/json2lua.lua",
-  "files": [
-    "json2lua.lua"
-  ],
+  "files": {
+    "json2lua.lua": {
+      "sha256": "0a7830dca64d95336c0c4e06865ddad412517c3d685f30265b075941d65aa591",
+      "size": 304
+    }
+  },
   "dependencies": {
     "cjson": "1.0.0",
     "cjson.util": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/json2lua.lua"
   }
 }

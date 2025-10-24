@@ -1,112 +1,413 @@
 {
+  "manifestVersion": "1.0",
   "id": "samemory",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/SAMemory",
-  "files": [
-    "Kernel.lua",
-    "game\\AnimBlendFrameData.lua",
-    "game\\C2dEffect.lua",
-    "game\\CAEAudioEntity.lua",
-    "game\\CAEPedAudioEntity.lua",
-    "game\\CAEPedSpeechAudioEntity.lua",
-    "game\\CAEPoliceScannerAudioEntity.lua",
-    "game\\CAESound.lua",
-    "game\\CAETwinLoopSoundEntity.lua",
-    "game\\CAEVehicleAudioEntity.lua",
-    "game\\CAEWeaponAudioEntity.lua",
-    "game\\CAttractorScanner.lua",
-    "game\\CAutoPilot.lua",
-    "game\\CAutomobile.lua",
-    "game\\CBike.lua",
-    "game\\CBmx.lua",
-    "game\\CBoat.lua",
-    "game\\CBouncingPanel.lua",
-    "game\\CCam.lua",
-    "game\\CCamPathSplines.lua",
-    "game\\CCamera.lua",
-    "game\\CColBox.lua",
-    "game\\CColDisk.lua",
-    "game\\CColLine.lua",
-    "game\\CColModel.lua",
-    "game\\CColPoint.lua",
-    "game\\CColSphere.lua",
-    "game\\CColTriangle.lua",
-    "game\\CColTrianglePlane.lua",
-    "game\\CCollisionData.lua",
-    "game\\CColourSet.lua",
-    "game\\CCopPed.lua",
-    "game\\CCrimeBeingQd.lua",
-    "game\\CCutsceneObject.lua",
-    "game\\CDamageManager.lua",
-    "game\\CDoor.lua",
-    "game\\CDummy.lua",
-    "game\\CEntity.lua",
-    "game\\CEntityScanner.lua",
-    "game\\CEventGroup.lua",
-    "game\\CEventHandler.lua",
-    "game\\CEventScanner.lua",
-    "game\\CFire.lua",
-    "game\\CHeli.lua",
-    "game\\CMatrix.lua",
-    "game\\CMatrixLink.lua",
-    "game\\CObject.lua",
-    "game\\CObjectInfo.lua",
-    "game\\CPed.lua",
-    "game\\CPedAcquaintance.lua",
-    "game\\CPedClothesDesc.lua",
-    "game\\CPedIK.lua",
-    "game\\CPedIntelligence.lua",
-    "game\\CPhysical.lua",
-    "game\\CPlaceable.lua",
-    "game\\CPlane.lua",
-    "game\\CPlayerData.lua",
-    "game\\CPlayerInfo.lua",
-    "game\\CPlayerPed.lua",
-    "game\\CPool.lua",
-    "game\\CQueuedMode.lua",
-    "game\\CRealTimeShadow.lua",
-    "game\\CReference.lua",
-    "game\\CReferences.lua",
-    "game\\CRideAnimData.lua",
-    "game\\CShadowCamera.lua",
-    "game\\CSimpleTransform.lua",
-    "game\\CStoredCollPoly.lua",
-    "game\\CTask.lua",
-    "game\\CTaskManager.lua",
-    "game\\CTaskTimer.lua",
-    "game\\CTrain.lua",
-    "game\\CTransmission.lua",
-    "game\\CVehicle.lua",
-    "game\\CWanted.lua",
-    "game\\CWeapon.lua",
-    "game\\CWeaponEffects.lua",
-    "game\\CWeaponInfo.lua",
-    "game\\CompressedVector.lua",
-    "game\\FxSystem_c.lua",
-    "game\\RenderWare.lua",
-    "game\\definitions.lua",
-    "game\\eCamMode.lua",
-    "game\\ePedState.lua",
-    "game\\ePedType.lua",
-    "game\\eVehicleHandlingFlags.lua",
-    "game\\eVehicleHandlingModelFlags.lua",
-    "game\\eWeaponType.lua",
-    "game\\matrix.lua",
-    "game\\quaternion.lua",
-    "game\\tBoatHandlingData.lua",
-    "game\\tFlyingHandlingData.lua",
-    "game\\tHandlingData.lua",
-    "game\\tTransmissionGear.lua",
-    "game\\vector2d.lua",
-    "game\\vector3d.lua",
-    "init.lua",
-    "metatype.lua",
-    "shared.lua"
-  ],
+  "files": {
+    "Kernel.lua": {
+      "sha256": "9da0fa0e77c7d4314f4dedf5347c1c2534723e381c530ee24c56e3ab005ba518",
+      "size": 862
+    },
+    "game/AnimBlendFrameData.lua": {
+      "sha256": "68634cd2167ebc76b1d1d535da683dec41d54ec50bd9fb809db3182b4813f5a7",
+      "size": 528
+    },
+    "game/C2dEffect.lua": {
+      "sha256": "e0c6e12662393e5a512d626d3ee80615446b94020b806ba42e7fca16cfed252e",
+      "size": 3008
+    },
+    "game/CAEAudioEntity.lua": {
+      "sha256": "f5af7ef5eb8f66f4a855d8f6dc87eb74b92c74d7402ad0d1af986f1d5a051859",
+      "size": 504
+    },
+    "game/CAEPedAudioEntity.lua": {
+      "sha256": "3158f3a78155b29963897c21182773238fd2c6618591f9e977c3efee436a1e33",
+      "size": 1001
+    },
+    "game/CAEPedSpeechAudioEntity.lua": {
+      "sha256": "9e43e7781967ac05c023c5865ed0586d1f085727f1ac379988c97c6064d60d53",
+      "size": 1235
+    },
+    "game/CAEPoliceScannerAudioEntity.lua": {
+      "sha256": "028c6703dd1d3a28d6142aad19469adfe23ba09947c16c074c78b6af4b1d5d87",
+      "size": 479
+    },
+    "game/CAESound.lua": {
+      "sha256": "320d3b7901fa6af4a4c2b70240c96379a3ce8292a0c8ef8a47e78d0bee575c80",
+      "size": 2607
+    },
+    "game/CAETwinLoopSoundEntity.lua": {
+      "sha256": "90787013a35422dbdcf1f9a4205afcb3e13c0831ca68f49b8131a8772e20e703",
+      "size": 990
+    },
+    "game/CAEVehicleAudioEntity.lua": {
+      "sha256": "b2d4b42e5c3de08b33525b0240b05668a36ddc406a457c9b5735605ed89e6a75",
+      "size": 3693
+    },
+    "game/CAEWeaponAudioEntity.lua": {
+      "sha256": "47a191dbc4bcb0bb33adfe218aa3015d12ee7cadc72a5fe9e1dca2fedd9afa73",
+      "size": 892
+    },
+    "game/CAttractorScanner.lua": {
+      "sha256": "0eea590e18ae743f0b52c404f53e5b259f31ed1d92dae18baab0d8d02892c924",
+      "size": 611
+    },
+    "game/CAutoPilot.lua": {
+      "sha256": "63e5d6659e41fb1ab93fc74215891d17a6cc5fe9282e6ecab355771c060e6ca5",
+      "size": 2096
+    },
+    "game/CAutomobile.lua": {
+      "sha256": "b89fa9040687d9cb24d9205c5672115c061e530d8bb19c9990bb8aed785374cc",
+      "size": 3786
+    },
+    "game/CBike.lua": {
+      "sha256": "ddd7c29850913159b9b5ba21854d887680102fd7bda05d37ab1254b1180f294e",
+      "size": 2487
+    },
+    "game/CBmx.lua": {
+      "sha256": "432e4f16eb54f19b21c89b8b566699605dcb03b1d548b74e7038a1625d5e818e",
+      "size": 637
+    },
+    "game/CBoat.lua": {
+      "sha256": "0bc8defed317a138f3fb5666d488abf1055acb96b52502757d84614a49376efa",
+      "size": 1975
+    },
+    "game/CBouncingPanel.lua": {
+      "sha256": "05a02a7dcfd758c160998d9d6bcf13ef59a4ac832b8bc02ff3d0c96d46171392",
+      "size": 553
+    },
+    "game/CCam.lua": {
+      "sha256": "1dd0a5a2094d359b8f62ddac93b422ff95b096a220f02611d1a0383521b224ec",
+      "size": 4313
+    },
+    "game/CCamPathSplines.lua": {
+      "sha256": "710f2b8b9d412cc3ec8d174294b62b3e3644004d1ae7c368955fee3679e0eb41",
+      "size": 414
+    },
+    "game/CCamera.lua": {
+      "sha256": "b16e15aafb24855352a9a3639bacaa43e0252be3b353cf9b5175877bdc35c5d2",
+      "size": 10274
+    },
+    "game/CColBox.lua": {
+      "sha256": "29c13e529a9dd51f2073b0af1b29f0a9ba2285875b7edd2c68ac46400d682d19",
+      "size": 509
+    },
+    "game/CColDisk.lua": {
+      "sha256": "f9dcd955a9d5247a4d980880ee8c91528c3928bba4c9d7dee017c5b6862d4fd1",
+      "size": 573
+    },
+    "game/CColLine.lua": {
+      "sha256": "340a0e3120bacaaee20bcac3992df6a1ea557e1a513e53d2e0b24f1a6893b4bd",
+      "size": 473
+    },
+    "game/CColModel.lua": {
+      "sha256": "76c2c0a18d45f734394c9fc81fb32e0b9f2c4cbe9d04581001c3fb354e3bd393",
+      "size": 538
+    },
+    "game/CColPoint.lua": {
+      "sha256": "6eef5e740d7b05063e079c20887d2f48967f1f8b73c1a7236b676a28acdfa7b0",
+      "size": 855
+    },
+    "game/CColSphere.lua": {
+      "sha256": "64cf590ac5d6bc447ea15e33917a72e7a6a8dda17b34e600c743ed12dba23f04",
+      "size": 519
+    },
+    "game/CColTriangle.lua": {
+      "sha256": "bd66df15e26f304f4a2f59115d20057f66eafd5f3475284959ec4a4ab6723ac9",
+      "size": 508
+    },
+    "game/CColTrianglePlane.lua": {
+      "sha256": "ad7f7caf492fed90d8ee6931e1da762ed4f402e9b9079788ebba53c65b7b6fb1",
+      "size": 521
+    },
+    "game/CCollisionData.lua": {
+      "sha256": "dc671232a02af774a1f1641ad737ddc22860c14e5956f724a67dc7d6c6bda47a",
+      "size": 1384
+    },
+    "game/CColourSet.lua": {
+      "sha256": "c10b949d9ffe7fd892ea926c33e488234f601f789bd5fa5dcfd8b85428000710",
+      "size": 2123
+    },
+    "game/CCopPed.lua": {
+      "sha256": "0fd85499b25bfba437bd2b1072da43d46b89fb9ea83c67e06bd4860eae50be58",
+      "size": 749
+    },
+    "game/CCrimeBeingQd.lua": {
+      "sha256": "1045544a5a6fc2e8ccbb55453a81576dbf3f7cd7372d48acc45a16837cfa744b",
+      "size": 612
+    },
+    "game/CCutsceneObject.lua": {
+      "sha256": "2c9cda830b57bf4f1658f7bb8fc6eb80785d79a653ddc635156dbec848e587b1",
+      "size": 641
+    },
+    "game/CDamageManager.lua": {
+      "sha256": "ef85cdd87945bf6125f11a295687412e188229051d94bc26db5eae2a7da4ea6f",
+      "size": 2687
+    },
+    "game/CDoor.lua": {
+      "sha256": "c460232e788c12056221b22111a2df8d60a0c9a562c527c9f804da4d5014ec1b",
+      "size": 572
+    },
+    "game/CDummy.lua": {
+      "sha256": "6f58a7a1dcec6e54eec7dcd11f7a428b05dd48d3647116ca46ac188625971ae9",
+      "size": 365
+    },
+    "game/CEntity.lua": {
+      "sha256": "ee606a7f169a258db3b21a42327d78efa6659ab624005a265c385496e33b43a8",
+      "size": 2073
+    },
+    "game/CEntityScanner.lua": {
+      "sha256": "3245a3102e4cc3344c1f93c4091dd2cb37ac6ce3c5b9d8b6a97bdf66f220cd5c",
+      "size": 536
+    },
+    "game/CEventGroup.lua": {
+      "sha256": "18fcf98fa67e954142fdd0e989497ef2aa75d9cd9e15b2c261d0b8607145d5d9",
+      "size": 504
+    },
+    "game/CEventHandler.lua": {
+      "sha256": "94fa46e43313301a51b1a3d3474165ad38bae8901e65164aed0949ecf529ee22",
+      "size": 648
+    },
+    "game/CEventScanner.lua": {
+      "sha256": "a2a450810ae2953a49eb17ac4e18a7fb7b201a88cb68a7046cc7880391f6b1fe",
+      "size": 687
+    },
+    "game/CFire.lua": {
+      "sha256": "1450dce1b164d68d6b4aa4c8de043a6bb79264aec687aa790f5c9ef54bd90487",
+      "size": 922
+    },
+    "game/CHeli.lua": {
+      "sha256": "6f471b8bd69912555d7e69f5664d29eea402f4ec87fee8192f1edcbd0f90f415",
+      "size": 1473
+    },
+    "game/CMatrix.lua": {
+      "sha256": "fbc371d95cb441470c596900aef72f9669ed938c743c5f691bfe0610fa20ebff",
+      "size": 557
+    },
+    "game/CMatrixLink.lua": {
+      "sha256": "30df3bb29f6ff82c192a2038792d32b9f261516929b99cb6e1a12f88b315a88d",
+      "size": 539
+    },
+    "game/CObject.lua": {
+      "sha256": "00c6bd01ae45ff68c22ef6b11b2f566958245a8433af5b24b3a07a707a48b487",
+      "size": 2447
+    },
+    "game/CObjectInfo.lua": {
+      "sha256": "a2124c846eb3fc6a1d6d87e01b7d64a184cb8e3bffabf5fd5208c73ce735acd4",
+      "size": 1061
+    },
+    "game/CPed.lua": {
+      "sha256": "6c50ee953db662824cdba96facc7367bc9aba3420aa9de777b1f0cf127d7f091",
+      "size": 8311
+    },
+    "game/CPedAcquaintance.lua": {
+      "sha256": "1cc897c0106638dfc6cf4fea25776171c1983039fa8684ba19c5037f83a1bd26",
+      "size": 513
+    },
+    "game/CPedClothesDesc.lua": {
+      "sha256": "fe49f568f72e8d5b8ec64aeff0933f96b46c12c6ebf5fae3faa63f8f1953bad9",
+      "size": 496
+    },
+    "game/CPedIK.lua": {
+      "sha256": "05d0b66ad1d95a16257298a0759b3eae1c0e7234bcf12b4db3641cf241b51fbc",
+      "size": 550
+    },
+    "game/CPedIntelligence.lua": {
+      "sha256": "59943536b364e698a1381467ca3fc98357c4e863127547565819f7dd032accc1",
+      "size": 1442
+    },
+    "game/CPhysical.lua": {
+      "sha256": "11bc9bfdb6990fd835bf8fb136e2e776a68c9d214fffe4bd6083cb18f4a340c3",
+      "size": 3022
+    },
+    "game/CPlaceable.lua": {
+      "sha256": "d3949384b3b02d3aa887d0b7bbf6d24b1f2155b598f27bf3b31b29d8b2fecf02",
+      "size": 522
+    },
+    "game/CPlane.lua": {
+      "sha256": "05b188ec854ae814b44111dda6ac0da53dc288bd03628ac3c5069247f6e7d8d4",
+      "size": 1203
+    },
+    "game/CPlayerData.lua": {
+      "sha256": "7ed7181f6e7bb44567648814673f52b915726b07991455c3f179c8ae2029d764",
+      "size": 2635
+    },
+    "game/CPlayerInfo.lua": {
+      "sha256": "56c17f1b3b4e0d37e32c2a27c744d6ee64bc0001ab5c9cef041a436a8f58150a",
+      "size": 2825
+    },
+    "game/CPlayerPed.lua": {
+      "sha256": "6849389e88095dbd2007b473618d220267e4200e641d29c9c6736fc9aa2c8790",
+      "size": 458
+    },
+    "game/CPool.lua": {
+      "sha256": "627d1714872583ed3048964f527037e9919bdeab387f7446eb18baf1fb60874d",
+      "size": 3214
+    },
+    "game/CQueuedMode.lua": {
+      "sha256": "3787a27f753d9ffde2a0ec5238b23b960bd17bcc3b83955c557dad327e9e7649",
+      "size": 481
+    },
+    "game/CRealTimeShadow.lua": {
+      "sha256": "b53b8af75284e2a833446da69c042864da48a6a83d09c1af95b095c64d7d9e66",
+      "size": 827
+    },
+    "game/CReference.lua": {
+      "sha256": "f9b98dd9c264559dc0e934a7cbe6015d3a49e8f8941cd1f77119cd4a8f242af9",
+      "size": 476
+    },
+    "game/CReferences.lua": {
+      "sha256": "70604992f40fcef386d9ede561171db2f8cf9c9cd899b3f78d64aff6474822d2",
+      "size": 394
+    },
+    "game/CRideAnimData.lua": {
+      "sha256": "5d7662423a00177c52cf69241cc2717a2f1b58a493b95dce57f65b0757808c1a",
+      "size": 568
+    },
+    "game/CShadowCamera.lua": {
+      "sha256": "97f332aa6b10f6024bf527aa2170cba34a87e5e5456f468259ad578f4f52d048",
+      "size": 467
+    },
+    "game/CSimpleTransform.lua": {
+      "sha256": "049a9fb3510f2e77c4fb1bbcd12e708cab40860212f803b7b32edb5c981bd3c4",
+      "size": 465
+    },
+    "game/CStoredCollPoly.lua": {
+      "sha256": "a5455508de47490bd53e46dd3c3f392c34498edb5473dea901943c226825743c",
+      "size": 504
+    },
+    "game/CTask.lua": {
+      "sha256": "a6b991c214e8fc895e65231d50fd4c9b81cecee007c7efd0aea40904149d21d1",
+      "size": 420
+    },
+    "game/CTaskManager.lua": {
+      "sha256": "0cde116a622bf49fa49a221e77f56092ff8572a10f5c0a4d74d8afdc6f3cbf79",
+      "size": 504
+    },
+    "game/CTaskTimer.lua": {
+      "sha256": "9017984f3783540709f2d4bc567eaf63918187c5565aee2090704ef94ac39071",
+      "size": 468
+    },
+    "game/CTrain.lua": {
+      "sha256": "a26b1604976c6e243ffb4127e6668e8998947620c134d632a2110523826223fe",
+      "size": 2562
+    },
+    "game/CTransmission.lua": {
+      "sha256": "1026cb91d58b2134d175acfbccecb31d74af9fa3e92ab4ea19d255855fcfb935",
+      "size": 775
+    },
+    "game/CVehicle.lua": {
+      "sha256": "79ff94955cf4681e9f6a5c823a86b369ed0161d8b4c0f48524323fa4a4fde750",
+      "size": 8840
+    },
+    "game/CWanted.lua": {
+      "sha256": "d3443e74605e61acf5faec327248069973e6c43d46cdd66215f82aaeda371fe9",
+      "size": 1524
+    },
+    "game/CWeapon.lua": {
+      "sha256": "338244b15efb974c988c382e78c7d1070bce4ec60eb3285091005cd79687cc56",
+      "size": 838
+    },
+    "game/CWeaponEffects.lua": {
+      "sha256": "128cc4142ceaf83e1eaf6f9553ab5dc4ce1b585c3d0fd0d76bfd9c7c8628d8e5",
+      "size": 674
+    },
+    "game/CWeaponInfo.lua": {
+      "sha256": "5680b2e026d491f87028b6b0f2afcf88fdae4ecf4031abae5a1f78a0a51a35d6",
+      "size": 1898
+    },
+    "game/CompressedVector.lua": {
+      "sha256": "6ea7d8a06a02fb3436cebae8a7433e81d42f25020b50bf461a0da5eea181867d",
+      "size": 446
+    },
+    "game/FxSystem_c.lua": {
+      "sha256": "00b11956a0d14bc2bed09526c02020b362b9a85e2cd38f0d05e7da3a6225a55c",
+      "size": 1344
+    },
+    "game/RenderWare.lua": {
+      "sha256": "02e6474c04b8a0c998fe728a2b61b54b9ba258396130fea0baa1f885d0c237a6",
+      "size": 9223
+    },
+    "game/definitions.lua": {
+      "sha256": "391d76f815671b396245f7100b8c72b51b8e16fe51497c5bcfaf664293426155",
+      "size": 6767
+    },
+    "game/eCamMode.lua": {
+      "sha256": "af020765cf851509bc8095c22c2c0ea7335f1413ff0bccfee52894168ce43728",
+      "size": 2228
+    },
+    "game/ePedState.lua": {
+      "sha256": "765d1c31bb20de043c16ecaa2d3fb7e033fb3b565e46e978724a9b16cef02d4a",
+      "size": 1774
+    },
+    "game/ePedType.lua": {
+      "sha256": "3ae1a16162abc420b12af31347a79f2e1ce731b20d4d1de4c065bc87c5ea3942",
+      "size": 965
+    },
+    "game/eVehicleHandlingFlags.lua": {
+      "sha256": "097d956f22ff237253593a80be00c359b5fd560b2ea53312a43b59292eb47ea8",
+      "size": 1573
+    },
+    "game/eVehicleHandlingModelFlags.lua": {
+      "sha256": "1ecf1e3e28d6ee4ab7d528ecfa6ad8185c64464c9d9c681028a9f0187f65823c",
+      "size": 1907
+    },
+    "game/eWeaponType.lua": {
+      "sha256": "af7284152c3fde8040930777f2244c53c3eabb95fdf743c7d31b9cb8600efcc6",
+      "size": 1585
+    },
+    "game/matrix.lua": {
+      "sha256": "28857498168fd596dbc1c35f81bf16c15d4ea0226908288b489798a60a56700d",
+      "size": 2060
+    },
+    "game/quaternion.lua": {
+      "sha256": "5ec1554428cf8b4197c88c13a008d1aced649f9c48a45d0df88fc78705d04936",
+      "size": 1385
+    },
+    "game/tBoatHandlingData.lua": {
+      "sha256": "c34aacd80112624b51c2718967f4fcd7e3593d872898e75fee6b44e72d7637d4",
+      "size": 693
+    },
+    "game/tFlyingHandlingData.lua": {
+      "sha256": "6800f384bbefc74d0c7dbb670ffe07dc4996b8009765a365483f7d858165a74c",
+      "size": 826
+    },
+    "game/tHandlingData.lua": {
+      "sha256": "d3c0878eefc6137a474a9825afc87925301603280e4cae107146928918ee2f7b",
+      "size": 4010
+    },
+    "game/tTransmissionGear.lua": {
+      "sha256": "98a8800a1ae1dd648ee972e5ac35349ed2b5c73c0b9fce1c449c84cb193e163f",
+      "size": 475
+    },
+    "game/vector2d.lua": {
+      "sha256": "30a18cd9f7f4c279ed34708ba619938c3d682b90ef97cd488bc14b17925247cd",
+      "size": 1120
+    },
+    "game/vector3d.lua": {
+      "sha256": "5fde2c9053f1fab383a4372da915c5d892323d98d32c5c35f387fe12f847b643",
+      "size": 2114
+    },
+    "init.lua": {
+      "sha256": "0accfef77436140d5d085c1026abb4b5c09995685833f064ccdfbfcd8a709c9f",
+      "size": 1463
+    },
+    "metatype.lua": {
+      "sha256": "5bde92a9be243af04d06ae3c4f78fcb57f60fae936e6ca5f76010291fa4206a9",
+      "size": 1845
+    },
+    "shared.lua": {
+      "sha256": "01687fa96bb97966c77a60295a1919ae6faf0fc1d9e2bf3a14b2dc9108ed2948",
+      "size": 1360
+    }
+  },
   "dependencies": {
     "SAMemory.game.definitions": "1.0.0",
     "SAMemory.metatype": "1.0.0",
     "SAMemory.shared": "1.0.0",
     "ffi": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/SAMemory"
   }
 }

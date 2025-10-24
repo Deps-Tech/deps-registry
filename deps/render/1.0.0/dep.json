@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "render",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/render.lua",
-  "files": [
-    "render.lua"
-  ]
+  "files": {
+    "render.lua": {
+      "sha256": "eaa2a779354568604da8c3c33aaeeeee7dc371ca9954f77ed039f3c1d8c3a035",
+      "size": 4034
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/render.lua"
+  }
 }

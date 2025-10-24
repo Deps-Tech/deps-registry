@@ -1,81 +1,298 @@
 {
+  "manifestVersion": "1.0",
   "id": "sa-mp api",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/SA-MP API",
-  "files": [
-    "init.lua",
-    "kernel.lua",
-    "samp\\0_3_7-R1\\enums.lua",
-    "samp\\0_3_7-R1\\stActorPool.lua",
-    "samp\\0_3_7-R1\\stChatEntry.lua",
-    "samp\\0_3_7-R1\\stChatInfo.lua",
-    "samp\\0_3_7-R1\\stDialogInfo.lua",
-    "samp\\0_3_7-R1\\stFontRenderer.lua",
-    "samp\\0_3_7-R1\\stGameInfo.lua",
-    "samp\\0_3_7-R1\\stGangzone.lua",
-    "samp\\0_3_7-R1\\stGangzonePool.lua",
-    "samp\\0_3_7-R1\\stInputInfo.lua",
-    "samp\\0_3_7-R1\\stKillEntry.lua",
-    "samp\\0_3_7-R1\\stKillInfo.lua",
-    "samp\\0_3_7-R1\\stLocalPlayer.lua",
-    "samp\\0_3_7-R1\\stObject.lua",
-    "samp\\0_3_7-R1\\stObjectPool.lua",
-    "samp\\0_3_7-R1\\stPickup.lua",
-    "samp\\0_3_7-R1\\stPickupPool.lua",
-    "samp\\0_3_7-R1\\stPlayerPool.lua",
-    "samp\\0_3_7-R1\\stRemotePlayer.lua",
-    "samp\\0_3_7-R1\\stSAMP.lua",
-    "samp\\0_3_7-R1\\stSAMPEntity.lua",
-    "samp\\0_3_7-R1\\stSAMPPed.lua",
-    "samp\\0_3_7-R1\\stSAMPPools.lua",
-    "samp\\0_3_7-R1\\stSAMPVehicle.lua",
-    "samp\\0_3_7-R1\\stScoreboardInfo.lua",
-    "samp\\0_3_7-R1\\stServerInfo.lua",
-    "samp\\0_3_7-R1\\stServerPresets.lua",
-    "samp\\0_3_7-R1\\stTextLabel.lua",
-    "samp\\0_3_7-R1\\stTextLabelPool.lua",
-    "samp\\0_3_7-R1\\stTextdraw.lua",
-    "samp\\0_3_7-R1\\stTextdrawPool.lua",
-    "samp\\0_3_7-R1\\stVehiclePool.lua",
-    "samp\\0_3_7-R1\\sync.lua",
-    "samp\\0_3_DL-R1\\enums.lua",
-    "samp\\0_3_DL-R1\\stActorPool.lua",
-    "samp\\0_3_DL-R1\\stChatEntry.lua",
-    "samp\\0_3_DL-R1\\stChatInfo.lua",
-    "samp\\0_3_DL-R1\\stDialogInfo.lua",
-    "samp\\0_3_DL-R1\\stFontRenderer.lua",
-    "samp\\0_3_DL-R1\\stGameInfo.lua",
-    "samp\\0_3_DL-R1\\stGangzone.lua",
-    "samp\\0_3_DL-R1\\stGangzonePool.lua",
-    "samp\\0_3_DL-R1\\stInputInfo.lua",
-    "samp\\0_3_DL-R1\\stKillEntry.lua",
-    "samp\\0_3_DL-R1\\stKillInfo.lua",
-    "samp\\0_3_DL-R1\\stLocalPlayer.lua",
-    "samp\\0_3_DL-R1\\stObject.lua",
-    "samp\\0_3_DL-R1\\stObjectPool.lua",
-    "samp\\0_3_DL-R1\\stPickup.lua",
-    "samp\\0_3_DL-R1\\stPickupPool.lua",
-    "samp\\0_3_DL-R1\\stPlayerPool.lua",
-    "samp\\0_3_DL-R1\\stRemotePlayer.lua",
-    "samp\\0_3_DL-R1\\stSAMP.lua",
-    "samp\\0_3_DL-R1\\stSAMPEntity.lua",
-    "samp\\0_3_DL-R1\\stSAMPPed.lua",
-    "samp\\0_3_DL-R1\\stSAMPPools.lua",
-    "samp\\0_3_DL-R1\\stSAMPVehicle.lua",
-    "samp\\0_3_DL-R1\\stScoreboardInfo.lua",
-    "samp\\0_3_DL-R1\\stServerInfo.lua",
-    "samp\\0_3_DL-R1\\stServerPresets.lua",
-    "samp\\0_3_DL-R1\\stSpawnInfo.lua",
-    "samp\\0_3_DL-R1\\stTargetInfo.lua",
-    "samp\\0_3_DL-R1\\stTextLabel.lua",
-    "samp\\0_3_DL-R1\\stTextLabelPool.lua",
-    "samp\\0_3_DL-R1\\stTextdraw.lua",
-    "samp\\0_3_DL-R1\\stTextdrawPool.lua",
-    "samp\\0_3_DL-R1\\stVehiclePool.lua",
-    "samp\\0_3_DL-R1\\sync.lua",
-    "samp\\definitions.lua"
-  ],
+  "files": {
+    "init.lua": {
+      "sha256": "eedc9348b8ecf06d6fda98edb579f3847b1c3d1a3e299d96f2d4516c759a479c",
+      "size": 8657
+    },
+    "kernel.lua": {
+      "sha256": "d45b06555ddd1580c2d16c87a62362ddd07d3cfdb04a4cc5ab6bd78b9c1cedb7",
+      "size": 384
+    },
+    "samp/0_3_7-R1/enums.lua": {
+      "sha256": "3c47cd7f1c598f8dad2a952312e5856775eb20c1f37de59cc532bcbaddecf4d4",
+      "size": 1404
+    },
+    "samp/0_3_7-R1/stActorPool.lua": {
+      "sha256": "779ac33a3d9dcf2db1f96b054b57e9ea266084c9055d559f8debf441b9a8169b",
+      "size": 505
+    },
+    "samp/0_3_7-R1/stChatEntry.lua": {
+      "sha256": "4ec94a1a41eedaa043a6c26d81d0aef6a9f1003e2bb02945aac4c267055d6821",
+      "size": 476
+    },
+    "samp/0_3_7-R1/stChatInfo.lua": {
+      "sha256": "3fc841907688c5e27799921be90d099f4b0bb25b9a7decbdefbd70b61962aeeb",
+      "size": 1210
+    },
+    "samp/0_3_7-R1/stDialogInfo.lua": {
+      "sha256": "ddafdcfd8b1ee90d5c0cc091ecf2709cbfec759538a662964fb5ca46eb8c0457",
+      "size": 675
+    },
+    "samp/0_3_7-R1/stFontRenderer.lua": {
+      "sha256": "02b433d56a48cee91e47640278964ca0c7b9209dc64add195da5c0b8712259a6",
+      "size": 493
+    },
+    "samp/0_3_7-R1/stGameInfo.lua": {
+      "sha256": "724dcf94d3ee3c95d9e023abd29e764fd0ae3c157418170fc3077aa8610f27cf",
+      "size": 1229
+    },
+    "samp/0_3_7-R1/stGangzone.lua": {
+      "sha256": "5d9b7ade4831032f300e030d633b66d2637779fbb55889087a2be06ebb59269b",
+      "size": 374
+    },
+    "samp/0_3_7-R1/stGangzonePool.lua": {
+      "sha256": "04a7fa0515ab7c88cd937159757a364c002779d057e1752f07df5ca510445736",
+      "size": 418
+    },
+    "samp/0_3_7-R1/stInputInfo.lua": {
+      "sha256": "3334684644b869ba3c4b102ab233edbdff660a3e9024a26b1fc7f37b1e0bb393",
+      "size": 1075
+    },
+    "samp/0_3_7-R1/stKillEntry.lua": {
+      "sha256": "b09505c58361f4a3211ffe04fe3717d93015d781c7c4f78deb97db34e06ebb51",
+      "size": 440
+    },
+    "samp/0_3_7-R1/stKillInfo.lua": {
+      "sha256": "87ef6c5e924d44d05a58ee0882a5fdeac6359d9e7a0958a40026dee3106e35eb",
+      "size": 648
+    },
+    "samp/0_3_7-R1/stLocalPlayer.lua": {
+      "sha256": "480c63e80b61082d291e737367fd7a5d0afe5f3f6e1d50bd64266901f827ace9",
+      "size": 2317
+    },
+    "samp/0_3_7-R1/stObject.lua": {
+      "sha256": "f4051c6a1b9ffca8ca24dd74a1c958648f051e4a4b092fc885ea321bba675c40",
+      "size": 581
+    },
+    "samp/0_3_7-R1/stObjectPool.lua": {
+      "sha256": "34bb555aca12c4b876426854eac1218f6ffab153d9dd219f42e949f9a8da4a0c",
+      "size": 433
+    },
+    "samp/0_3_7-R1/stPickup.lua": {
+      "sha256": "81ca3575dc603fb6d2034186af2008c74e7805a7fb635fc95e6ddd79a3eb1e86",
+      "size": 350
+    },
+    "samp/0_3_7-R1/stPickupPool.lua": {
+      "sha256": "df6c80cb47c0194152f13541987ab5e4f3225e0390237f8a6819bd0af2d35805",
+      "size": 536
+    },
+    "samp/0_3_7-R1/stPlayerPool.lua": {
+      "sha256": "a0a2abfe13d2e94f75a1fde3c950dbd3519b7420c76cc019ad6544c2a73b40f5",
+      "size": 764
+    },
+    "samp/0_3_7-R1/stRemotePlayer.lua": {
+      "sha256": "0137df8e168c84f2e8e8f96bb359ae4ccfd2e072f3f0de4fb2e170fbc720ee96",
+      "size": 1766
+    },
+    "samp/0_3_7-R1/stSAMP.lua": {
+      "sha256": "99d1ddf120f3d2f3102f447847edf405e44ce219ae7c9275ed4e0bb860d208ef",
+      "size": 886
+    },
+    "samp/0_3_7-R1/stSAMPEntity.lua": {
+      "sha256": "3b38fcca5df520cf150c742c76d9aaf7910fe59d8bcbfc0294027e58eb0bb77f",
+      "size": 404
+    },
+    "samp/0_3_7-R1/stSAMPPed.lua": {
+      "sha256": "5ad31c769ae003795deefdeba7000e01dc35080e450efcf6c94bcafe3b56468f",
+      "size": 812
+    },
+    "samp/0_3_7-R1/stSAMPPools.lua": {
+      "sha256": "59a97dd4f0d3f00cf947679dbf537b746e231a9df8edce68758c8ab72d8dd5a4",
+      "size": 1026
+    },
+    "samp/0_3_7-R1/stSAMPVehicle.lua": {
+      "sha256": "2075285737b68151ed56b1b42cdda923f9b5aeae2943f698526f2ecd8ef42e0a",
+      "size": 677
+    },
+    "samp/0_3_7-R1/stScoreboardInfo.lua": {
+      "sha256": "b90601223f56749ccee36f8ae055c0742780badb5f2505498dffa91902bc7765",
+      "size": 547
+    },
+    "samp/0_3_7-R1/stServerInfo.lua": {
+      "sha256": "cc9ee4a247a3f13bc9f9bc0e7616d589d29dc0e6c23f81810ce758faf581c90d",
+      "size": 354
+    },
+    "samp/0_3_7-R1/stServerPresets.lua": {
+      "sha256": "47fe4a0e2188992345c7fc96ea7c10c7a9b41909f715fe930bed19d409caf4c8",
+      "size": 972
+    },
+    "samp/0_3_7-R1/stTextLabel.lua": {
+      "sha256": "1dad74584f8e16dfb112d91e23f0a4881b3b4d9f56dc01ceb4bc0fc4b2ed7b31",
+      "size": 513
+    },
+    "samp/0_3_7-R1/stTextLabelPool.lua": {
+      "sha256": "b795d187d5a0b6e4f386990a187d01347796d1e0cbda1131a243b5a2dd96199a",
+      "size": 420
+    },
+    "samp/0_3_7-R1/stTextdraw.lua": {
+      "sha256": "1dea8cbdc7e60bf224cf0fc5cb82ed53b533e8d7aca5fa9bbfb6cbe590855047",
+      "size": 1288
+    },
+    "samp/0_3_7-R1/stTextdrawPool.lua": {
+      "sha256": "c5e88f0c82dcde4ce91f4e36e3a7d10e59e39026917379effda631271e05d83d",
+      "size": 485
+    },
+    "samp/0_3_7-R1/stVehiclePool.lua": {
+      "sha256": "f418aab855c87136d41f5d3c09c1cbba45481ba1d24faf2d47cc65a289112a19",
+      "size": 755
+    },
+    "samp/0_3_7-R1/sync.lua": {
+      "sha256": "69b034d9dbc7c1d260f124bfde452dfa70a189bfad4af4b1b200139ffbc7d0fb",
+      "size": 4094
+    },
+    "samp/0_3_DL-R1/enums.lua": {
+      "sha256": "e3fdd67faf982b1a3a6339cf0c9e5a4a4963b17c9ce0fbb774c9d92b20f9f823",
+      "size": 1404
+    },
+    "samp/0_3_DL-R1/stActorPool.lua": {
+      "sha256": "05bec432f741cc33f356436ace32dbfde7ce1daf978338b8fe91db5fb23ff65d",
+      "size": 479
+    },
+    "samp/0_3_DL-R1/stChatEntry.lua": {
+      "sha256": "b1a8fcafd3720c4ad7e6fc7ac85db9d1a0d65df82aac09d3269dd97c0f58398f",
+      "size": 486
+    },
+    "samp/0_3_DL-R1/stChatInfo.lua": {
+      "sha256": "30620b0024f6f26a7d4f2bbd7913ae63ab7dbd7d7c2168d9c609902f4d297222",
+      "size": 1295
+    },
+    "samp/0_3_DL-R1/stDialogInfo.lua": {
+      "sha256": "6aab487effa1d842f2f6dd31666cd2ad340fa763de78f532d0443ff37e175956",
+      "size": 707
+    },
+    "samp/0_3_DL-R1/stFontRenderer.lua": {
+      "sha256": "4a90d389a70d8ef81fbbca0691f97a6c758fedfe2aa17598e6a46de7781ba51a",
+      "size": 500
+    },
+    "samp/0_3_DL-R1/stGameInfo.lua": {
+      "sha256": "2a4522749d3b8db54c5dad0d6bbfb99a64842f13713acece8f85f4c0358b222d",
+      "size": 1260
+    },
+    "samp/0_3_DL-R1/stGangzone.lua": {
+      "sha256": "5d9b7ade4831032f300e030d633b66d2637779fbb55889087a2be06ebb59269b",
+      "size": 374
+    },
+    "samp/0_3_DL-R1/stGangzonePool.lua": {
+      "sha256": "30c78b9add25f2b78655a2150dfc64d9a16fa4a1dca9257527f3daa695e58cce",
+      "size": 419
+    },
+    "samp/0_3_DL-R1/stInputInfo.lua": {
+      "sha256": "4d5164ee2518329c43afce5db6671f87d5fb7d05861aeae7a7291238d1be67f2",
+      "size": 1124
+    },
+    "samp/0_3_DL-R1/stKillEntry.lua": {
+      "sha256": "9f1fc4c35f2e7a7ed394f9da71c9f70f7c4c7b0ceac0e5d6a4fba3d604416192",
+      "size": 433
+    },
+    "samp/0_3_DL-R1/stKillInfo.lua": {
+      "sha256": "80f0b72d9807d0a296480e910a47b4dcee3742c6363c2cce841ffabe52afe1cd",
+      "size": 662
+    },
+    "samp/0_3_DL-R1/stLocalPlayer.lua": {
+      "sha256": "b3ce67160fbac7b5d4d9cd05c71029050708ac14dc7dd4e75e077141cee429e1",
+      "size": 2135
+    },
+    "samp/0_3_DL-R1/stObject.lua": {
+      "sha256": "2c216efa8d070cae2fde5c3ef987dc7c55edcf7aac3c3fe3ff10675ca0e4091a",
+      "size": 579
+    },
+    "samp/0_3_DL-R1/stObjectPool.lua": {
+      "sha256": "dba78a6836d19bef29e65cd2f9a59dc84c8a7603825915800f8fdc48d2a338b7",
+      "size": 436
+    },
+    "samp/0_3_DL-R1/stPickup.lua": {
+      "sha256": "81ca3575dc603fb6d2034186af2008c74e7805a7fb635fc95e6ddd79a3eb1e86",
+      "size": 350
+    },
+    "samp/0_3_DL-R1/stPickupPool.lua": {
+      "sha256": "279ea3628d0b5cbc5f8e839ba9e1a68c993c04866b94eab086225fe343b1e25b",
+      "size": 534
+    },
+    "samp/0_3_DL-R1/stPlayerPool.lua": {
+      "sha256": "461b6f15535d682f53215facc54f1b505f3fb5631e51bb757f5fbede75ee2518",
+      "size": 770
+    },
+    "samp/0_3_DL-R1/stRemotePlayer.lua": {
+      "sha256": "fa46b5492346fa8d930bd06ed10fd15485685bc0bea4bddb033cd233d27ddbe0",
+      "size": 1888
+    },
+    "samp/0_3_DL-R1/stSAMP.lua": {
+      "sha256": "1308336d3d4f47d5a85c9c1668e8b87968f8eb022325cb61e4b05cb49ad1dba2",
+      "size": 1105
+    },
+    "samp/0_3_DL-R1/stSAMPEntity.lua": {
+      "sha256": "bd767a8d52b1beefde853fe9381b55bcfa775132575e73002536d9934e9aab90",
+      "size": 411
+    },
+    "samp/0_3_DL-R1/stSAMPPed.lua": {
+      "sha256": "a14f12491cab546a76018a480179341cffc50d00f6dd9cce90be4755211f9ba2",
+      "size": 783
+    },
+    "samp/0_3_DL-R1/stSAMPPools.lua": {
+      "sha256": "42a645bf8f84e6285ac1bd39ea8d905b85cd22c13a05cc63ac27a954ec771b3c",
+      "size": 1101
+    },
+    "samp/0_3_DL-R1/stSAMPVehicle.lua": {
+      "sha256": "c82dc57168a123cbd19eb9236933db4ede1d5e7acab0461987456910e5d791b3",
+      "size": 677
+    },
+    "samp/0_3_DL-R1/stScoreboardInfo.lua": {
+      "sha256": "5e4fcb80fcf63108f0d57787899f13880127ea62590059317f59c2baf88b9bde",
+      "size": 546
+    },
+    "samp/0_3_DL-R1/stServerInfo.lua": {
+      "sha256": "78d79bbad56f8f097a683eff75c47251dcb607de0cd68bf3250fdc74e3765595",
+      "size": 352
+    },
+    "samp/0_3_DL-R1/stServerPresets.lua": {
+      "sha256": "3bf13421ffa0dae46456a514cd61b4955fd3cc1b75a5c1628f794e97a865319f",
+      "size": 967
+    },
+    "samp/0_3_DL-R1/stSpawnInfo.lua": {
+      "sha256": "dbfdda9d20d7d5b9549128b1db6e9441be1c0cb933f2a1f344153c0bc5d6e948",
+      "size": 452
+    },
+    "samp/0_3_DL-R1/stTargetInfo.lua": {
+      "sha256": "7013ab375ed3710da65948f57bcd9ba294c341deae5fe2cea42d11b5e4ab058c",
+      "size": 408
+    },
+    "samp/0_3_DL-R1/stTextLabel.lua": {
+      "sha256": "1dad74584f8e16dfb112d91e23f0a4881b3b4d9f56dc01ceb4bc0fc4b2ed7b31",
+      "size": 513
+    },
+    "samp/0_3_DL-R1/stTextLabelPool.lua": {
+      "sha256": "3646d65d1e4147435c7568c59ff4f568abddbffc326b5c61a3c9103f66e708b1",
+      "size": 421
+    },
+    "samp/0_3_DL-R1/stTextdraw.lua": {
+      "sha256": "6734d9851f8b5f582e4adb57b0eb0aae0ba60bbace7dc601a0689ce6dcb1ec7d",
+      "size": 1239
+    },
+    "samp/0_3_DL-R1/stTextdrawPool.lua": {
+      "sha256": "4aff78f0b380e2a92d70682d4c0b8caf3cb6d556a3e360104f6d3d8ad5923bf4",
+      "size": 486
+    },
+    "samp/0_3_DL-R1/stVehiclePool.lua": {
+      "sha256": "6123783defb4c2554fdb0e764a33aaf15868febd00f09738b4c8d52ccd164d13",
+      "size": 758
+    },
+    "samp/0_3_DL-R1/sync.lua": {
+      "sha256": "d721df4262e1ca525a6804ca5108d1915cfe9630e02fbbbf9d020aafb991b6bc",
+      "size": 3832
+    },
+    "samp/definitions.lua": {
+      "sha256": "831a87d3fb537631278f5c16679bf1f9b0a36df8fc92c94196ea3a7f898956ac",
+      "size": 3084
+    }
+  },
   "dependencies": {
     "ffi": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/SA-MP API"
   }
 }

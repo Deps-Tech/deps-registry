@@ -1,9 +1,19 @@
 {
+  "manifestVersion": "1.0",
   "id": "md5",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/md5.lua",
-  "files": [
-    "md5.lua",
-    "core.dll"
-  ]
+  "files": {
+    "core.dll": {
+      "sha256": "cba9525d93957d6b442ef019557cf6c47bde0aad07652c897900475335e281e0",
+      "size": 75776
+    },
+    "md5.lua": {
+      "sha256": "921f2e4d48d8987be0eb96a93762a918bbdd825b7c506ef68aedf1b217ae6355",
+      "size": 836
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/md5.lua"
+  }
 }

@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "ltn12",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/ltn12.lua",
-  "files": [
-    "ltn12.lua"
-  ]
+  "files": {
+    "ltn12.lua": {
+      "sha256": "3bf0000f86d25da94089d47de3bbb204fd5be491edbe275730e73f68c710ea42",
+      "size": 8331
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/ltn12.lua"
+  }
 }

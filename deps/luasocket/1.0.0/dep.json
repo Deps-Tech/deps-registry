@@ -1,23 +1,60 @@
 {
+  "manifestVersion": "1.0",
   "id": "luasocket",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/luasocket",
-  "files": [
-    "ltn12.lua",
-    "mime\\core.dll",
-    "mime.lua",
-    "socket\\core.dll",
-    "socket\\ftp.lua",
-    "socket\\headers.lua",
-    "socket\\http.lua",
-    "socket\\smtp.lua",
-    "socket\\tp.lua",
-    "socket\\url.lua",
-    "socket.lua"
-  ],
+  "files": {
+    "ltn12.lua": {
+      "sha256": "3bf0000f86d25da94089d47de3bbb204fd5be491edbe275730e73f68c710ea42",
+      "size": 8331
+    },
+    "mime.lua": {
+      "sha256": "a548fc214ac1e935afa683df9bdbeded0ca60cf353dfcc16f6db0187b9fc512d",
+      "size": 2487
+    },
+    "mime/core.dll": {
+      "sha256": "b4737e1d1d687dbcb865eae69cf8113be6b3e9441d45c3ffc895b4bc3c41cb9c",
+      "size": 77824
+    },
+    "socket.lua": {
+      "sha256": "332871e3beeaccf8bff18cde1509e81c2bd16beb511b1fe586c12862dc7667b2",
+      "size": 4451
+    },
+    "socket/core.dll": {
+      "sha256": "913bf007a9a58cca37e4a16fa5cd909d152d1461a339162a55ca4ae6032d74cc",
+      "size": 142848
+    },
+    "socket/ftp.lua": {
+      "sha256": "05eae0f1477cc17a580cb88e11a62107b1b6cde37a1c76fced6f91b390d98ed5",
+      "size": 9243
+    },
+    "socket/headers.lua": {
+      "sha256": "aecff8c2d99d77a6473269367d5b085ad0db189d9699c2f47dcb97ae5ad348df",
+      "size": 3698
+    },
+    "socket/http.lua": {
+      "sha256": "9bdf0c2b37f1941e4a65c31697187ee976b43d0a4a8865b96260222f85c0fdb8",
+      "size": 12330
+    },
+    "socket/smtp.lua": {
+      "sha256": "55bdeff392dffc381b1487b6e9493a7aadb52f851f78ec29316decf50d88df58",
+      "size": 8074
+    },
+    "socket/tp.lua": {
+      "sha256": "9faacdfcde3167ab426054625ccf0ca8255a24dc7752f58543edbc93216b53b1",
+      "size": 3612
+    },
+    "socket/url.lua": {
+      "sha256": "7290952cba25a671e0434a01b5693855cb5d19ba777adb302779b050d8b0d3c7",
+      "size": 11036
+    }
+  },
   "dependencies": {
     "ltn12": "1.0.0",
     "mime.core": "1.0.0",
     "socket.core": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/luasocket"
   }
 }

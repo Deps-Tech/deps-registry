@@ -1,11 +1,18 @@
 {
+  "manifestVersion": "1.0",
   "id": "fAwesome6_solid",
   "version": "1.0.0",
-  "sourceUrl": "https://www.blast.hk/threads/151050/",
-  "files": [
-    "fAwesome6_solid.lua"
-  ],
+  "files": {
+    "fAwesome6_solid.lua": {
+      "sha256": "d654f487401d697b5e6d2e58ff6de7f9ae1913f44200de5a6299f8a5d94d55f8",
+      "size": 342546
+    }
+  },
   "dependencies": {
     "mimgui": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "https://www.blast.hk/threads/151050/"
   }
 }

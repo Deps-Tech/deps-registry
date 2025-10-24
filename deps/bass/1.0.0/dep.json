@@ -1,11 +1,18 @@
 {
+  "manifestVersion": "1.0",
   "id": "bass",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/bass.lua",
-  "files": [
-    "bass.lua"
-  ],
+  "files": {
+    "bass.lua": {
+      "sha256": "21cb70ed0168f8b5d2b3b7e543156d8b98d5678db7b5e5154c8c898ef6d5bb69",
+      "size": 33569
+    }
+  },
   "dependencies": {
     "ffi": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/bass.lua"
   }
 }

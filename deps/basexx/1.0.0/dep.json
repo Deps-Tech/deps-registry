@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "basexx",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/basexx.lua",
-  "files": [
-    "basexx.lua"
-  ]
+  "files": {
+    "basexx.lua": {
+      "sha256": "c825010212ff2310d83c5d502ea915310d3d57c153ec84f0a5047eb7b6c4b337",
+      "size": 8375
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/basexx.lua"
+  }
 }

@@ -1,13 +1,20 @@
 {
+  "manifestVersion": "1.0",
   "id": "imgui",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/imgui.lua",
-  "files": [
-    "imgui.lua"
-  ],
+  "files": {
+    "imgui.lua": {
+      "sha256": "83153983d7d5954deb00182bd75e92dcddb6ebc2a076cdf6f80cf7adb1eeacd1",
+      "size": 112630
+    }
+  },
   "dependencies": {
     "MoonImGui": "1.0.0",
     "bitex": "1.0.0",
     "windows.message": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/imgui.lua"
   }
 }

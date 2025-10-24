@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "fawesome6",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/fAwesome6.lua",
-  "files": [
-    "fAwesome6.lua"
-  ]
+  "files": {
+    "fAwesome6.lua": {
+      "sha256": "e0a3bcd5d0dab0aec5ea843a58bae05148caf44f64aa83c55153c239175fcd48",
+      "size": 3839469
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/fAwesome6.lua"
+  }
 }

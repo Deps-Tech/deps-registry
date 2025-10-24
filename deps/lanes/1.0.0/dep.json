@@ -1,10 +1,23 @@
 {
+  "manifestVersion": "1.0",
   "id": "lanes",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/lanes.lua",
-  "files": [
-    "lanes.lua",
-    "core.dll",
-    "lanes\\core.dll"
-  ]
+  "files": {
+    "core.dll": {
+      "sha256": "aaf492a38689d1b2c24dbc966b3c23727e6d1d961ddd513a5b4942283fd95559",
+      "size": 174592
+    },
+    "lanes.lua": {
+      "sha256": "cdb9250323ee5920569d8712eba003c18da338404fad130b13ae96a27ae9e39d",
+      "size": 24027
+    },
+    "lanes/core.dll": {
+      "sha256": "aaf492a38689d1b2c24dbc966b3c23727e6d1d961ddd513a5b4942283fd95559",
+      "size": 174592
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/lanes.lua"
+  }
 }

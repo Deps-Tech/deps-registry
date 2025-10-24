@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "class",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/class.lua",
-  "files": [
-    "class.lua"
-  ]
+  "files": {
+    "class.lua": {
+      "sha256": "a896a3de2aa85a39d35c33e759d5eea42d9e81d1d99b42b3dacc3935c363a0ef",
+      "size": 2263
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/class.lua"
+  }
 }

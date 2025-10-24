@@ -1,12 +1,22 @@
 {
+  "manifestVersion": "1.0",
   "id": "moonmonet",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/MoonMonet",
-  "files": [
-    "init.lua",
-    "moonmonet_rs.dll"
-  ],
+  "files": {
+    "init.lua": {
+      "sha256": "2e5854d441b943b80b89f71f062a8a8f23f465a60b85feead59c432447400197",
+      "size": 1197
+    },
+    "moonmonet_rs.dll": {
+      "sha256": "524e087a1d13f205c9e3cea79fb881d4da6b5f981f965f6aa5f4c06938b3bee8",
+      "size": 146432
+    }
+  },
   "dependencies": {
     "ffi": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/MoonMonet"
   }
 }

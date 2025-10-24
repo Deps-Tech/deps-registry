@@ -1,11 +1,18 @@
 {
+  "manifestVersion": "1.0",
   "id": "matrix3x3",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/matrix3x3.lua",
-  "files": [
-    "matrix3x3.lua"
-  ],
+  "files": {
+    "matrix3x3.lua": {
+      "sha256": "eac61fc4e6512cfdfd5ec515d72a42b2f2957d0fd9a03e9978c2dae39b975f78",
+      "size": 2000
+    }
+  },
   "dependencies": {
     "vector3d": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/matrix3x3.lua"
   }
 }

@@ -1,11 +1,18 @@
 {
+  "manifestVersion": "1.0",
   "id": "raknet",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/raknet.lua",
-  "files": [
-    "raknet.lua"
-  ],
+  "files": {
+    "raknet.lua": {
+      "sha256": "488a60296bb5c41f5a2a4007308bfbe33e78f512bbb60fafc978437d0f7bf7b0",
+      "size": 11365
+    }
+  },
   "dependencies": {
     "sampfuncs": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/raknet.lua"
   }
 }

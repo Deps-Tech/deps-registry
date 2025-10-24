@@ -1,11 +1,18 @@
 {
+  "manifestVersion": "1.0",
   "id": "synchronization",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/synchronization.lua",
-  "files": [
-    "synchronization.lua"
-  ],
+  "files": {
+    "synchronization.lua": {
+      "sha256": "5e2e5ad3bfba848b20b8035f1b7a0ad997c958b924f231931c5a95b619a34ac7",
+      "size": 3463
+    }
+  },
   "dependencies": {
     "ffi": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/synchronization.lua"
   }
 }

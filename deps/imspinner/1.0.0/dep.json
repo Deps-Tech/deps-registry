@@ -1,11 +1,18 @@
 {
+  "manifestVersion": "1.0",
   "id": "imspinner",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/imspinner.lua",
-  "files": [
-    "imspinner.lua"
-  ],
+  "files": {
+    "imspinner.lua": {
+      "sha256": "372d9006d28bb6f884f96d9f07bdf4a0c8cf3df41999e80942358b4dfc05046f",
+      "size": 1768
+    }
+  },
   "dependencies": {
     "mimgui": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/imspinner.lua"
   }
 }

@@ -1,8 +1,15 @@
 {
+  "manifestVersion": "1.0",
   "id": "moonbot",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/MoonBot.dll",
-  "files": [
-    "MoonBot.dll"
-  ]
+  "files": {
+    "MoonBot.dll": {
+      "sha256": "c88a1d17c2090af6c9d8d6e66910886e3f88fa78d3d0b15f74ed8fc01601c2e2",
+      "size": 997888
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/MoonBot.dll"
+  }
 }

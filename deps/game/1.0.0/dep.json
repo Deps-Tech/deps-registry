@@ -1,11 +1,27 @@
 {
+  "manifestVersion": "1.0",
   "id": "game",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/game",
-  "files": [
-    "globals.lua",
-    "keys.lua",
-    "models.lua",
-    "weapons.lua"
-  ]
+  "files": {
+    "globals.lua": {
+      "sha256": "f40e919cd149e217da7bac2aec6c5a1959f5d9817c8141eef62df8d0beeb6ec0",
+      "size": 27330
+    },
+    "keys.lua": {
+      "sha256": "fcad830d0df2d1256e2d779ba87bb5336a0b94554567502008fcc484cf4abbc9",
+      "size": 1013
+    },
+    "models.lua": {
+      "sha256": "fa014ae98cbbf90a964b56b878d09944d8fe1742ad59e8d29fec4a49c86ea6de",
+      "size": 11980
+    },
+    "weapons.lua": {
+      "sha256": "f0525b53f58e2de0531ed2b2c55588743030ee2bfaeb553d0d366dde3cf245e5",
+      "size": 2338
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/game"
+  }
 }

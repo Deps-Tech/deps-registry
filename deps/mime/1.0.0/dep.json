@@ -1,12 +1,22 @@
 {
+  "manifestVersion": "1.0",
   "id": "mime",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/mime.lua",
-  "files": [
-    "mime.lua",
-    "core.dll"
-  ],
+  "files": {
+    "core.dll": {
+      "sha256": "e845e535e70086ab72f18d53d00cf80d15300089ab78db3eff383b5854e8667f",
+      "size": 77824
+    },
+    "mime.lua": {
+      "sha256": "a548fc214ac1e935afa683df9bdbeded0ca60cf353dfcc16f6db0187b9fc512d",
+      "size": 2487
+    }
+  },
   "dependencies": {
     "ltn12": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/mime.lua"
   }
 }

@@ -1,13 +1,26 @@
 {
+  "manifestVersion": "1.0",
   "id": "xml",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/xml",
-  "files": [
-    "Parser.lua",
-    "core.dll",
-    "init.lua"
-  ],
+  "files": {
+    "Parser.lua": {
+      "sha256": "c46fa675a7f6303c70bfdffec3bbd4b6babe91fae463ab8d75bbf27f05c6125f",
+      "size": 1750
+    },
+    "core.dll": {
+      "sha256": "7f02af34a92b286bcad9ff5afc3deede314737b9957a9f1cad0108fb087555b6",
+      "size": 140800
+    },
+    "init.lua": {
+      "sha256": "49648e800722d846cf2a77d5cb4569b46458f217a19aadd4ca9b6652e48ce210",
+      "size": 7549
+    }
+  },
   "dependencies": {
     "lub": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/xml"
   }
 }

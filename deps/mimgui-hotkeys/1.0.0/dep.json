@@ -1,12 +1,19 @@
 {
+  "manifestVersion": "1.0",
   "id": "mimgui-hotkeys",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/mimgui_hotkeys.lua",
-  "files": [
-    "mimgui_hotkeys.lua"
-  ],
+  "files": {
+    "mimgui_hotkeys.lua": {
+      "sha256": "b5d3092e8179c418b164ebd1e1572c560c68c2c86ca10e0430b742c0576c1bc0",
+      "size": 5787
+    }
+  },
   "dependencies": {
     "mimgui": "1.0.0",
     "vkeys": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/mimgui_hotkeys.lua"
   }
 }

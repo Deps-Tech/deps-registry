@@ -1,23 +1,75 @@
 {
+  "manifestVersion": "1.0",
   "id": "path",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/path.lua",
-  "files": [
-    "syscall\\fs.lua",
-    "win32\\alien\\fs.lua",
-    "win32\\alien\\types.lua",
-    "win32\\fs.lua",
-    "path.lua",
-    "findfile.lua",
-    "win32\\alien\\wcs.lua",
-    "win32\\ffi\\wcs.lua",
-    "win32\\ffi\\fs.lua",
-    "win32\\ffi\\types.lua",
-    "fs.lua",
-    "lfs\\impl\\fs.lua",
-    "win32\\alien\\utils.lua",
-    "win32\\wcs.lua",
-    "lfs\\fs.lua",
-    "module.lua"
-  ]
+  "files": {
+    "findfile.lua": {
+      "sha256": "734b9d88b8354273a6118899505df56eeef11fa62cc9915e920edc153a26e166",
+      "size": 2396
+    },
+    "fs.lua": {
+      "sha256": "5f7b9b904a4aaa39c85c3bf429e3346a7131b035130e5bde0dd400e779c1954a",
+      "size": 997
+    },
+    "lfs/fs.lua": {
+      "sha256": "efd297e2489e6aecefaacad3cbdf60dad878ee22a8e9790453f1ab28020b3549",
+      "size": 446
+    },
+    "lfs/impl/fs.lua": {
+      "sha256": "0b7552ad1ec3fa785a8728c5cb748eed89c7659a405e40cc9f338aa750a9eed8",
+      "size": 9996
+    },
+    "module.lua": {
+      "sha256": "04ccd013076537c259461b3b574fae36a1173b5ee96de7a0439379548c87877c",
+      "size": 524
+    },
+    "path.lua": {
+      "sha256": "10a575c669b90ad28899c04bfd8afc0341779782f574e1b4c8cb60aa2f480e6b",
+      "size": 13557
+    },
+    "syscall/fs.lua": {
+      "sha256": "8e5b1da8ed753972907d90af0e82f85ce7a67d188534c53a7d2742f7c94d4548",
+      "size": 454
+    },
+    "win32/alien/fs.lua": {
+      "sha256": "f8e8b96c6417ecec875e96ecd0884b9393a064ab7bdc298a3e861a617b239bbe",
+      "size": 14764
+    },
+    "win32/alien/types.lua": {
+      "sha256": "f073c4eaf38eb34b28c933c69f8a051f215786fb2398f091af4389312acfef36",
+      "size": 3393
+    },
+    "win32/alien/utils.lua": {
+      "sha256": "3024c0292e529aea784b88908c1c141ff822c3aad39e75ee503cebeed5e6870c",
+      "size": 4216
+    },
+    "win32/alien/wcs.lua": {
+      "sha256": "d3eeb7128c4b83d873c30579c8147c342473d1076e2f021f00dc2b44561c4b25",
+      "size": 3603
+    },
+    "win32/ffi/fs.lua": {
+      "sha256": "178f7b6503a51955fce4b255067f2092ea7756a321a86d455e61fa9b2c9d5ecd",
+      "size": 13383
+    },
+    "win32/ffi/types.lua": {
+      "sha256": "fc63a77cf3363200d2b8a4da25956860dddba42a26310faa3ff911be3052e172",
+      "size": 4449
+    },
+    "win32/ffi/wcs.lua": {
+      "sha256": "201328cc3a45f941fc769371c621acc65b010dc31746c875b14db3e6460646d5",
+      "size": 3512
+    },
+    "win32/fs.lua": {
+      "sha256": "8a684221da0b42b5b363797d8abb9c4079e9737b0514777ec5363efed9e7cbe0",
+      "size": 36080
+    },
+    "win32/wcs.lua": {
+      "sha256": "a2940f65596e7c63feba9ddc2bdcc5c6af15deb2fe27da3bab4a4c9126d6a4d9",
+      "size": 2136
+    }
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/path.lua"
+  }
 }

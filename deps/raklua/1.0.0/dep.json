@@ -1,11 +1,18 @@
 {
+  "manifestVersion": "1.0",
   "id": "raklua",
   "version": "1.0.0",
-  "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/RakLua.lua",
-  "files": [
-    "RakLua.lua"
-  ],
+  "files": {
+    "RakLua.lua": {
+      "sha256": "9fecd838269bca25095354efdbabe18861da0df618a603ffd4c2c75e35f73575",
+      "size": 892
+    }
+  },
   "dependencies": {
     "RakLuaDll": "1.0.0"
+  },
+  "security": {},
+  "metadata": {
+    "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/RakLua.lua"
   }
 }
