@@ -7,7 +7,7 @@
 #### Using the Web Interface (Recommended)
 
 1. **Visit the web interface:**
-   Go to [registry website URL]
+   Go to [registry.depscian.tech](https://registry.depscian.tech/)
 
 2. **Sign in with GitHub:**
    Click "Sign in with GitHub" and authorize the application
@@ -101,7 +101,7 @@ git push origin main
 #### Используя веб-интерфейс (Рекомендуется)
 
 1. **Откройте веб-интерфейс:**
-   Перейдите на [URL сайта реестра]
+   Перейдите на [registry.depscian.tech](https://registry.depscian.tech/)
 
 2. **Войдите через GitHub:**
    Нажмите "Войти через GitHub" и авторизуйте приложение
