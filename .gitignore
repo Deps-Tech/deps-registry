@@ -1,3 +1,17 @@
+# Build artifacts
+dist/
+*.zip
+
+# Binaries
+tools-cli
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Go build cache
+tools/bin/
+
 # IDE and OS-specific files
 .idea/
 .vscode/
@@ -5,9 +19,8 @@
 .DS_Store
 Thumbs.db
 
-#Binary files
-*.exe
-
-#Trash
-dep_validate.go
-dep_fix.go
+# Temporary files
+*.tmp
+*.bak
+*.log
+.backup/
