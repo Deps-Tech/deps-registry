@@ -1,0 +1,9 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Documentation / Документация
+    url: https://github.com/Deps-Tech/deps-registry/wiki
+    about: Check the documentation for guides and examples / Проверьте документацию для руководств и примеров
+  - name: Discussions / Обсуждения
+    url: https://github.com/Deps-Tech/deps-registry/discussions
+    about: Ask questions and discuss ideas / Задавайте вопросы и обсуждайте идеи
+

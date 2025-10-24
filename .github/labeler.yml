@@ -1,0 +1,22 @@
+scripts:
+  - changed-files:
+    - any-glob-to-any-file: 'scripts/**'
+
+dependencies:
+  - changed-files:
+    - any-glob-to-any-file: 'deps/**'
+
+tooling:
+  - changed-files:
+    - any-glob-to-any-file: 'tools/**'
+
+ci:
+  - changed-files:
+    - any-glob-to-any-file: '.github/**'
+
+documentation:
+  - changed-files:
+    - any-glob-to-any-file: 
+      - '*.md'
+      - 'docs/**'
+

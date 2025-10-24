@@ -1,0 +1,16 @@
+# Registry maintainers are responsible for reviewing all changes
+
+* @DepsCian
+
+# Scripts require security review
+/scripts/ @DepsCian
+
+# Dependencies require compatibility review
+/deps/ @DepsCian
+
+# CI/CD changes require infrastructure review
+/.github/ @DepsCian
+
+# Tooling changes require maintainer approval
+/tools/ @DepsCian
+
