@@ -58,4 +58,3 @@ func ZipDirectory(sourcePath, targetPath string) error {
 		return err
 	})
 }
-

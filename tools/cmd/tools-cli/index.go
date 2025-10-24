@@ -50,4 +50,3 @@ func runIndex(cmd *cobra.Command, args []string) {
 	fmt.Printf("Generated index.json with %d dependencies and %d scripts\n",
 		len(idx.Dependencies), len(idx.Scripts))
 }
-

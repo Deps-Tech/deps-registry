@@ -82,4 +82,3 @@ func packageItems(itemType, distPath string) error {
 
 	return nil
 }
-

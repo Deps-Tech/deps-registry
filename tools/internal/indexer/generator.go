@@ -136,4 +136,3 @@ func readManifestFromZip(zipPath string) (*manifest.Manifest, error) {
 
 	return nil, fmt.Errorf("dep.json not found in %s", zipPath)
 }
-

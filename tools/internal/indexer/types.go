@@ -20,4 +20,3 @@ type Index struct {
 	Dependencies map[string]PackageInfo `json:"dependencies"`
 	Scripts      map[string]PackageInfo `json:"scripts"`
 }
-
