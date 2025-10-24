@@ -1,4 +1,4 @@
-name: "Deploy to CDN"
+name: Deploy to CDN
 
 on:
   push:
@@ -24,20 +24,20 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Configure AWS Credentials via OIDC
-        uses: aws-actions/configure-aws-credentials@v4.2.1
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ secrets.AWS_OIDC_ROLE_ARN }}
           aws-region: ${{ vars.AWS_REGION }}
 
-      - name: Download CLI artifact
+      - name: Download CLI
         uses: actions/download-artifact@v4
         with:
           name: tools-cli-artifact
-          path: .
+          path: tools
           
       - name: Make CLI executable
-        run: chmod +x ./tools-cli
+        run: chmod +x tools/tools-cli
 
       - name: Get changed files
         id: changed-files
@@ -47,11 +47,12 @@ jobs:
       - name: Package and Generate Index
         if: steps.changed-files.outputs.files
         run: |
+          cd tools
           ./tools-cli package
-          ./tools-cli generate-index --cdn-url "https://${{ vars.S3_BUCKET_NAME }}.s3.${{ vars.AWS_REGION }}.amazonaws.com"
+          ./tools-cli index --cdn-url "https://${{ vars.S3_BUCKET_NAME }}.s3.${{ vars.AWS_REGION }}.amazonaws.com"
 
-      - name: Deploy Content to CDN
+      - name: Deploy to CDN
         if: steps.changed-files.outputs.files
         run: |
-          aws s3 sync ./dist/ s3://${{ vars.S3_BUCKET_NAME }}/
+          aws s3 sync tools/dist/ s3://${{ vars.S3_BUCKET_NAME }}/
           aws cloudfront create-invalidation --distribution-id ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"

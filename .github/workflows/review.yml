@@ -1,4 +1,4 @@
-name: "PR Review"
+name: PR Review
 
 on:
   pull_request:
@@ -15,35 +15,27 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Download CLI artifact
+      - name: Download CLI
         uses: actions/download-artifact@v4
         with:
           name: tools-cli-artifact
-          path: .
+          path: tools
 
       - name: Make CLI executable
-        run: chmod +x ./tools-cli
+        run: chmod +x tools/tools-cli
 
       - name: Get changed files
         id: changed-files
         run: |
           echo "files=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }} | xargs)" >> $GITHUB_OUTPUT
 
-      - name: "Scenario: New Dependency"
-        if: contains(steps.changed-files.outputs.files, 'deps/')
+      - name: Validate manifests
+        if: contains(steps.changed-files.outputs.files, 'deps/') || contains(steps.changed-files.outputs.files, 'scripts/')
         run: |
-          echo "Changes detected in deps/ directory."
-          echo "Running validation for deps..."
-          ./tools-cli validate --path deps
-
-      - name: "Scenario: New Script"
-        if: contains(steps.changed-files.outputs.files, 'scripts/')
-        run: |
-          echo "Changes detected in scripts/ directory."
-          echo "Running validation for scripts..."
-          ./tools-cli validate --path scripts
+          cd tools
+          ./tools-cli validate
