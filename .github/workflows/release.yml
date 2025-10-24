@@ -40,6 +40,7 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: '1.23'
+          cache-dependency-path: tools/go.sum
 
       - name: Build
         working-directory: ./tools
@@ -48,7 +49,7 @@ jobs:
           GOARCH: ${{ matrix.arch }}
           CGO_ENABLED: 0
         run: |
-          go build -ldflags="-s -w" -o ../tools-cli-${{ matrix.os }}-${{ matrix.arch }}${{ matrix.ext }} .
+          go build -ldflags="-s -w" -o ../tools-cli-${{ matrix.os }}-${{ matrix.arch }}${{ matrix.ext }} ./cmd/tools-cli
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
