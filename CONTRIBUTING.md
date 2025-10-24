@@ -4,17 +4,42 @@
 
 ### How to Add a Package
 
-#### Using the CLI (Recommended)
+#### Using the Web Interface (Recommended)
 
-1. **Clone the repository:**
+1. **Visit the web interface:**
+   Go to [registry website URL]
+
+2. **Sign in with GitHub:**
+   Click "Sign in with GitHub" and authorize the application
+
+3. **Upload your package:**
+   - Navigate to the "Upload" page
+   - Drag and drop your .lua file(s)
+   - The system will automatically:
+     - Extract metadata from `script_name()`, `script_version()`, `script_author()`
+     - Analyze and detect all dependencies
+     - Detect security features (FFI, network access, file I/O)
+   - Review the detected metadata and edit if needed
+   - Add tags (comma-separated)
+   - Add source URL (optional)
+
+4. **Create Pull Request:**
+   - Click "Upload & Create PR"
+   - The system will automatically create a fork, commit files, and open a PR
+   - Wait for maintainer review
+
+#### Using the CLI
+
+1. **Download the CLI:**
+   Download pre-compiled binary from [Releases](https://github.com/Deps-Tech/deps-registry/releases/latest):
+   - Windows: `tools-cli-windows-amd64.exe`
+   - Linux: `tools-cli-linux-amd64` or `tools-cli-linux-arm64`
+   - macOS: `tools-cli-darwin-amd64` or `tools-cli-darwin-arm64`
+
+2. **Clone the repository:**
 ```bash
 git clone https://github.com/Deps-Tech/deps-registry.git
-cd deps-registry/tools
-```
-
-2. **Build the CLI:**
-```bash
-go build -o tools-cli ./cmd/tools-cli
+cd deps-registry
 ```
 
 3. **Add your script:**
@@ -33,7 +58,6 @@ The CLI will automatically:
 
 4. **Review the generated files:**
 ```bash
-cd ..
 git diff
 ```
 
@@ -74,17 +98,42 @@ git push origin main
 
 ### Как добавить пакет
 
-#### Используя CLI (Рекомендуется)
+#### Используя веб-интерфейс (Рекомендуется)
 
-1. **Клонируйте репозиторий:**
+1. **Откройте веб-интерфейс:**
+   Перейдите на [URL сайта реестра]
+
+2. **Войдите через GitHub:**
+   Нажмите "Войти через GitHub" и авторизуйте приложение
+
+3. **Загрузите ваш пакет:**
+   - Перейдите на страницу "Загрузить"
+   - Перетащите ваш .lua файл(ы)
+   - Система автоматически:
+     - Извлечёт метаданные из `script_name()`, `script_version()`, `script_author()`
+     - Проанализирует и найдёт все зависимости
+     - Обнаружит функции безопасности (FFI, сетевой доступ, файловый I/O)
+   - Проверьте обнаруженные метаданные и отредактируйте при необходимости
+   - Добавьте теги (через запятую)
+   - Добавьте ссылку на источник (опционально)
+
+4. **Создайте Pull Request:**
+   - Нажмите "Загрузить и создать PR"
+   - Система автоматически создаст форк, закоммитит файлы и откроет PR
+   - Дождитесь проверки мейнтейнера
+
+#### Используя CLI
+
+1. **Скачайте CLI:**
+   Скачайте готовый бинарник из [Releases](https://github.com/Deps-Tech/deps-registry/releases/latest):
+   - Windows: `tools-cli-windows-amd64.exe`
+   - Linux: `tools-cli-linux-amd64` или `tools-cli-linux-arm64`
+   - macOS: `tools-cli-darwin-amd64` или `tools-cli-darwin-arm64`
+
+2. **Клонируйте репозиторий:**
 ```bash
 git clone https://github.com/Deps-Tech/deps-registry.git
-cd deps-registry/tools
-```
-
-2. **Соберите CLI:**
-```bash
-go build -o tools-cli ./cmd/tools-cli
+cd deps-registry
 ```
 
 3. **Добавьте свой скрипт:**
@@ -95,15 +144,14 @@ go build -o tools-cli ./cmd/tools-cli
 ```
 
 CLI автоматически:
-- Извлечет метаданные из `script_name()`, `script_version()`, `script_author()`
-- Проанализирует и найдет все зависимости
+- Извлечёт метаданные из `script_name()`, `script_version()`, `script_author()`
+- Проанализирует и найдёт все зависимости
 - Обнаружит функции безопасности (FFI, сетевой доступ, файловый I/O)
 - Сгенерирует манифест с SHA256 хешами
 - Создаст правильную структуру директорий
 
 4. **Проверьте сгенерированные файлы:**
 ```bash
-cd ..
 git diff
 ```
 
@@ -137,4 +185,3 @@ git push origin main
 2. Мейнтейнер проверяет код на безопасность
 3. При одобрении PR сливается
 4. Пакет автоматически деплоится на CDN в течение 2 минут
-
