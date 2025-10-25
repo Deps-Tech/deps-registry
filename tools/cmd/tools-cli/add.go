@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"os"
 	"path/filepath"
@@ -10,7 +11,7 @@ import (
 	"github.com/Deps-Tech/deps-registry/tools/internal/filesystem"
 	"github.com/Deps-Tech/deps-registry/tools/internal/manifest"
 	"github.com/Deps-Tech/deps-registry/tools/internal/parser"
-	"github.com/Deps-Tech/deps-registry/tools/internal/versioning"
+	"github.com/Deps-Tech/deps-registry/tools/internal/registry"
 	"github.com/spf13/cobra"
 )
 
@@ -63,6 +64,8 @@ func runAddDep(cmd *cobra.Command, args []string) {
 }
 
 func addItem(itemType, source, tagList string) error {
+	client := registry.NewClient("")
+
 	metadata, err := extractMetadata(source)
 	if err != nil {
 		return fmt.Errorf("failed to extract metadata: %w", err)
@@ -76,16 +79,53 @@ func addItem(itemType, source, tagList string) error {
 		fmt.Printf("  Author: %s\n", metadata.Author)
 	}
 
+	dupInfo, err := client.CheckDuplicate(itemType, metadata.ID, metadata.Version)
+	if err != nil && client.IsAvailable() {
+		return fmt.Errorf("failed to check for duplicates: %w", err)
+	}
+
+	if dupInfo != nil && dupInfo.ExactMatch {
+		fmt.Printf("\n❌ Error: %s '%s' v%s already exists\n", itemType, metadata.ID, metadata.Version)
+		if dupInfo.PackageURL != "" {
+			fmt.Printf("   URL: %s\n", dupInfo.PackageURL)
+		}
+		fmt.Printf("\n   To add a new version, use a different version number.\n")
+		return fmt.Errorf("package already exists")
+	}
+
+	if dupInfo != nil && dupInfo.Exists && !dupInfo.ExactMatch {
+		fmt.Printf("\n⚠️  Warning: %s '%s' already exists with versions: %v\n",
+			itemType, metadata.ID, dupInfo.AllVersions)
+		fmt.Printf("   You are adding a new version: %s\n", metadata.Version)
+		fmt.Printf("\n   Continue? [y/N]: ")
+
+		reader := bufio.NewReader(os.Stdin)
+		response, _ := reader.ReadString('\n')
+		response = strings.TrimSpace(strings.ToLower(response))
+
+		if response != "y" && response != "yes" {
+			fmt.Println("\n   Aborted.")
+			return fmt.Errorf("user cancelled")
+		}
+	}
+
 	availableDeps := getAvailableDeps()
 	analysis, err := parser.AnalyzeLua(source, metadata.ID, availableDeps)
 	if err != nil {
 		return fmt.Errorf("failed to analyze: %w", err)
 	}
 
+	var depVersions map[string]string
 	if len(analysis.Dependencies) > 0 {
 		fmt.Printf("\nFound dependencies:\n")
+		_, depVersions = resolveDependencies(client, analysis.Dependencies)
 		for _, dep := range analysis.Dependencies {
-			fmt.Printf("  - %s\n", dep)
+			version := depVersions[dep]
+			if version == "*" {
+				fmt.Printf("  - %s (*) ⚠️  not in registry\n", dep)
+			} else {
+				fmt.Printf("  - %s (%s) ✓\n", dep, version)
+			}
 		}
 	}
 
@@ -125,9 +165,10 @@ func addItem(itemType, source, tagList string) error {
 
 	deps := make(map[string]string)
 	for _, dep := range analysis.Dependencies {
-		version := getLatestVersion(dep)
-		if version != "" {
+		if version, ok := depVersions[dep]; ok {
 			deps[dep] = version
+		} else {
+			deps[dep] = "*"
 		}
 	}
 
@@ -329,24 +370,35 @@ func getAvailableDeps() map[string]bool {
 	return deps
 }
 
-func getLatestVersion(depID string) string {
-	depPath := filepath.Join("..", "deps", depID)
-	versions, err := os.ReadDir(depPath)
-	if err != nil {
-		return ""
+func resolveDependencies(client *registry.Client, deps []string) ([]string, map[string]string) {
+	cdnAvailable := client.IsAvailable()
+	if !cdnAvailable {
+		fmt.Printf("\n⚠️  Warning: Cannot reach registry CDN\n")
+		fmt.Printf("   Continuing with unknown dependency versions (*)\n")
 	}
 
-	versionList := []string{}
-	for _, v := range versions {
-		if v.IsDir() {
-			versionList = append(versionList, v.Name())
+	versions := make(map[string]string)
+	uniqueDeps := make(map[string]bool)
+	result := []string{}
+
+	for _, dep := range deps {
+		if uniqueDeps[dep] {
+			continue
+		}
+		uniqueDeps[dep] = true
+		result = append(result, dep)
+
+		if cdnAvailable {
+			version, err := client.GetLatestVersion("deps", dep)
+			if err == nil {
+				versions[dep] = version
+			} else {
+				versions[dep] = "*"
+			}
+		} else {
+			versions[dep] = "*"
 		}
 	}
 
-	if len(versionList) == 0 {
-		return ""
-	}
-
-	return versioning.GetLatest(versionList)
+	return result, versions
 }
-
