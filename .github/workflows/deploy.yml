@@ -10,7 +10,39 @@ permissions:
   contents: read
 
 jobs:
+  build-cli:
+    name: Build CLI
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+          cache-dependency-path: tools/go.sum
+
+      - name: Build CLI
+        working-directory: ./tools
+        run: |
+          VERSION="deploy.$(date -u +%Y.%m.%d-%H%M%S)"
+          COMMIT_SHA="${{ github.sha }}"
+          BUILD_DATE="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          go build -ldflags="-s -w -X main.Version=${VERSION} -X main.CommitSHA=${COMMIT_SHA} -X main.BuildDate=${BUILD_DATE}" -o tools-cli ./cmd/tools-cli
+          chmod +x tools-cli
+
+      - name: Upload CLI artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: tools-cli
+          path: tools/tools-cli
+          retention-days: 1
+
   deploy:
+    name: Deploy
+    needs: build-cli
     runs-on: ubuntu-latest
     environment: production
     
@@ -20,17 +52,20 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Download CLI artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: tools-cli
+          path: tools
+
+      - name: Make CLI executable
+        run: chmod +x tools/tools-cli
+
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ secrets.AWS_OIDC_ROLE_ARN }}
           aws-region: ${{ vars.AWS_REGION }}
-
-      - name: Download CLI from latest auto-build
-        run: |
-          mkdir -p tools
-          curl -sL "https://github.com/${{ github.repository }}/releases/download/latest-auto/tools-cli-linux-amd64" -o tools/tools-cli
-          chmod +x tools/tools-cli
 
       - name: Get changed files
         id: changed-files

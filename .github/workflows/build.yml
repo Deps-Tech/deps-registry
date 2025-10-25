@@ -120,4 +120,3 @@ jobs:
             For stable releases, see [Releases](https://github.com/${{ github.repository }}/releases).
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-

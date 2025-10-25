@@ -16,7 +16,36 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Download CLI from latest auto-build
+      - name: Check if tools/ changed
+        id: check-tools
+        run: |
+          if git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }} | grep -q '^tools/'; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Tools directory changed in this PR"
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "Tools directory not changed in this PR"
+          fi
+
+      - name: Setup Go
+        if: steps.check-tools.outputs.changed == 'true'
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+          cache-dependency-path: tools/go.sum
+
+      - name: Build CLI from PR source
+        if: steps.check-tools.outputs.changed == 'true'
+        working-directory: ./tools
+        run: |
+          VERSION="pr.$(date -u +%Y.%m.%d-%H%M%S)"
+          COMMIT_SHA="${{ github.event.pull_request.head.sha }}"
+          BUILD_DATE="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          go build -ldflags="-s -w -X main.Version=${VERSION} -X main.CommitSHA=${COMMIT_SHA} -X main.BuildDate=${BUILD_DATE}" -o tools-cli ./cmd/tools-cli
+          chmod +x tools-cli
+
+      - name: Download CLI from latest-auto
+        if: steps.check-tools.outputs.changed == 'false'
         run: |
           mkdir -p tools
           curl -sL "https://github.com/${{ github.repository }}/releases/download/latest-auto/tools-cli-linux-amd64" -o tools/tools-cli

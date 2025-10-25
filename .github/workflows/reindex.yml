@@ -22,7 +22,7 @@ jobs:
           role-to-assume: ${{ secrets.AWS_OIDC_ROLE_ARN }}
           aws-region: ${{ vars.AWS_REGION }}
 
-      - name: Download CLI from latest auto-build
+      - name: Download CLI from latest-auto
         run: |
           curl -sL "https://github.com/${{ github.repository }}/releases/download/latest-auto/tools-cli-linux-amd64" -o tools-cli
           chmod +x tools-cli
