@@ -22,20 +22,17 @@ jobs:
           role-to-assume: ${{ secrets.AWS_OIDC_ROLE_ARN }}
           aws-region: ${{ vars.AWS_REGION }}
 
-      - name: Download latest CLI release
+      - name: Download CLI from latest auto-build
         run: |
-          LATEST_RELEASE=$(curl -s https://api.github.com/repos/${{ github.repository }}/releases/latest | jq -r '.tag_name')
-          curl -sL "https://github.com/${{ github.repository }}/releases/download/${LATEST_RELEASE}/tools-cli-linux-amd64" -o tools-cli
-          
-      - name: Make CLI executable
-        run: chmod +x ./tools-cli
+          curl -sL "https://github.com/${{ github.repository }}/releases/download/latest-auto/tools-cli-linux-amd64" -o tools-cli
+          chmod +x tools-cli
 
       - name: Package and Generate Index
         run: |
           ./tools-cli package
-          ./tools-cli generate-index --cdn-url "https://${{ vars.S3_BUCKET_NAME }}.s3.${{ vars.AWS_REGION }}.amazonaws.com"
+          ./tools-cli index --cdn-url "https://${{ vars.S3_BUCKET_NAME }}.s3.${{ vars.AWS_REGION }}.amazonaws.com"
 
       - name: Deploy Content to CDN
         run: |
-          aws s3 sync ./dist/ s3://${{ vars.S3_BUCKET_NAME }}/
+          aws s3 sync dist/ s3://${{ vars.S3_BUCKET_NAME }}/
           aws cloudfront create-invalidation --distribution-id ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"

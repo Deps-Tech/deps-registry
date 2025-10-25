@@ -26,14 +26,11 @@ jobs:
           role-to-assume: ${{ secrets.AWS_OIDC_ROLE_ARN }}
           aws-region: ${{ vars.AWS_REGION }}
 
-      - name: Download latest CLI release
+      - name: Download CLI from latest auto-build
         run: |
-          LATEST_RELEASE=$(curl -s https://api.github.com/repos/${{ github.repository }}/releases/latest | jq -r '.tag_name')
           mkdir -p tools
-          curl -sL "https://github.com/${{ github.repository }}/releases/download/${LATEST_RELEASE}/tools-cli-linux-amd64" -o tools/tools-cli
-          
-      - name: Make CLI executable
-        run: chmod +x tools/tools-cli
+          curl -sL "https://github.com/${{ github.repository }}/releases/download/latest-auto/tools-cli-linux-amd64" -o tools/tools-cli
+          chmod +x tools/tools-cli
 
       - name: Get changed files
         id: changed-files
