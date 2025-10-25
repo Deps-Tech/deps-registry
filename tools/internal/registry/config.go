@@ -12,9 +12,8 @@ const (
 )
 
 func GetCDNURL() string {
-	if url := os.Getenv("DEPS_CDN_URL"); url != "" {
+	if url := os.Getenv("CDN_URL"); url != "" {
 		return url
 	}
 	return DefaultCDNURL
 }
-
