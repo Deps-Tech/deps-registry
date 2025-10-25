@@ -8,11 +8,11 @@ import (
 	"os"
 	"path/filepath"
 	"regexp"
-	"sort"
 	"time"
 
 	"github.com/Deps-Tech/deps-registry/tools/internal/filesystem"
 	"github.com/Deps-Tech/deps-registry/tools/internal/manifest"
+	"github.com/Deps-Tech/deps-registry/tools/internal/versioning"
 )
 
 func Generate(distPath, cdnURL string) (*Index, error) {
@@ -64,15 +64,15 @@ func generateForType(itemType, distPath, cdnURL string) (map[string]PackageInfo,
 	}
 
 	for pkgName, versions := range packageVersions {
-		sort.Strings(versions)
-		latest := versions[len(versions)-1]
+		sortedVersions := versioning.Sort(versions)
+		latest := versioning.GetLatest(versions)
 
 		pkgInfo := PackageInfo{
 			Latest:   latest,
 			Versions: make(map[string]VersionInfo),
 		}
 
-		for _, version := range versions {
+		for _, version := range sortedVersions {
 			fileName := fmt.Sprintf("%s-%s.zip", pkgName, version)
 			filePath := filepath.Join(itemsPath, fileName)
 
