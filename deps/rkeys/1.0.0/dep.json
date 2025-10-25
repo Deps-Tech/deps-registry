@@ -12,7 +12,7 @@
     "bitex": "1.0.0",
     "ffi": "1.0.0",
     "vkeys": "1.0.0",
-    "windows.message": "1.0.0"
+    "windows": "1.0.0"
   },
   "security": {},
   "metadata": {

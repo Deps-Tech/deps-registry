@@ -8,9 +8,6 @@
       "size": 892
     }
   },
-  "dependencies": {
-    "RakLuaDll": "1.0.0"
-  },
   "security": {},
   "metadata": {
     "sourceUrl": "file:///C:/Users/Administrator/AppData/Local/Programs/Arizona Games Launcher/bin/arizona/moonloader/lib/RakLua.lua"

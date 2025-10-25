@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "ffi": "1.0.0",
-    "mimgui.imgui": "1.0.0"
+    "mimgui": "1.0.0"
   },
   "security": {},
   "metadata": {

@@ -9,8 +9,7 @@
     }
   },
   "dependencies": {
-    "cjson": "1.0.0",
-    "cjson.util": "1.0.0"
+    "cjson": "1.0.0"
   },
   "security": {},
   "metadata": {

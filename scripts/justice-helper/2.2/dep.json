@@ -17,8 +17,8 @@
     "ltn12": "1.0.0",
     "mimgui": "1.0.0",
     "moonloader": "1.0.0",
-    "samp.events": "1.0.0",
-    "socket.http": "1.0.0",
+    "samp": "1.0.0",
+    "socket": "1.0.0",
     "vkeys": "1.0.0"
   },
   "security": {

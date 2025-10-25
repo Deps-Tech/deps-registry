@@ -58,7 +58,8 @@
   },
   "dependencies": {
     "ffi": "1.0.0",
-    "sampfuncs": "1.0.0"
+    "sampfuncs": "1.0.0",
+    "vector3d": "1.0.0"
   },
   "security": {},
   "metadata": {

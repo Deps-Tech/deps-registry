@@ -17,7 +17,7 @@
     }
   },
   "dependencies": {
-    "path.win32.ffi.types": "1.0.0"
+    "path": "1.0.0"
   },
   "security": {},
   "metadata": {

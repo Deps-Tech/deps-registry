@@ -9,9 +9,8 @@
     }
   },
   "dependencies": {
-    "MoonImGui": "1.0.0",
     "bitex": "1.0.0",
-    "windows.message": "1.0.0"
+    "windows": "1.0.0"
   },
   "security": {},
   "metadata": {

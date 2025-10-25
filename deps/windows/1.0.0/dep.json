@@ -2,6 +2,9 @@
   "manifestVersion": "1.0",
   "id": "windows",
   "version": "1.0.0",
+  "provides": [
+    "windows.message"
+  ],
   "files": {
     "init.lua": {
       "sha256": "a21b08e392b611bca7995fd48aa049f99916a483814da08bd9ac264b3b6c44da",

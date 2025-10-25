@@ -2,6 +2,9 @@
   "manifestVersion": "1.0",
   "id": "cjson",
   "version": "1.0.0",
+  "provides": [
+    "cjson.safe"
+  ],
   "files": {
     "cjson.dll": {
       "sha256": "7d402147fb093813d20432aa3c6211cd9cde3848ab8f4be3ed977c67dbddfced",

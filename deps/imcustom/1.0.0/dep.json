@@ -16,7 +16,7 @@
     "imgui": "1.0.0",
     "rkeys": "1.0.0",
     "vkeys": "1.0.0",
-    "windows.message": "1.0.0"
+    "windows": "1.0.0"
   },
   "security": {},
   "metadata": {

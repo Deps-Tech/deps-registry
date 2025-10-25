@@ -2,6 +2,9 @@
   "manifestVersion": "1.0",
   "id": "ssl",
   "version": "1.0.0",
+  "provides": [
+    "ssl.https"
+  ],
   "files": {
     "https.lua": {
       "sha256": "aa10898dd60781500f30cd0f425eea0ca8e9632b7067d56d26a5d4341055d239",
@@ -18,9 +21,7 @@
   },
   "dependencies": {
     "ltn12": "1.0.0",
-    "socket": "1.0.0",
-    "socket.http": "1.0.0",
-    "socket.url": "1.0.0"
+    "socket": "1.0.0"
   },
   "security": {},
   "metadata": {

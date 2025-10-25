@@ -2,6 +2,11 @@
   "manifestVersion": "1.0",
   "id": "mimgui",
   "version": "1.0.0",
+  "provides": [
+    "mimgui.imgui",
+    "mimgui.dx9",
+    "mimgui.cdefs"
+  ],
   "files": {
     "cdefs.lua": {
       "sha256": "55b10a5b13590a076ffaf3a109f4748be305a76943313ddf22c9d9a5761bcaad",
@@ -26,7 +31,7 @@
   },
   "dependencies": {
     "ffi": "1.0.0",
-    "windows.message": "1.0.0"
+    "windows": "1.0.0"
   },
   "security": {},
   "metadata": {

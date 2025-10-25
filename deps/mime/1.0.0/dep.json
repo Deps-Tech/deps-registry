@@ -2,6 +2,9 @@
   "manifestVersion": "1.0",
   "id": "mime",
   "version": "1.0.0",
+  "provides": [
+    "mime.core"
+  ],
   "files": {
     "core.dll": {
       "sha256": "e845e535e70086ab72f18d53d00cf80d15300089ab78db3eff383b5854e8667f",

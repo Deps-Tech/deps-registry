@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "encoding": "1.0.0",
-    "fAwesome5": "1.0.0",
     "mimgui": "1.0.0"
   },
   "security": {},

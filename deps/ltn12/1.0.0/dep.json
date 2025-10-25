@@ -2,6 +2,9 @@
   "manifestVersion": "1.0",
   "id": "ltn12",
   "version": "1.0.0",
+  "provides": [
+    "ltn12"
+  ],
   "files": {
     "ltn12.lua": {
       "sha256": "3bf0000f86d25da94089d47de3bbb204fd5be491edbe275730e73f68c710ea42",

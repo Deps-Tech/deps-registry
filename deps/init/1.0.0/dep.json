@@ -10,9 +10,8 @@
   },
   "dependencies": {
     "ffi": "1.0.0",
-    "mimgui.dx9": "1.0.0",
-    "mimgui.imgui": "1.0.0",
-    "windows.message": "1.0.0"
+    "mimgui": "1.0.0",
+    "windows": "1.0.0"
   },
   "security": {},
   "metadata": {

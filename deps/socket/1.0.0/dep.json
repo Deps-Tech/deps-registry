@@ -2,6 +2,15 @@
   "manifestVersion": "1.0",
   "id": "socket",
   "version": "1.0.0",
+  "provides": [
+    "socket.http",
+    "socket.ftp",
+    "socket.smtp",
+    "socket.url",
+    "socket.headers",
+    "socket.tp",
+    "socket.core"
+  ],
   "files": {
     "core.dll": {
       "sha256": "c7e65c06df09addf05fd807e964e87f4ea56476e15e19ea5e47a321419ace50e",

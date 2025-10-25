@@ -2,6 +2,16 @@
   "manifestVersion": "1.0",
   "id": "luasocket",
   "version": "1.0.0",
+  "provides": [
+    "socket",
+    "socket.http",
+    "socket.ftp",
+    "socket.smtp",
+    "socket.url",
+    "socket.headers",
+    "socket.tp",
+    "socket.core"
+  ],
   "files": {
     "ltn12.lua": {
       "sha256": "3bf0000f86d25da94089d47de3bbb204fd5be491edbe275730e73f68c710ea42",
@@ -49,9 +59,8 @@
     }
   },
   "dependencies": {
-    "ltn12": "1.0.0",
-    "mime.core": "1.0.0",
-    "socket.core": "1.0.0"
+    "mime": "1.0.0",
+    "socket": "1.0.0"
   },
   "security": {},
   "metadata": {

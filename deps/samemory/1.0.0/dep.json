@@ -401,10 +401,8 @@
     }
   },
   "dependencies": {
-    "SAMemory.game.definitions": "1.0.0",
-    "SAMemory.metatype": "1.0.0",
-    "SAMemory.shared": "1.0.0",
-    "ffi": "1.0.0"
+    "ffi": "1.0.0",
+    "vector3d": "1.0.0"
   },
   "security": {},
   "metadata": {

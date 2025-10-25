@@ -33,8 +33,6 @@
     }
   },
   "dependencies": {
-    "SFlua.cdef": "1.0.0",
-    "SFlua.const": "1.0.0",
     "ffi": "1.0.0"
   },
   "security": {},
