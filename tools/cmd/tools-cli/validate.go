@@ -6,6 +6,7 @@ import (
 	"path/filepath"
 
 	"github.com/Deps-Tech/deps-registry/tools/internal/manifest"
+	"github.com/Deps-Tech/deps-registry/tools/internal/validator"
 	"github.com/spf13/cobra"
 )
 
@@ -21,6 +22,7 @@ func init() {
 
 func runValidate(cmd *cobra.Command, args []string) {
 	hasErrors := false
+	allManifests := make(map[string]*manifest.Manifest)
 
 	for _, itemType := range []string{"deps", "scripts"} {
 		basePath := filepath.Join("..", itemType)
@@ -48,12 +50,37 @@ func runValidate(cmd *cobra.Command, args []string) {
 				}
 
 				versionPath := filepath.Join(itemPath, version.Name())
-				if err := validateManifest(versionPath); err != nil {
+				m, err := validateManifest(versionPath)
+				if err != nil {
 					fmt.Printf("❌ %s/%s: %v\n", item.Name(), version.Name(), err)
 					hasErrors = true
 				} else {
 					fmt.Printf("✓ %s/%s\n", item.Name(), version.Name())
+					if m != nil {
+						allManifests[m.ID] = m
+					}
 				}
+			}
+		}
+	}
+
+	if !hasErrors {
+		fmt.Println("\nRunning dependency graph validation...")
+
+		cycles := validator.DetectCycles(allManifests)
+		if len(cycles) > 0 {
+			fmt.Printf("\n⚠️  Found %d circular dependencies:\n", len(cycles))
+			for _, cycle := range cycles {
+				fmt.Printf("   %v\n", cycle.Cycle)
+			}
+			hasErrors = true
+		}
+
+		duplicates := validator.DetectDuplicates(allManifests)
+		if len(duplicates) > 0 {
+			fmt.Printf("\n⚠️  Found %d sets of duplicate packages:\n", len(duplicates))
+			for _, dup := range duplicates {
+				fmt.Printf("   %v\n", dup.Packages)
 			}
 		}
 	}
@@ -65,34 +92,34 @@ func runValidate(cmd *cobra.Command, args []string) {
 	fmt.Println("\nAll manifests are valid")
 }
 
-func validateManifest(path string) error {
+func validateManifest(path string) (*manifest.Manifest, error) {
 	m, err := manifest.Load(path)
 	if err != nil {
-		return fmt.Errorf("failed to load manifest: %w", err)
+		return nil, fmt.Errorf("failed to load manifest: %w", err)
 	}
 
 	if m.ID == "" {
-		return fmt.Errorf("missing id")
+		return nil, fmt.Errorf("missing id")
 	}
 
 	if m.Version == "" {
-		return fmt.Errorf("missing version")
+		return nil, fmt.Errorf("missing version")
 	}
 
 	if len(m.Files) == 0 {
-		return fmt.Errorf("no files listed")
+		return nil, fmt.Errorf("no files listed")
 	}
 
 	for file := range m.Files {
 		filePath := filepath.Join(path, file)
 		if _, err := os.Stat(filePath); os.IsNotExist(err) {
-			return fmt.Errorf("file %s not found", file)
+			return nil, fmt.Errorf("file %s not found", file)
 		}
 	}
 
 	diskFiles, err := os.ReadDir(path)
 	if err != nil {
-		return err
+		return nil, err
 	}
 
 	for _, f := range diskFiles {
@@ -101,9 +128,9 @@ func validateManifest(path string) error {
 		}
 
 		if _, ok := m.Files[f.Name()]; !ok {
-			return fmt.Errorf("file %s not in manifest", f.Name())
+			return nil, fmt.Errorf("file %s not in manifest", f.Name())
 		}
 	}
 
-	return nil
+	return m, nil
 }
