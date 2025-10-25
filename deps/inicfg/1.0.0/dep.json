@@ -1,0 +1,19 @@
+{
+  "manifestVersion": "1.0",
+  "id": "inicfg",
+  "name": "IniConfig",
+  "version": "1.0.0",
+  "files": {},
+  "security": {},
+  "metadata": {
+    "tags": [
+      "builtin",
+      "moonloader",
+      "config",
+      "ini"
+    ],
+    "description": "Built-in MoonLoader library for working with .ini configuration files",
+    "sourceUrl": "https://blast.hk/moonloader/"
+  }
+}
+

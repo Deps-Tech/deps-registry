@@ -1,0 +1,21 @@
+{
+  "manifestVersion": "1.0",
+  "id": "memory",
+  "name": "Memory",
+  "version": "1.0.0",
+  "files": {},
+  "security": {
+    "usesFFI": true
+  },
+  "metadata": {
+    "tags": [
+      "builtin",
+      "moonloader",
+      "memory",
+      "game"
+    ],
+    "description": "Built-in MoonLoader library for working with game memory",
+    "sourceUrl": "https://blast.hk/moonloader/"
+  }
+}
+
