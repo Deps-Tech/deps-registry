@@ -22,6 +22,7 @@ type Manifest struct {
 	ID              string              `json:"id"`
 	Name            string              `json:"name,omitempty"`
 	Version         string              `json:"version"`
+	Provides        []string            `json:"provides,omitempty"`
 	Files           map[string]FileInfo `json:"files"`
 	Dependencies    map[string]string   `json:"dependencies,omitempty"`
 	Security        Security            `json:"security,omitempty"`
