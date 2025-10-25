@@ -10,6 +10,7 @@ import (
 	"github.com/Deps-Tech/deps-registry/tools/internal/filesystem"
 	"github.com/Deps-Tech/deps-registry/tools/internal/manifest"
 	"github.com/Deps-Tech/deps-registry/tools/internal/parser"
+	"github.com/Deps-Tech/deps-registry/tools/internal/versioning"
 	"github.com/spf13/cobra"
 )
 
@@ -93,6 +94,12 @@ func addItem(itemType, source, tagList string) error {
 	}
 	if analysis.UsesFFI {
 		fmt.Println("\n⚠️  Uses FFI")
+	}
+	if len(analysis.Warnings) > 0 {
+		fmt.Printf("\n⚠️  %d warnings (dynamic requires detected):\n", len(analysis.Warnings))
+		for _, w := range analysis.Warnings {
+			fmt.Printf("   Line %d: %s\n", w.Line, w.Message)
+		}
 	}
 
 	targetPath := filepath.Join("..", itemType, metadata.ID, metadata.Version)
@@ -329,15 +336,17 @@ func getLatestVersion(depID string) string {
 		return ""
 	}
 
-	var latest string
+	versionList := []string{}
 	for _, v := range versions {
 		if v.IsDir() {
-			if latest == "" || v.Name() > latest {
-				latest = v.Name()
-			}
+			versionList = append(versionList, v.Name())
 		}
 	}
 
-	return latest
+	if len(versionList) == 0 {
+		return ""
+	}
+
+	return versioning.GetLatest(versionList)
 }
 
