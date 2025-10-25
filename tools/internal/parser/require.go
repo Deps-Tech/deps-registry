@@ -3,8 +3,6 @@ package parser
 import (
 	"os"
 	"path/filepath"
-	"regexp"
-	"strings"
 )
 
 type Analysis struct {
@@ -12,18 +10,31 @@ type Analysis struct {
 	FilePaths    []string
 	UsesNetwork  bool
 	UsesFFI      bool
+	Warnings     []Warning
+	HasDynamic   bool
 }
 
-var (
-	reRequire = regexp.MustCompile(`require\s*\(?\s*["']([\w\.-]+)["']\s*\)?`)
-	reNetwork = regexp.MustCompile(`(http\.request|socket\.tcp|socket\.connect)`)
-	reFFI     = regexp.MustCompile(`\brequire\s*\(?\s*["']ffi["']\s*\)?`)
-)
-
 func AnalyzeLua(sourcePath string, excludeID string, availableDeps map[string]bool) (*Analysis, error) {
+	registry := NewRegistry()
+	for depID := range availableDeps {
+		registry.AddPackage(&PackageInfo{
+			ID: depID,
+		})
+	}
+
+	ctx, err := NewContext(excludeID, sourcePath, registry)
+	if err != nil {
+		return nil, err
+	}
+
+	return AnalyzeWithContext(ctx, sourcePath)
+}
+
+func AnalyzeWithContext(ctx *Context, sourcePath string) (*Analysis, error) {
 	analysis := &Analysis{
 		Dependencies: []string{},
 		FilePaths:    []string{},
+		Warnings:     []Warning{},
 	}
 
 	luaFiles, err := findLuaFiles(sourcePath)
@@ -31,7 +42,7 @@ func AnalyzeLua(sourcePath string, excludeID string, availableDeps map[string]bo
 		return nil, err
 	}
 
-	depSet := make(map[string]struct{})
+	allRawModules := []string{}
 
 	for _, file := range luaFiles {
 		content, err := os.ReadFile(file)
@@ -41,33 +52,28 @@ func AnalyzeLua(sourcePath string, excludeID string, availableDeps map[string]bo
 
 		contentStr := string(content)
 
-		matches := reRequire.FindAllStringSubmatch(contentStr, -1)
-		for _, match := range matches {
-			if len(match) > 1 {
-				dep := strings.TrimPrefix(match[1], "lib.")
-				rootDep := strings.Split(dep, ".")[0]
+		regexResult := ParseWithRegex(contentStr)
+		allRawModules = append(allRawModules, regexResult.RawModules...)
+		analysis.FilePaths = append(analysis.FilePaths, regexResult.FilePaths...)
 
-				if excludeID != "" && strings.EqualFold(rootDep, excludeID) {
-					continue
-				}
-
-				if availableDeps[strings.ToLower(rootDep)] {
-					depSet[dep] = struct{}{}
-				}
-			}
-		}
-
-		if reNetwork.MatchString(contentStr) {
+		if regexResult.UsesNetwork {
 			analysis.UsesNetwork = true
 		}
-
-		if reFFI.MatchString(contentStr) {
+		if regexResult.UsesFFI {
 			analysis.UsesFFI = true
+		}
+
+		warnings := DetectDynamicRequires(contentStr)
+		analysis.Warnings = append(analysis.Warnings, warnings...)
+		if len(warnings) > 0 {
+			analysis.HasDynamic = true
 		}
 	}
 
-	for dep := range depSet {
-		analysis.Dependencies = append(analysis.Dependencies, dep)
+	resolved := ResolveDependencies(ctx, allRawModules)
+
+	for pkgID := range resolved {
+		analysis.Dependencies = append(analysis.Dependencies, pkgID)
 	}
 
 	return analysis, nil
