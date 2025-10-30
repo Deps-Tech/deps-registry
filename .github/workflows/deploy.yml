@@ -77,7 +77,7 @@ jobs:
         run: |
           cd tools
           ./tools-cli package
-          ./tools-cli index --cdn-url "https://${{ vars.S3_BUCKET_NAME }}.s3.${{ vars.AWS_REGION }}.amazonaws.com"
+          ./tools-cli index --cdn-url "https://cdn.depscian.tech"
 
       - name: Deploy to CDN
         if: steps.changed-files.outputs.files
