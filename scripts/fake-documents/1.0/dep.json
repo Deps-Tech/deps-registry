@@ -1,0 +1,30 @@
+{
+  "manifestVersion": "1.0",
+  "id": "fake-documents",
+  "name": "Fake Documents",
+  "version": "1.0",
+  "files": {
+    "Fake Documents 1.2.lua": {
+      "sha256": "718a8ab7c65b8333b4b849e0c2df1413dc9334057839d68704e046918510a815",
+      "size": 32219
+    }
+  },
+  "dependencies": {
+    "mimgui": "1.0.0",
+    "encoding": "1.0.0",
+    "ffi": "1.0.0",
+    "arizona-events": "2025.728.952"
+  },
+  "security": {
+    "usesFFI": true
+  },
+  "metadata": {
+    "tags": [
+      "cheats",
+      "cef",
+      "fake"
+    ],
+    "sourceUrl": "https://www.blast.hk/threads/235664/",
+    "uploadedBy": "DepsCian"
+  }
+}
