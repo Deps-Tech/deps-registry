@@ -77,10 +77,12 @@ jobs:
         run: |
           cd tools
           ./tools-cli package
-          ./tools-cli index --cdn-url "https://cdn.depscian.tech"
+          ./tools-cli index --cdn-url "https://storage.depscian.tech/catalyst"
 
-      - name: Deploy to CDN
+      - name: Deploy to R2
         if: steps.changed-files.outputs.files
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
         run: |
-          aws s3 sync tools/dist/ s3://${{ vars.S3_BUCKET_NAME }}/
-          aws cloudfront create-invalidation --distribution-id ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
+          aws s3 sync tools/dist/ s3://${{ vars.R2_BUCKET_NAME }}/catalyst/ --endpoint-url ${{ vars.R2_ENDPOINT_URL }}
